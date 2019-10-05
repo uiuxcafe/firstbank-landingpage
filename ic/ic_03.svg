@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>ic/ic_03</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ic/ic_03" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#FDF1E0" cx="50" cy="50" r="46"></circle>
+        <path d="M68,38 L32,38 L32,42 L68,42 L68,38 Z M68,48 L32,48 L32,62 L68,62 L68,48 Z M28,38.0042577 C28,35.7927672 29.7930912,34 32.00181,34 L67.99819,34 C70.2083286,34 72,35.7890275 72,38.0042577 L72,61.9957423 C72,64.2072328 70.2069088,66 67.99819,66 L32.00181,66 C29.7916714,66 28,64.2109725 28,61.9957423 L28,38.0042577 Z M56,54 C56,52.8954305 56.8867064,52 57.9981014,52 L62.0018986,52 C63.1054196,52 64,52.8877296 64,54 C64,55.1045695 63.1132936,56 62.0018986,56 L57.9981014,56 C56.8945804,56 56,55.1122704 56,54 Z" id="Shape" fill="#EFAD4E"></path>
+    </g>
+</svg>
