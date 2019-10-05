@@ -1,0 +1,136 @@
+extends layouts/layout.pug
+block page-title
+    title 微企e時貸
+block content
+    section.header
+        .container
+            nav.navbar.navbar-expand-lg.navbar-light
+                button.navbar-toggler(type='button' data-toggle='collapse' data-target='#first-nav' aria-controls='navbarTogglerDemo01' aria-expanded='false' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #first-nav.collapse.navbar-collapse
+                    a.navbar-brand(href='#') 第一銀行
+                    ul.navbar-nav.ml-auto
+                        li.nav-item
+                            a.nav-link(href='#') 信貸方案
+                        li.nav-item
+                            a.nav-link(href='#feature') 特色
+                        li.nav-item
+                            a.nav-link(href='#faq') FAQ
+                        li.nav-item
+                            a.nav-link(href='#') 申請流程
+                        li.nav-item
+                            a.nav-link
+                                button.btn.btn-success 立即申辦
+                    
+    section.banner.py-4
+        .container
+            .row.justify-content-center
+                .col-12
+                    .banner-card.card
+                        .bg
+                        .banner-content
+                            h2 是時候 <br> 擁有一家自己的餐廳了
+                            p 立即獲得試算額度，讓第一銀行微型企業貸款協助您圓夢 
+    section.photo.py-4
+        .container
+            .row.justify-content-center
+                .col-12
+                    .card.section-card
+                        .col-md-6
+                            h2 你可以從現在開始
+                            p 第一銀行過去8年協助過超過73萬個微型創業遍及台、美、亞洲各地，讓第一銀行陪您開創事業
+                            button.btn.btn-success 立即申辦
+                        .col-md-6
+                            img
+    section.feature#feature.py-4
+        .container
+            .row.justify-content-center
+                .title-area
+                    h2 信貸特色 
+            .row.justify-content-center.card
+                .col-md-4.col-12
+                    .icon
+                        //- img
+                        h3 200 萬元
+                        p 依照營業額配比，最高可貸200萬
+                .col-md-4.col-12
+                    .icon
+                        //- img
+                        h3 5 年
+                        p 貸款期限最長可至5年
+                .col-md-4.col-12
+                    .icon
+                        //- img
+                        h3 1.68 %
+                        p 超低利率，前三個月貸款利率最低1.68%起
+                .col-md-4.col-12
+                    .icon
+                        //- img
+                        h3 擔保
+                        p 移送中小企業信用保證基金保證。負責人及實際經營者須擔任保證人
+                .col-md-4.col-12
+                    .icon
+                        //- img
+                        h3 對象
+                        p 本國依法設立登記公司成立滿一年
+                .col-md-4.col-12
+                    .icon
+                        //- img
+                        h3 5000元
+                        p 開辦免壓力<br>超低開辦費用
+
+    section.photo.py-4
+        .container
+            .row.justify-content-cente
+                .col-12.card
+                    h2 協助企業遍及全球
+                    h2 729,371
+                    p 第一銀行過去8年協助過超過73萬個微型創業遍及台、美、亞洲各地，讓第一銀行陪您開創事業
+    section.apply.py-4
+        .container
+            .row.justify-content-center
+                .title-area
+                    h2 申請流程
+            .row.justify-content-center.card
+                .col-md-4.col-12
+                    .icon
+                        //- img
+                        h3 試算額度利率
+                        p 3分鐘即可得知專屬信貸報價
+                .col-md-4.col-12
+                    .icon
+                        //- img
+                        h3 填寫基本資料
+                        p 填寫基本資料即完成申請<br>最快 n 天得知審核結果
+                .col-md-4.col-12
+                    .icon
+                        //- img
+                        h3 取得資金！
+                        p 創業圓夢，由此開始！
+    section.faq#faq.py-4
+        .container
+            .row.justify-content-center
+                .title-area
+                    h2 FAQ
+            .row.justify-content-center.card
+                div
+                    h4 申請貸款需要提供哪些資料呢？
+                    p 依法辦理登記之獨資、合夥、有限公司與股份有限公司，財務結構健全、業務經營正常且一年營業額伍仟萬元以下
+                p 公司貸款跟個人貸款有什麼不一樣？
+                p 申請小型企業貸款需要準備哪些文件呢？
+                p 貸款申請到撥款會經過哪些流程？
+                p 要如何知道哪種貸款模式最適合我？
+
+    section.contact.py-4
+        .container
+            .row.justify-content-center
+                .title-area
+                    h2 專人聯絡我
+            .row.justify-content-center.card
+                input(type="" placeholder='請輸入您的姓名') 
+                input(type="" placeholder='請輸入您的手機號碼')
+
+    section.footer
+
+
+
