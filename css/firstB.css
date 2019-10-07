@@ -25,6 +25,11 @@ p {
   font-weight: 330;
   line-height: 28px; }
 
+li, a {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 320; }
+
 .title-area h2 {
   padding-bottom: 10%; }
 
@@ -72,6 +77,44 @@ button {
     -ms-transform: scale(0.94);
     transform: scale(0.94); }
 
+@media (max-width: 575.98px) {
+  html, body {
+    overflow-x: hidden; }
+  .col-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 90%;
+    flex: 0 0 90%; }
+  .py-4 {
+    padding-bottom: 1rem !important;
+    padding-top: 1rem !important; }
+  section.header ~ section.banner.py-4 {
+    padding-bottom: 0rem !important; }
+  h2 {
+    font-size: 24px;
+    line-height: 33px; }
+  h3 {
+    font-size: 28px;
+    line-height: 40px; }
+  h5 {
+    font-size: 20px;
+    line-height: 28px; }
+  p {
+    font-size: 16px;
+    line-height: 22px; }
+  li, a {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 320; }
+  .title-area h2 {
+    padding-bottom: 10%; }
+  .title-area .border-bottom {
+    height: 5px;
+    width: 100px;
+    margin-bottom: 20px;
+    background-color: #5FC68B;
+    margin-left: auto;
+    margin-right: auto; } }
+
 .header {
   height: 70px; }
   .header .navbar-brand {
@@ -84,8 +127,6 @@ button {
       width: 140px;
       height: 30px; }
       .header .navbar-nav li a {
-        font-size: 16px;
-        line-height: 22px;
         text-align: center; }
         .header .navbar-nav li a:hover {
           text-decoration: underline; }
@@ -100,22 +141,64 @@ button {
 
 .banner .card {
   width: 100%;
-  height: 650px; }
-  .banner .card .bg {
-    background-image: url("../img/banner.png");
-    width: 110%;
-    height: 100%;
+  height: 680px;
+  background-color: #EAEAEA; }
+  .banner .card .bg img {
+    width: 120%;
     overflow: hidden;
+    margin-left: -5%;
+    margin-top: -6%;
+    z-index: 0; }
+  .banner .card .bg-mask {
+    width: 150%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    position: absolute;
     margin-left: -5%; }
   .banner .card .banner-content {
     position: absolute;
-    padding: 10% 0% 0% 8%; }
+    padding: 10% 0% 0% 8%;
+    z-index: 3; }
     .banner .card .banner-content h2 {
       font-weight: 410;
       color: #FFF; }
     .banner .card .banner-content p {
       padding-top: 10px;
       color: #FFF; }
+
+@media (max-width: 575.98px) {
+  .banner .col-12 {
+    width: 95% !important; }
+  .banner .card {
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto; }
+    .banner .card .bg {
+      width: 125%;
+      margin-left: -10%;
+      height: auto; }
+    .banner .card .banner-content {
+      padding: 10% 0% 0% 5%;
+      width: 83%; }
+      .banner .card .banner-content p {
+        padding-top: 0px; } }
+
+@media (max-width: 376px) {
+  .banner .card {
+    height: 300px; }
+    .banner .card .bg {
+      width: 155%;
+      margin-left: -30%; } }
+
+@media (max-width: 321px) {
+  .banner .card {
+    height: 260px; }
+    .banner .card .bg {
+      width: 160%;
+      margin-left: -30%; }
+    .banner .card .banner-content h2 {
+      font-size: 20px; } }
 
 .photo-right .section-card {
   height: 400px; }
@@ -124,13 +207,12 @@ button {
     margin-left: 15%;
     width: 400px; }
     .photo-right .section-card .text-area button {
-      border: 0px;
       font-size: 20px;
       background: #5FC68B;
       color: #FFF;
       width: 130px;
-      padding: .6em .8em;
-      border-radius: 100px; }
+      padding: .5em .7em;
+      border-radius: 30px; }
 
 .feature .icon-area {
   width: 75%;
@@ -225,9 +307,6 @@ button {
   .footer li {
     padding-bottom: 15px; }
     .footer li a {
-      line-height: 22px;
-      color: #81838C;
-      font-size: 16px;
-      font-weight: 320; }
+      color: #81838C; }
   .footer ul li:nth-child(1) {
     padding-top: 15px; }

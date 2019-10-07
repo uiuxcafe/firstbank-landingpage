@@ -23,7 +23,10 @@ p
     font-size: 20px
     font-weight: 330
     line-height: 28px
-
+li,a 
+    font-size: 16px
+    line-height: 22px
+    font-weight: 320
 .title-area
     h2 
         padding-bottom: 10%
@@ -60,7 +63,7 @@ button
     transition: all .1s
     text-align: center
     cursor: pointer
-    outline: 0
+    outline: 0 
     &:hover
         text-decoration: none
         -webkit-transform: scale(1.04)
@@ -70,7 +73,44 @@ button
         -webkit-transform: scale(0.94)
         -ms-transform: scale(0.94)
         transform: scale(0.94)
+@media (max-width: 575.98px)
+    html,body
+        overflow-x: hidden
+    .col-12
+        flex: 0 0 90%
+    .py-4
+        padding-bottom: 1rem!important
+        padding-top: 1rem!important
+    section.header ~ section.banner.py-4
+        padding-bottom: 0rem!important
 
+    h2 
+        font-size: 24px
+        line-height: 33px
+            
+    h3 
+        font-size: 28px
+        line-height: 40px
+    h5 
+        font-size: 20px
+        line-height: 28px
+    p
+        font-size: 16px
+        line-height: 22px
+    li,a 
+        font-size: 16px
+        line-height: 22px
+        font-weight: 320
+    .title-area
+        h2 
+            padding-bottom: 10%
+        .border-bottom
+            height: 5px
+            width: 100px
+            margin-bottom: 20px
+            background-color: #5FC68B
+            margin-left: auto
+            margin-right: auto
 //header    
 .header
     height: 70px
@@ -84,8 +124,6 @@ button
             width: 140px
             height: 30px
             a
-                font-size: 16px
-                line-height: 22px
                 text-align: center
                 &:hover
                     text-decoration: underline
@@ -102,22 +140,67 @@ button
 .banner
     .card
         width: 100%
-        height: 650px
+        height: 680px
+        background-color: #EAEAEA
         .bg
-            background-image: url("../img/banner.png")
-            width: 110%
+            img
+                width: 120%
+                overflow: hidden
+                margin-left: -5%
+                margin-top: -6%
+                z-index: 0
+        .bg-mask
+            width: 150%
             height: 100%
-            overflow: hidden
+            background-color: rgba(0,0,0,0.5)
+            z-index: 2
+            position: absolute
             margin-left: -5%
         .banner-content
             position: absolute
             padding: 10% 0% 0% 8%
+            z-index: 3
             h2 
                 font-weight: 410
                 color: #FFF
             p
                 padding-top: 10px
                 color: #FFF
+@media (max-width: 575.98px)
+    .banner
+        .col-12
+            width: 95% !important
+        .card
+            height: 280px
+            margin-left: auto
+            margin-right: auto
+            .bg
+                width: 125%
+                margin-left: -10%
+                height: auto
+            .banner-content
+                padding: 10% 0% 0% 5%
+                width: 83%
+                p
+                    padding-top: 0px
+@media (max-width: 376px)
+    .banner
+        .card
+            height: 300px
+            .bg
+                width: 155%
+                margin-left: -30%
+@media (max-width: 321px)
+    .banner
+        .card
+            height: 260px
+            .bg
+                width: 160%
+                margin-left: -30% 
+            .banner-content
+                h2 
+                    font-size: 20px
+
 
 .photo-right
     .section-card
@@ -127,13 +210,12 @@ button
             margin-left: 15%
             width: 400px
             button
-                border: 0px
                 font-size: 20px
                 background: #5FC68B
                 color: #FFF
                 width: 130px
-                padding: .6em .8em
-                border-radius: 100px
+                padding: .5em .7em
+                border-radius: 30px
 .feature
     .icon-area
         width: 75%
@@ -230,10 +312,7 @@ button
     li 
         padding-bottom: 15px
         a
-            line-height: 22px
             color: #81838C
-            font-size: 16px
-            font-weight: 320
     ul
         li:nth-child(1)
             padding-top: 15px
