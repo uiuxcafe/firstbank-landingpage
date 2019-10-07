@@ -2,7 +2,7 @@
 body 
     background-color: #F8F9FA
 
-h1,h2,h3,h4,h5,p 
+h1,h2,h3,h4,h5,p,li,a
     color: #333848
     font-family: "PingFang TC"
 	
@@ -70,6 +70,33 @@ button
         -webkit-transform: scale(0.94)
         -ms-transform: scale(0.94)
         transform: scale(0.94)
+
+//header    
+.header
+    height: 70px
+    .navbar-brand
+        padding: 15px 0px
+        img 
+            width: 140px
+    .navbar-nav
+        padding: 15px 0px
+        li
+            width: 140px
+            height: 30px
+            a
+                font-size: 16px
+                line-height: 22px
+                text-align: center
+                &:hover
+                    text-decoration: underline
+            button
+                height: 48px
+                width: 120px
+                border-radius: 24px
+                background-color: #5FC68B
+                color: #FFF
+    .navbar-light .navbar-nav .nav-link
+        color: #333848
 
 // banner
 .banner
@@ -193,8 +220,9 @@ button
 .footer
     padding: 55px 220px 0px 220px
     height: 380px
-    .brand-logo
-        margin-left: 
+    img 
+        width: 180px
+        
     .border-bottom
         height: 3px
         width: 38px
