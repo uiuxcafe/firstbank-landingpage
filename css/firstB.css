@@ -104,8 +104,8 @@ button {
     font-size: 24px;
     line-height: 33px; }
   h3 {
-    font-size: 28px;
-    line-height: 40px; }
+    font-size: 24px;
+    line-height: 33px; }
   h5 {
     font-size: 20px;
     line-height: 28px; }
@@ -317,7 +317,6 @@ button {
       margin-top: -30px; } }
 
 .apply .card {
-  height: 580px;
   padding: 48px 48px 24px 48px; }
   .apply .card .col-md-4.col-12 {
     padding: 0px; }
@@ -328,6 +327,23 @@ button {
       text-align: center; }
     .apply .card .icon p {
       padding-top: 12px; }
+
+@media (max-width: 575.98px) {
+  .apply .card {
+    padding: 20px 16px 16px 20px; }
+    .apply .card .col-md-4.col-12 {
+      padding: 0px;
+      margin-right: auto;
+      margin-left: auto; }
+    .apply .card .icon {
+      width: 100%;
+      height: auto; }
+      .apply .card .icon img {
+        width: 90%; }
+      .apply .card .icon h3 {
+        margin-top: -10px; }
+      .apply .card .icon p {
+        padding-top: 0px; } }
 
 .faq .card {
   height: 580px;
