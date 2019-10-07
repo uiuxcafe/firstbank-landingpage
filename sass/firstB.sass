@@ -328,6 +328,7 @@ button
                 min-width: 300px
                 margin-top: -30px           
 
+
 .apply
     .card
         padding: 48px 48px 24px 48px
@@ -361,7 +362,6 @@ button
 
 .faq
     .card
-        height: 580px
         padding: 53px 85px
         .rectangle-text
             height: 178px
@@ -379,6 +379,29 @@ button
             padding-top: 24px
         img 
             margin-left: 20px
+@media (max-width: 575.98px)
+    .faq
+        .card
+            padding: 10px 0px
+            p 
+                font-size: 20px
+                line-height: 28px
+            .rectangle-text
+                height: auto
+                width: 100%
+                padding: 20px 24px
+                border-radius: 0px
+                background-color: rgba(144,226,159,0.2)
+                p
+                    color: #7F7F7F
+                    margin-bottom: 0px
+            .col-md-5 > p
+                width: 100%
+                color: #7F7F7F
+            .col-md-5 > p:nth-child(2)
+                padding-top: 20px
+            img 
+                width: 100%
 
 .contact
     .card
@@ -402,10 +425,11 @@ button
         .phoneNunber
             padding-top: 15px
         button
-            outline: none
+            outline: 0 
             position: absolute
             margin-top: -65px
             margin-left: 290px
+
 .footer
     padding: 55px 220px 0px 220px
     height: 380px
