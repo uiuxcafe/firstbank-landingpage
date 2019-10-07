@@ -9,6 +9,10 @@ h1,h2,h3,h4,h5,p,li,a
 h1,h2,h3
     font-weight: 600
 
+h1 
+    font-size: 48px
+    line-height: 67px
+
 h2 
     font-size: 32px
     line-height: 45px
@@ -88,7 +92,11 @@ button
         padding-bottom: 1rem!important
         padding-top: 1rem!important
     section.header ~ section.banner.py-4
-        padding-bottom: 0rem!important
+        // padding-bottom: 0rem!important
+
+    h1 
+        font-size: 36px
+        line-height: 50px
 
     h2 
         font-size: 24px
@@ -103,10 +111,11 @@ button
     p
         font-size: 16px
         line-height: 22px
+        font-weight: 350
     li,a 
         font-size: 16px
         line-height: 22px
-        font-weight: 320
+        font-weight: 350
     .title-area
         h2 
             padding-bottom: 0%
@@ -147,10 +156,10 @@ button
 .banner
     .card
         width: 100%
-        height: 680px
+        max-height: 680px
         background-color: #EAEAEA
         .bg
-            img
+            video
                 width: 120%
                 overflow: hidden
                 margin-left: -5%
@@ -184,6 +193,7 @@ button
             .bg
                 width: 125%
                 margin-left: -10%
+                margin-top: 5%
                 height: auto
             .banner-content
                 padding: 10% 0% 0% 5%
@@ -227,42 +237,51 @@ button
     .photo-right
         .section-card
             height: 450px
+            position: flex
+            align-items: flex-start
+            justify-content: space-around 
+            padding: 24px 15px
             .text-area
-                margin-top: 28px
-                margin-left: 24px
+                margin-top: 5px
+                margin-left: 8px
                 width: 85%
             button
                 height: 52px
-                max-width: 303px
-                width: 100%
+                // max-width: 303px
+                width: 90%
                 padding: .5em .7em
                 border-radius: 30px
                 background: #5FC68B
                 font-size: 20px
                 color: #FFF
-                margin-right: auto
-                margin-left: auto
-                // position: flex
-                // align-items: flex-start
-                // justify-content: space-around 
             img 
-                width: 100%
-                margin-left: 15px
-@media (max-width: 321px)
-    .photo-right
-        .section-card
-            button
-                max-width: 250px
-
+                width: 115%
+                margin-top: -5%
+            
 
 .feature
-    .icon-area
-        width: 75%
-        margin-top: 20px
-        margin-left: auto
-        margin-right: auto
-        h3 
-            padding-top: 25px
+    .card
+        padding: 60px 40px
+        .icon-area
+            width: 75%
+            margin-top: 20px
+            margin-left: auto
+            margin-right: auto
+            h2 
+                padding-top: 25px
+@media (max-width: 575.98px)
+    .feature
+        .card
+            padding: 32px 0px
+            .icon-area
+                width: 100%
+                margin-top: 0px
+                .icon
+                    img
+                        width: 60px
+                    h2
+                        padding-top: 8px
+
 
 .photo-left
     .section-card
@@ -275,9 +294,40 @@ button
             width: 395px
             h1 
                 color: #39AE6B
-                font-size: 48px
             p
                 color: #81838C
+@media (max-width: 575.98px)
+    .photo-left
+        .section-card
+            height: 416px
+            img
+                width: 125%
+                margin-top: -40px
+                overflow: hidden
+                margin-left: -5%
+            .text-area
+                margin-top: 0%
+                margin-left: 0px
+                padding: 24px 13px
+                width: 100%
+                h1 
+                    color: #39AE6B
+                p
+                    color: #81838C
+@media (max-width: 376px)
+    .photo-left
+        .section-card
+            img
+                min-width: 340px
+                margin-top: -25px
+@media (max-width: 321px)
+    .photo-left
+        .section-card
+            height: 370px
+            img
+                min-width: 300px
+                margin-top: -30px           
+
 .apply
     .card
         height: 580px
