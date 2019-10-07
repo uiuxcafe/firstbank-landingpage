@@ -92,7 +92,7 @@ block content
                         .col-md-5
                             .text-area
                                 h2 協助企業遍及全球
-                                h2 729,371
+                                h1 729,371
                                 p 第一銀行過去8年協助過超過73萬個微型創業遍及台、美、亞洲各地，讓第一銀行陪您開創事業
                         
     section.apply.py-4
@@ -129,8 +129,8 @@ block content
                 .col-12.card
                     .row.section-card
                         .col-md-5
-                            div
-                                h4 申請貸款需要提供哪些資料呢？
+                            div.rectangle-text
+                                h5 申請貸款需要提供哪些資料呢？
                                 p 依法辦理登記之獨資、合夥、有限公司與股份有限公司，財務結構健全、業務經營正常且一年營業額伍仟萬元以下
                             p 公司貸款跟個人貸款有什麼不一樣？
                             p 申請小型企業貸款需要準備哪些文件呢？
@@ -145,9 +145,17 @@ block content
                 .title-area.text-center
                     h2 專人聯絡我
                     div.border-bottom
-            .row.justify-content-center.card
-                input(type="" placeholder='請輸入您的姓名') 
-                input(type="" placeholder='請輸入您的手機號碼')
+            .row
+                .card.col-12
+                    .row.justify-content-center
+                        .col-12
+                            .input-group-lg
+                                input.form-control#userName(type="text" name='姓名' placeholder='請輸入您的姓名' required="required") 
+                        .col-12
+                            .input-group-lg.phoneNunber
+                                input.form-control#phoneNunber(type="tel" name='手機號碼' placeholder='請輸入您的手機號碼' required="required" minlength="10" maxlength="10")
+                                button
+                                    img(src="", alt="")
 
     section.footer
         footer.page-footer.font-small.blue.pt-4

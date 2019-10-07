@@ -1,9 +1,24 @@
 body {
   background-color: #F8F9FA; }
 
+h1, h2, h3, h4, h5, p {
+  color: #333848;
+  font-family: "PingFang TC"; }
+
+h1, h2, h3 {
+  font-weight: 600; }
+
+h2 {
+  font-size: 32px;
+  line-height: 45px; }
+
+h3 {
+  font-size: 28px;
+  line-height: 40px; }
+
 p {
   font-size: 20px;
-  font-weight: 320;
+  font-weight: 330;
   line-height: 28px; }
 
 .title-area h2 {
@@ -63,12 +78,13 @@ button {
     margin-left: -5%; }
   .banner .card .banner-content {
     position: absolute;
-    color: #FFF;
     padding: 10% 0% 0% 8%; }
     .banner .card .banner-content h2 {
-      font-weight: 410; }
+      font-weight: 410;
+      color: #FFF; }
     .banner .card .banner-content p {
-      padding-top: 10px; }
+      padding-top: 10px;
+      color: #FFF; }
 
 .photo-right .section-card {
   height: 400px; }
@@ -92,3 +108,74 @@ button {
   margin-right: auto; }
   .feature .icon-area h3 {
     padding-top: 25px; }
+
+.photo-left .section-card {
+  height: 400px; }
+  .photo-left .section-card img {
+    margin-left: -20px; }
+  .photo-left .section-card .text-area {
+    margin-top: 30%;
+    margin-left: 20px;
+    width: 395px; }
+    .photo-left .section-card .text-area h1 {
+      color: #39AE6B;
+      font-size: 48px; }
+    .photo-left .section-card .text-area p {
+      color: #81838C; }
+
+.apply .card {
+  height: 580px;
+  padding: 48px 48px 24px 48px; }
+  .apply .card .col-md-4.col-12 {
+    padding: 0px; }
+  .apply .card .icon {
+    width: 360px;
+    height: 516px; }
+    .apply .card .icon h3, .apply .card .icon p {
+      text-align: center; }
+    .apply .card .icon p {
+      padding-top: 12px; }
+
+.faq .card {
+  height: 580px;
+  padding: 53px 85px; }
+  .faq .card .rectangle-text {
+    height: 178px;
+    width: 424px;
+    padding: 28px 32px;
+    border-radius: 16px;
+    background-color: rgba(144, 226, 159, 0.2); }
+    .faq .card .rectangle-text h5 {
+      font-size: 20px;
+      line-height: 28px; }
+  .faq .card .col-md-5 > p {
+    padding-left: 32px;
+    width: 400px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #81838C; }
+  .faq .card .col-md-5 > p:nth-child(2) {
+    padding-top: 24px; }
+  .faq .card img {
+    margin-left: 20px; }
+
+.contact .card {
+  padding: 34px 0px; }
+  .contact .card .col-12 .input-group-lg {
+    max-width: 362px !important;
+    margin-left: auto;
+    margin-right: auto; }
+  .contact .card input {
+    background-color: #FFFFFF;
+    height: 68px;
+    border: 1px solid #D5D5D5;
+    border-radius: 34px;
+    color: #81838C;
+    font-weight: 320;
+    line-height: 28px;
+    padding: 0 0 0 36px; }
+  .contact .card input:focus {
+    -webkit-box-shadow: 0 0 0 1px #5FC68B;
+    box-shadow: 0 0 0 1px #5FC68B; }
+  .contact .card .phoneNunber {
+    padding-top: 15px; }
