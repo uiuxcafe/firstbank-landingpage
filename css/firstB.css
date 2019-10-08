@@ -446,7 +446,8 @@ button {
   padding: 55px 220px 0px 220px;
   height: 380px; }
   .footer img {
-    width: 180px; }
+    width: 180px;
+    margin-left: 5%; }
   .footer .border-bottom {
     height: 3px;
     width: 38px;
@@ -487,7 +488,19 @@ button {
         width: 24px;
         height: 24px;
         -webkit-filter: invert(0.5) brightness(1.6);
-        filter: invert(0.5) brightness(1.6); } }
+        filter: invert(0.5) brightness(1.6);
+        -moz-transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+        -o-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        transform: scaleY(1); }
+    .footer .footer-collapse:hover img {
+      transform: .3s;
+      -moz-transform: scaleY(-1);
+      -webkit-transform: scaleY(-1);
+      -o-transform: scaleY(-1);
+      -ms-transform: scaleY(-1);
+      transform: scaleY(-1); } }
 
 @media (max-width: 376px) {
   .footer .footer-collapse {

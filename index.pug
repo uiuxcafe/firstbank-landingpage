@@ -170,17 +170,17 @@ block content
     section.footer
         footer.page-footer.font-small.blue.pt-4
             .container.text-left
-                .row
+                .row#footer-links
                     .col-md-4.mt-md-0.brand-logo.pb-4
                         img(src="./header/logo_firstbank@2x.png", alt="第一銀行")
                     //- hr.clearfix.w-100.d-md-none.pb-3
                     .col-md-2.mb-md-0.mb-1
                         h5.text-uppercase.footer-title#footer-1 相關服務
                         div.border-bottom.web
-                        div.footer-collapse.d-md-none(type="button" data-toggle="collapse" data-target="#footer-1-content" aria-expanded="true" aria-controls="footer-1-content"  )
+                        div.footer-collapse.d-md-none(type="button" data-toggle="collapse" data-target="#footer-1-content" aria-expanded="true" aria-controls="footer-1-content")
                             img.image(src="./img/arrow_down.svg", alt="" οnclick="change()")
                         //mobile with collapse
-                        #footer-1-content.collapse.d-md-none(aria-labelledby="footer-1" data-parent="#footer-1-links")
+                        #footer-1-content.collapse.d-md-none(aria-labelledby="footer-1" data-parent="#footer-links")
                             ul.list-unstyled
                                 li
                                     a(href='#!') 第一金控
@@ -206,7 +206,7 @@ block content
                         div.footer-collapse.d-md-none(type="button" data-toggle="collapse" data-target="#footer-2-content" aria-expanded="true" aria-controls="footer-2-content")
                             img.image(src="./img/arrow_down.svg", alt="" οnclick="change()")
                         //mobile with collapse
-                        #footer-2-content.collapse(aria-labelledby="footer-2" data-parent="#footer-2-links")
+                        #footer-2-content.collapse(aria-labelledby="footer-2" data-parent="#footer-links")
                             ul.list-unstyled
                                 li
                                     a(href='#!') 線上e專員
@@ -224,7 +224,7 @@ block content
                         div.footer-collapse.d-md-none(type="button" data-toggle="collapse" data-target="#footer-3-content" aria-expanded="true" aria-controls="footer-3-content")
                             img.image(src="./img/arrow_down.svg", alt="" οnclick="change()")
                         //mobile with collapse
-                        #footer-3-content.collapse(aria-labelledby="footer-3" data-parent="#footer-3-links")
+                        #footer-3-content.collapse(aria-labelledby="footer-3" data-parent="#footer-links")
                             ul.list-unstyled
                                 li
                                     a(href='#!') 申請書下載
@@ -244,9 +244,9 @@ block content
                         h5.text-uppercase.footer-title#footer-4  其他服務
                         div.border-bottom.web
                         div.footer-collapse.d-md-none(type="button" data-toggle="collapse" data-target="#footer-4-content" aria-expanded="true" aria-controls="footer-4-content")
-                            img.image(src="./img/arrow_down.svg", alt="" οnclick="change()")
+                            img.image(src="./img/arrow_down.svg", alt="" )
                         //mobile with collapse
-                        #footer-4-content.collapse(aria-labelledby="footer-4" data-parent="#footer-4-links")
+                        #footer-4-content.collapse(aria-labelledby="footer-4" data-parent="#footer-links")
                             ul.list-unstyled
                                 li
                                     a(href='#!') 第一數速貸

@@ -467,7 +467,7 @@ button
     height: 380px
     img 
         width: 180px
-        
+        margin-left: 5%
     .border-bottom
         height: 3px
         width: 38px
@@ -511,12 +511,24 @@ button
                 width: 24px
                 height: 24px
                 filter: invert(0.5) brightness(1.6)
+                -moz-transform: scaleY(1)
+                -webkit-transform: scaleY(1)
+                -o-transform: scaleY(1)
+                -ms-transform: scaleY(1)
+                transform: scaleY(1)
                 //background-image: url(../img/arrow_down.svg)
+        .footer-collapse:hover
+            img
+                transform: .3s
+                -moz-transform: scaleY(-1)
+                -webkit-transform: scaleY(-1)
+                -o-transform: scaleY(-1)
+                -ms-transform: scaleY(-1)
+                transform: scaleY(-1) 
 @media (max-width: 376px)
     .footer
         .footer-collapse
             margin-left: 75%
-
 @media (max-width: 321px)
     .footer
         .footer-collapse
