@@ -1,11 +1,47 @@
-// banner
-body 
-    background-color: #F8F9FA
 
+body 
+    background-color: #FAFAFA
+
+h1,h2,h3,h4,h5,p,li,a
+    color: #333848
+    font-family: "PingFang TC"
+	
+h1,h2,h3
+    font-weight: 600
+
+h1 
+    font-size: 48px
+    line-height: 67px
+
+h2 
+    font-size: 32px
+    line-height: 45px
+    	
+h3 
+    font-size: 28px
+    line-height: 40px
+h5 
+    font-size: 20px
+    line-height: 28px
 p
     font-size: 20px
-    font-weight: lighter
-    
+    font-weight: 330
+    line-height: 28px
+li,a 
+    font-size: 16px
+    line-height: 22px
+    font-weight: 350
+.title-area
+    h2 
+        padding-bottom: 10%
+    .border-bottom
+        height: 5px
+        width: 100px
+        margin-bottom: 20px
+        background-color: #5FC68B
+        margin-left: auto
+        margin-right: auto
+
 .card
     border: 0px
     border-radius: .8rem !important
@@ -18,25 +54,482 @@ p
     -moz-backface-visibility: hidden
     -webkit-transform: translate3d(0, 0, 0)
     -moz-transform: translate3d(0, 0, 0)
+
+button
+    border: 0px
+    display: inline-block
+    -webkit-transform: scale(1)
+    -ms-transform: scale(1)
+    transform: scale(1)
+    -webkit-tap-highlight-color: transparent
+    -webkit-transition: all .1s
+    -o-transition: all .1s
+    transition: all .1s
+    text-align: center
+    cursor: pointer
+    outline: 0 
+    &:hover
+        text-decoration: none
+        -webkit-transform: scale(1.04)
+        -ms-transform: scale(1.04)
+        transform: scale(1.04)
+    &:active
+        -webkit-transform: scale(0.94)
+        -ms-transform: scale(0.94)
+        transform: scale(0.94)
+.mobile
+    display: none !important
+
+.web
+    display: block !important
+
+@media (max-width: 575.98px)
+    html,body
+        overflow-x: hidden
+    .col-12
+        flex: 0 0 90%
+    .py-4
+        padding-bottom: 1rem!important
+        padding-top: 1rem!important
+    section.header ~ section.banner.py-4
+        // padding-bottom: 0rem!important
+
+    h1 
+        font-size: 36px
+        line-height: 50px
+
+    h2 
+        font-size: 24px
+        line-height: 33px
+            
+    h3 
+        font-size: 24px
+        line-height: 33px
+    h5 
+        font-size: 20px
+        line-height: 28px
+    p
+        font-size: 16px
+        line-height: 22px
+        font-weight: 350
+    li,a 
+        font-size: 16px
+        line-height: 22px
+        font-weight: 350
+    .title-area
+        h2 
+            padding-bottom: 0%
+        .border-bottom
+            margin-bottom: 20px
+    .mobile
+        display: block !important
+
+    .web
+        display: none !important
+
+//header    
+.header
+    height: 70px
+    .navbar-brand
+        padding: 15px 0px
+        img 
+            width: 140px
+    .navbar-nav
+        padding: 15px 0px
+        li
+            width: 140px
+            height: 30px
+            a
+                text-align: center
+                &:hover
+                    text-decoration: underline
+            button
+                height: 48px
+                width: 120px
+                border-radius: 24px
+                background-color: #5FC68B
+                color: #FFF
+    .navbar-light .navbar-nav .nav-link
+        color: #333848
+
+// banner
 .banner
     .card
         width: 100%
-        height: 650px
+        max-height: 680px
+        background-color: #EAEAEA
         .bg
-            background-image: url("../img/banner.png")
-            width: 110%
+            video
+                width: 120%
+                overflow: hidden
+                margin-left: -5%
+                margin-top: -6%
+                z-index: 0
+        .bg-mask
+            width: 150%
             height: 100%
-            overflow: hidden
+            background-color: rgba(0,0,0,0.5)
+            z-index: 2
+            position: absolute
             margin-left: -5%
         .banner-content
             position: absolute
-            color: #FFF
             padding: 10% 0% 0% 8%
+            z-index: 3
             h2 
                 font-weight: 410
+                color: #FFF
             p
                 padding-top: 10px
+                color: #FFF
+@media (max-width: 575.98px)
+    .banner
+        .col-12
+            width: 95% !important
+        .card
+            height: 280px
+            margin-left: auto
+            margin-right: auto
+            .bg
+                width: 125%
+                margin-left: -10%
+                margin-top: 5%
+                height: auto
+            .banner-content
+                padding: 10% 0% 0% 5%
+                width: 83%
+                p
+                    padding-top: 0px
+@media (max-width: 376px)
+    .banner
+        .card
+            height: 300px
+            .bg
+                width: 155%
+                margin-left: -30%
+@media (max-width: 321px)
+    .banner
+        .card
+            height: 260px
+            .bg
+                width: 160%
+                margin-left: -30% 
+            .banner-content
+                h2 
+                    font-size: 20px
 
-.photo
+
+.photo-right
     .section-card
         height: 400px
+        .text-area
+            margin-top: 20%
+            margin-left: 15%
+            width: 400px
+        button
+            font-size: 20px
+            background: #5FC68B
+            color: #FFF
+            width: 130px
+            padding: .5em .7em
+            border-radius: 30px
+@media (max-width: 575.98px)
+    .photo-right
+        .section-card
+            height: 450px
+            position: flex
+            align-items: flex-start
+            justify-content: space-around 
+            padding: 24px 15px
+            .text-area
+                margin-top: 5px
+                margin-left: 8px
+                width: 85%
+            button
+                height: 52px
+                // max-width: 303px
+                width: 90%
+                padding: .5em .7em
+                border-radius: 30px
+                background: #5FC68B
+                font-size: 20px
+                color: #FFF
+            img 
+                width: 115%
+                margin-top: -5%
+            
+
+.feature
+    .card
+        padding: 60px 40px
+        .icon-area
+            width: 75%
+            margin-top: 20px
+            margin-left: auto
+            margin-right: auto
+            h2 
+                padding-top: 25px
+@media (max-width: 575.98px)
+    .feature
+        .card
+            padding: 32px 0px
+            .icon-area
+                width: 100%
+                margin-top: 0px
+                .icon
+                    img
+                        width: 60px
+                    h2
+                        padding-top: 8px
+
+
+.photo-left
+    .section-card
+        height: 400px
+        img
+            margin-left: -20px
+        .text-area
+            margin-top: 30%
+            margin-left: 20px
+            width: 395px
+            h1 
+                color: #39AE6B
+            p
+                color: #81838C
+@media (max-width: 575.98px)
+    .photo-left
+        .section-card
+            height: 416px
+            img
+                width: 125%
+                margin-top: -40px
+                overflow: hidden
+                margin-left: -5%
+            .text-area
+                margin-top: 0%
+                margin-left: 0px
+                padding: 24px 13px
+                width: 100%
+                h1 
+                    color: #39AE6B
+                p
+                    color: #81838C
+@media (max-width: 376px)
+    .photo-left
+        .section-card
+            img
+                min-width: 340px
+                margin-top: -25px
+@media (max-width: 321px)
+    .photo-left
+        .section-card
+            height: 370px
+            img
+                min-width: 300px
+                margin-top: -30px           
+
+
+.apply
+    .card
+        padding: 48px 48px 24px 48px
+        .col-md-4.col-12
+            padding: 0px
+        .icon
+            width: 360px
+            height: 516px
+            h3,p
+                text-align: center
+            p 
+                padding-top: 12px
+@media (max-width: 575.98px)
+    .apply
+        .card
+            padding: 20px 16px 16px 20px
+            .col-md-4.col-12
+                padding: 0px
+                margin-right: auto
+                margin-left: auto
+            .icon
+                width: 100%
+                height: auto
+                img
+                    width: 90%
+                h3 
+                    margin-top: -10px
+                p 
+                    padding-top: 0px
+
+
+.faq
+    .card
+        padding: 53px 85px
+        .rectangle-text
+            height: 178px
+            width: 424px
+            padding: 28px 32px
+            border-radius: 16px
+            background-color: rgba(144,226,159,0.2)
+        .col-md-5 > p
+            padding-left: 32px
+            width: 400px
+            font-weight: 400
+            line-height: 28px
+            color: #81838C
+        .col-md-5 > p:nth-child(2)
+            padding-top: 24px
+        img 
+            margin-left: 20px
+@media (max-width: 575.98px)
+    .faq
+        .card
+            padding: 10px 0px
+            p 
+                font-size: 20px
+                line-height: 28px
+            .rectangle-text
+                height: auto
+                width: 100%
+                padding: 20px 24px
+                border-radius: 0px
+                background-color: rgba(144,226,159,0.2)
+                p
+                    color: #7F7F7F
+                    margin-bottom: 0px
+            .col-md-5 > p
+                width: 100%
+                color: #7F7F7F
+            .col-md-5 > p:nth-child(2)
+                padding-top: 20px
+            img 
+                width: 100%
+
+.contact
+    .card
+        padding: 34px 0px
+        .col-12
+            .input-group-lg
+                max-width: 362px !important
+                margin-left: auto
+                margin-right: auto
+        input
+            background-color: #FFFFFF
+            height: 68px
+            border: 1px solid #D5D5D5
+            border-radius: 34px
+            color: #81838C
+            font-weight: 320
+            line-height: 28px
+            padding: 0 0 0 36px
+        input:focus
+            box-shadow: 0 0 0 1px #5FC68B
+        .phoneNunber
+            padding-top: 15px
+        button
+            outline: 0 
+            position: absolute
+            margin-top: -65px
+            margin-left: 290px
+@media (max-width: 575.98px)
+    .contact
+        .card
+            padding: 28px 0px
+            .col-12
+                .input-group-lg
+                    max-width: 304px !important
+            input
+                height: 53px
+                border-radius: 26px
+                font-size: 16px
+                line-height: 22px
+                padding: 0 0 0 28px
+            .phoneNunber
+                position: relative
+            button
+                outline: 0 
+                position: absolute
+                top: 122%
+                left: -14%
+                img 
+                    width: 44px
+@media (max-width: 376px)
+    .contact
+        .card
+            button
+                left: -16%
+@media (max-width: 321px)
+    .contact
+        .card
+            button
+                left: -35%
+
+.footer
+    padding: 55px 220px 0px 220px
+    height: 380px
+    img 
+        width: 180px
+        margin-left: 5%
+    .border-bottom
+        height: 3px
+        width: 38px
+        background-color: #5FC68B
+    li 
+        padding-bottom: 15px
+        a
+            color: #81838C
+    ul
+        li:nth-child(1)
+            padding-top: 15px
+@media (max-width: 575.98px)
+    .footer
+        padding: 0px 25px
+        img 
+            width: 120px
+        h5 
+            font-weight: 500
+            display: inline
+            
+        h5,li a   
+            font-size: 12px
+            line-height: 17px
+        li 
+            padding: 15px 0px
+            a
+                color: #81838C
+        ul
+            li:nth-child(1)
+                padding-top: 15px
+        .col-md-2.mb-md-0.mb-1    
+            padding: 10px 15px
+            // display: flex
+        .footer-collapse
+            display: inline-block
+            width: 16px
+            height: 16px
+            margin-left: 80%
+            margin-top: -15px
+            img
+                width: 24px
+                height: 24px
+                filter: invert(0.5) brightness(1.6)
+                -moz-transform: scaleY(1)
+                -webkit-transform: scaleY(1)
+                -o-transform: scaleY(1)
+                -ms-transform: scaleY(1)
+                transform: scaleY(1)
+                //background-image: url(../img/arrow_down.svg)
+        .footer-collapse:hover
+            img
+                transform: .3s
+                -moz-transform: scaleY(-1)
+                -webkit-transform: scaleY(-1)
+                -o-transform: scaleY(-1)
+                -ms-transform: scaleY(-1)
+                transform: scaleY(-1) 
+@media (max-width: 376px)
+    .footer
+        .footer-collapse
+            margin-left: 75%
+@media (max-width: 321px)
+    .footer
+        .footer-collapse
+            margin-left: 70%
