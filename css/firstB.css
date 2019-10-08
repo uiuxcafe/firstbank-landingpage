@@ -461,7 +461,8 @@ button {
 
 @media (max-width: 575.98px) {
   .footer {
-    padding: 0px 25px; }
+    padding: 0px 25px;
+    height: 100%; }
     .footer img {
       width: 120px; }
     .footer h5 {
