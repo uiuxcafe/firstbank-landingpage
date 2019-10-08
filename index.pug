@@ -96,7 +96,7 @@ block content
             .row.justify-content-center
                 .col-12.card
                     .row.section-card.d-flex
-                        
+
                         .col-md-5.order-md-2
                             .text-area
                                 h2 協助企業遍及全球
@@ -169,15 +169,29 @@ block content
 
     section.footer
         footer.page-footer.font-small.blue.pt-4
-            .container.text-center.text-md-left
+            .container.text-left
                 .row
-                    .col-md-4.mt-md-0.mt-3.brand-logo
+                    .col-md-4.mt-md-0.brand-logo.pb-4
                         img(src="./header/logo_firstbank@2x.png", alt="第一銀行")
-                    hr.clearfix.w-100.d-md-none.pb-3
-                    .col-md-2.mb-md-0.mb-3
-                        h5.text-uppercase.footer-title 相關服務
-                        div.border-bottom
-                        ul.list-unstyled
+                    //- hr.clearfix.w-100.d-md-none.pb-3
+                    .col-md-2.mb-md-0.mb-1
+                        h5.text-uppercase.footer-title#footer-1 相關服務
+                        div.border-bottom.web
+                        div.footer-collapse.d-md-none(type="button" data-toggle="collapse" data-target="#footer-1-content" aria-expanded="true" aria-controls="footer-1-content"  )
+                            img.image(src="./img/arrow_down.svg", alt="" οnclick="change()")
+                        //mobile with collapse
+                        #footer-1-content.collapse.d-md-none(aria-labelledby="footer-1" data-parent="#footer-1-links")
+                            ul.list-unstyled
+                                li
+                                    a(href='#!') 第一金控
+                                li
+                                    a(href='#!') 活動專區
+                                li
+                                    a(href='#!') 線上徵才
+                                li
+                                    a(href='#!') 帳單繳費
+                        //Web no collapse
+                        ul.list-unstyled.web
                             li
                                 a(href='#!') 第一金控
                             li
@@ -186,28 +200,60 @@ block content
                                 a(href='#!') 線上徵才
                             li
                                 a(href='#!') 帳單繳費
-                    .col-md-2.mb-md-0.mb-3
-                        h5.text-uppercase.footer-title 聯絡我們
-                        div.border-bottom
-                        ul.list-unstyled
+                    .col-md-2.mb-md-0.mb-1
+                        h5.text-uppercase.footer-title#footer-2 聯絡我們
+                        div.border-bottom.web
+                        div.footer-collapse.d-md-none(type="button" data-toggle="collapse" data-target="#footer-2-content" aria-expanded="true" aria-controls="footer-2-content")
+                            img.image(src="./img/arrow_down.svg", alt="" οnclick="change()")
+                        //mobile with collapse
+                        #footer-2-content.collapse(aria-labelledby="footer-2" data-parent="#footer-2-links")
+                            ul.list-unstyled
+                                li
+                                    a(href='#!') 線上e專員
+                                li
+                                    a(href='#!') 門市查詢
+                        //Web no collapse
+                        ul.list-unstyled.web
                             li
                                 a(href='#!') 線上e專員
                             li
                                 a(href='#!') 門市查詢
-                    .col-md-2.mb-md-0.mb-3
-                        h5.text-uppercase.footer-title 客戶服務
-                        div.border-bottom
-                        ul.list-unstyled
+                    .col-md-2.mb-md-0.mb-1
+                        h5.text-uppercase.footer-title#footer-3  客戶服務
+                        div.border-bottom.web
+                        div.footer-collapse.d-md-none(type="button" data-toggle="collapse" data-target="#footer-3-content" aria-expanded="true" aria-controls="footer-3-content")
+                            img.image(src="./img/arrow_down.svg", alt="" οnclick="change()")
+                        //mobile with collapse
+                        #footer-3-content.collapse(aria-labelledby="footer-3" data-parent="#footer-3-links")
+                            ul.list-unstyled
+                                li
+                                    a(href='#!') 申請書下載
+                                li
+                                    a(href='#!') 營業規章
+                                li
+                                    a(href='#!') 公告資訊
+                        //Web no collapse
+                        ul.list-unstyled.web
                             li
                                 a(href='#!') 申請書下載
                             li
                                 a(href='#!') 營業規章
                             li
-                                a(href='#!') 公告資訊
-                    .col-md-2.mb-md-0.mb-3
-                        h5.text-uppercase.footer-title 其他服務
-                        div.border-bottom
-                        ul.list-unstyled
+                                a(href='#!') 公告資訊    
+                    .col-md-2.mb-md-0.mb-1
+                        h5.text-uppercase.footer-title#footer-4  其他服務
+                        div.border-bottom.web
+                        div.footer-collapse.d-md-none(type="button" data-toggle="collapse" data-target="#footer-4-content" aria-expanded="true" aria-controls="footer-4-content")
+                            img.image(src="./img/arrow_down.svg", alt="" οnclick="change()")
+                        //mobile with collapse
+                        #footer-4-content.collapse(aria-labelledby="footer-4" data-parent="#footer-4-links")
+                            ul.list-unstyled
+                                li
+                                    a(href='#!') 第一數速貸
+                                li
+                                    a(href='#!') iLeo
+                        //Web no collapse
+                        ul.list-unstyled.web
                             li
                                 a(href='#!') 第一數速貸
                             li

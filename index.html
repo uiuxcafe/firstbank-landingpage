@@ -11,6 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="./js/firstB.js"></script>
   </head>
   <title>微企e時貸</title>
   <body>
@@ -232,41 +233,79 @@
     </section>
     <section class="footer">
       <footer class="page-footer font-small blue pt-4">
-        <div class="container text-center text-md-left">
+        <div class="container text-left">
           <div class="row">
-            <div class="col-md-4 mt-md-0 mt-3 brand-logo"><img src="./header/logo_firstbank@2x.png" alt="第一銀行"></div>
-            <hr class="clearfix w-100 d-md-none pb-3">
-            <div class="col-md-2 mb-md-0 mb-3">
-              <h5 class="text-uppercase footer-title">相關服務</h5>
-              <div class="border-bottom"></div>
-              <ul class="list-unstyled">
+            <div class="col-md-4 mt-md-0 brand-logo pb-4"><img src="./header/logo_firstbank@2x.png" alt="第一銀行"></div>
+            <div class="col-md-2 mb-md-0 mb-1">
+              <h5 class="text-uppercase footer-title" id="footer-1">相關服務</h5>
+              <div class="border-bottom web"></div>
+              <div class="footer-collapse d-md-none" type="button" data-toggle="collapse" data-target="#footer-1-content" aria-expanded="true" aria-controls="footer-1-content"><img class="image" src="./img/arrow_down.svg" alt="" οnclick="change()"></div>
+              <!--mobile with collapse-->
+              <div class="collapse d-md-none" id="footer-1-content" aria-labelledby="footer-1" data-parent="#footer-1-links">
+                <ul class="list-unstyled">
+                  <li><a href="#!">第一金控</a></li>
+                  <li><a href="#!">活動專區</a></li>
+                  <li><a href="#!">線上徵才</a></li>
+                  <li><a href="#!">帳單繳費</a></li>
+                </ul>
+              </div>
+              <!--Web no collapse-->
+              <ul class="list-unstyled web">
                 <li><a href="#!">第一金控</a></li>
                 <li><a href="#!">活動專區</a></li>
                 <li><a href="#!">線上徵才</a></li>
                 <li><a href="#!">帳單繳費</a></li>
               </ul>
             </div>
-            <div class="col-md-2 mb-md-0 mb-3">
-              <h5 class="text-uppercase footer-title">聯絡我們</h5>
-              <div class="border-bottom"></div>
-              <ul class="list-unstyled">
+            <div class="col-md-2 mb-md-0 mb-1">
+              <h5 class="text-uppercase footer-title" id="footer-2">聯絡我們</h5>
+              <div class="border-bottom web"></div>
+              <div class="footer-collapse d-md-none" type="button" data-toggle="collapse" data-target="#footer-2-content" aria-expanded="true" aria-controls="footer-2-content"><img class="image" src="./img/arrow_down.svg" alt="" οnclick="change()"></div>
+              <!--mobile with collapse-->
+              <div class="collapse" id="footer-2-content" aria-labelledby="footer-2" data-parent="#footer-2-links">
+                <ul class="list-unstyled">
+                  <li><a href="#!">線上e專員</a></li>
+                  <li><a href="#!">門市查詢</a></li>
+                </ul>
+              </div>
+              <!--Web no collapse-->
+              <ul class="list-unstyled web">
                 <li><a href="#!">線上e專員</a></li>
                 <li><a href="#!">門市查詢</a></li>
               </ul>
             </div>
-            <div class="col-md-2 mb-md-0 mb-3">
-              <h5 class="text-uppercase footer-title">客戶服務</h5>
-              <div class="border-bottom"></div>
-              <ul class="list-unstyled">
+            <div class="col-md-2 mb-md-0 mb-1">
+              <h5 class="text-uppercase footer-title" id="footer-3"> 客戶服務</h5>
+              <div class="border-bottom web"></div>
+              <div class="footer-collapse d-md-none" type="button" data-toggle="collapse" data-target="#footer-3-content" aria-expanded="true" aria-controls="footer-3-content"><img class="image" src="./img/arrow_down.svg" alt="" οnclick="change()"></div>
+              <!--mobile with collapse-->
+              <div class="collapse" id="footer-3-content" aria-labelledby="footer-3" data-parent="#footer-3-links">
+                <ul class="list-unstyled">
+                  <li><a href="#!">申請書下載</a></li>
+                  <li><a href="#!">營業規章</a></li>
+                  <li><a href="#!">公告資訊</a></li>
+                </ul>
+              </div>
+              <!--Web no collapse-->
+              <ul class="list-unstyled web">
                 <li><a href="#!">申請書下載</a></li>
                 <li><a href="#!">營業規章</a></li>
-                <li><a href="#!">公告資訊</a></li>
+                <li><a href="#!">公告資訊    </a></li>
               </ul>
             </div>
-            <div class="col-md-2 mb-md-0 mb-3">
-              <h5 class="text-uppercase footer-title">其他服務</h5>
-              <div class="border-bottom"></div>
-              <ul class="list-unstyled">
+            <div class="col-md-2 mb-md-0 mb-1">
+              <h5 class="text-uppercase footer-title" id="footer-4"> 其他服務</h5>
+              <div class="border-bottom web"></div>
+              <div class="footer-collapse d-md-none" type="button" data-toggle="collapse" data-target="#footer-4-content" aria-expanded="true" aria-controls="footer-4-content"><img class="image" src="./img/arrow_down.svg" alt="" οnclick="change()"></div>
+              <!--mobile with collapse-->
+              <div class="collapse" id="footer-4-content" aria-labelledby="footer-4" data-parent="#footer-4-links">
+                <ul class="list-unstyled">
+                  <li><a href="#!">第一數速貸</a></li>
+                  <li><a href="#!">iLeo</a></li>
+                </ul>
+              </div>
+              <!--Web no collapse-->
+              <ul class="list-unstyled web">
                 <li><a href="#!">第一數速貸</a></li>
                 <li><a href="#!">iLeo</a></li>
               </ul>

@@ -413,6 +413,35 @@ button {
     margin-top: -65px;
     margin-left: 290px; }
 
+@media (max-width: 575.98px) {
+  .contact .card {
+    padding: 28px 0px; }
+    .contact .card .col-12 .input-group-lg {
+      max-width: 304px !important; }
+    .contact .card input {
+      height: 53px;
+      border-radius: 26px;
+      font-size: 16px;
+      line-height: 22px;
+      padding: 0 0 0 28px; }
+    .contact .card .phoneNunber {
+      position: relative; }
+    .contact .card button {
+      outline: 0;
+      position: absolute;
+      top: 122%;
+      left: -14%; }
+      .contact .card button img {
+        width: 44px; } }
+
+@media (max-width: 376px) {
+  .contact .card button {
+    left: -16%; } }
+
+@media (max-width: 321px) {
+  .contact .card button {
+    left: -35%; } }
+
 .footer {
   padding: 55px 220px 0px 220px;
   height: 380px; }
@@ -428,3 +457,45 @@ button {
       color: #81838C; }
   .footer ul li:nth-child(1) {
     padding-top: 15px; }
+
+@media (max-width: 575.98px) {
+  .footer {
+    padding: 0px 25px; }
+    .footer img {
+      width: 120px; }
+    .footer h5 {
+      font-weight: 500;
+      display: inline; }
+    .footer h5, .footer li a {
+      font-size: 12px;
+      line-height: 17px; }
+    .footer li {
+      padding: 15px 0px; }
+      .footer li a {
+        color: #81838C; }
+    .footer ul li:nth-child(1) {
+      padding-top: 15px; }
+    .footer .col-md-2.mb-md-0.mb-1 {
+      padding: 10px 15px; }
+    .footer .footer-collapse {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      width: 16px; }
+      .footer .footer-collapse img {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        width: 24px;
+        height: 24px;
+        -webkit-filter: invert(0.5) brightness(1.6);
+        filter: invert(0.5) brightness(1.6); } }
