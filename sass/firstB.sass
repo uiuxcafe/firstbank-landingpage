@@ -502,17 +502,22 @@ button
             padding: 10px 15px
             // display: flex
         .footer-collapse
-            display: inline-flex
-            justify-content: center
-            align-items: flex-end
+            display: inline-block
             width: 16px
-            // height: 16px
-            // margin-left: 80%
-            // margin-top: -100px
+            height: 16px
+            margin-left: 80%
+            margin-top: -15px
             img
-                justify-content: center
-                align-items: flex-end
                 width: 24px
                 height: 24px
                 filter: invert(0.5) brightness(1.6)
                 //background-image: url(../img/arrow_down.svg)
+@media (max-width: 376px)
+    .footer
+        .footer-collapse
+            margin-left: 75%
+
+@media (max-width: 321px)
+    .footer
+        .footer-collapse
+            margin-left: 70%

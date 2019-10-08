@@ -478,24 +478,21 @@ button {
     .footer .col-md-2.mb-md-0.mb-1 {
       padding: 10px 15px; }
     .footer .footer-collapse {
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: end;
-      -ms-flex-align: end;
-      align-items: flex-end;
-      width: 16px; }
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-left: 80%;
+      margin-top: -15px; }
       .footer .footer-collapse img {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: end;
-        -ms-flex-align: end;
-        align-items: flex-end;
         width: 24px;
         height: 24px;
         -webkit-filter: invert(0.5) brightness(1.6);
         filter: invert(0.5) brightness(1.6); } }
+
+@media (max-width: 376px) {
+  .footer .footer-collapse {
+    margin-left: 75%; } }
+
+@media (max-width: 321px) {
+  .footer .footer-collapse {
+    margin-left: 70%; } }
