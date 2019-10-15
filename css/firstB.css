@@ -1,3 +1,21 @@
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity; }
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1; }
+
+.carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0; }
+
+.carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
+  opacity: 1; }
+
 body {
   background-color: #FAFAFA; }
 
@@ -228,14 +246,14 @@ button {
 
 @media (max-width: 575.98px) {
   .photo-right .section-card {
-    height: 450px;
+    height: 455px;
     position: flex;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    padding: 24px 15px; }
+    padding: 24px 15px 24px 15px; }
     .photo-right .section-card .text-area {
       margin-top: 5px;
       margin-left: 8px;
@@ -366,7 +384,10 @@ button {
 
 @media (max-width: 575.98px) {
   .faq .card {
-    padding: 10px 0px; }
+    padding: 10px 0px;
+    background-color: #FAFAFA;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important; }
     .faq .card p {
       font-size: 20px;
       line-height: 28px; }
@@ -375,7 +396,8 @@ button {
       width: 100%;
       padding: 20px 24px;
       border-radius: 0px;
-      background-color: rgba(144, 226, 159, 0.2); }
+      background-color: rgba(144, 226, 159, 0.2);
+      margin-top: -10px; }
       .faq .card .rectangle-text p {
         color: #7F7F7F;
         margin-bottom: 0px; }
@@ -385,7 +407,8 @@ button {
     .faq .card .col-md-5 > p:nth-child(2) {
       padding-top: 20px; }
     .faq .card img {
-      width: 100%; } }
+      width: 100%;
+      margin-left: 0px; } }
 
 .contact .card {
   padding: 34px 0px; }
@@ -446,7 +469,7 @@ button {
   padding: 55px 220px 0px 220px;
   height: 380px; }
   .footer img {
-    width: 180px;
+    width: 150px;
     margin-left: 5%; }
   .footer .border-bottom {
     height: 3px;

@@ -1,3 +1,18 @@
+.carousel-fade .carousel-inner .item
+    opacity: 0
+    -webkit-transition-property: opacity
+    -moz-transition-property: opacity 
+    -ms-transition-property: opacity
+    -o-transition-property: opacity 
+    transition-property: opacity 
+
+.carousel-fade .carousel-inner .active
+    opacity: 1
+.carousel-fade .carousel-inner .active.left,.carousel-fade .carousel-inner .active.right
+    left: 0
+    opacity: 0
+.carousel-fade .carousel-inner .next.left,.carousel-fade .carousel-inner .prev.right
+    opacity: 1
 
 body 
     background-color: #FAFAFA
@@ -236,11 +251,11 @@ button
 @media (max-width: 575.98px)
     .photo-right
         .section-card
-            height: 450px
+            height: 455px
             position: flex
             align-items: flex-start
             justify-content: space-around 
-            padding: 24px 15px
+            padding: 24px 15px 24px 15px
             .text-area
                 margin-top: 5px
                 margin-left: 8px
@@ -369,6 +384,7 @@ button
             padding: 28px 32px
             border-radius: 16px
             background-color: rgba(144,226,159,0.2)
+            
         .col-md-5 > p
             padding-left: 32px
             width: 400px
@@ -383,6 +399,9 @@ button
     .faq
         .card
             padding: 10px 0px
+            background-color:#FAFAFA 
+            border-top-left-radius: 0px !important
+            border-top-right-radius: 0px !important
             p 
                 font-size: 20px
                 line-height: 28px
@@ -392,6 +411,7 @@ button
                 padding: 20px 24px
                 border-radius: 0px
                 background-color: rgba(144,226,159,0.2)
+                margin-top: -10px
                 p
                     color: #7F7F7F
                     margin-bottom: 0px
@@ -402,6 +422,7 @@ button
                 padding-top: 20px
             img 
                 width: 100%
+                margin-left: 0px
 
 .contact
     .card
@@ -466,7 +487,7 @@ button
     padding: 55px 220px 0px 220px
     height: 380px
     img 
-        width: 180px
+        width: 150px
         margin-left: 5%
     .border-bottom
         height: 3px
