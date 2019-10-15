@@ -37,14 +37,25 @@
         <div class="row justify-content-center">
           <div class="col-12 card">
             <div class="bg">
-              <video class="caf" preload="auto" loop="" muted="" autoplay="" poster="https://i.vimeocdn.com/video/611388128_1280x720.jpg?r=pad" data-func="play_video">
-                <!--source(src='https://player.vimeo.com/external/158202697.m3u8?s=b01f0ac44a83760eb6f04e94b058897f998bf229&oauth2_token_id=424556544', type='application/x-mpegURL')-->
-                <!--source(src='https://player.vimeo.com/external/158202697.hd.mp4?s=88330ec5f0989af2b7d4701aa951500c7078dab7&profile_id=119&oauth2_token_id=424556544', type='video/mp4', media='(min-device-pixel-ratio:2), (-webkit-min-device-pixel-ratio:2), (min--moz-device-pixel-ratio:2), (-o-min-device-pixel-ratio:2)')-->
-                <!--source(src='https://player.vimeo.com/external/158202697.sd.mp4?s=4245bffa5b7ba70450c8e3973baa627bafbcf494&profile_id=164&oauth2_token_id=424556544', type='video/mp4', media='(max-device-pixel-ratio:1), (-webkit-max-device-pixel-ratio:1), (max--moz-device-pixel-ratio:1), (-o-max-device-pixel-ratio:1)')-->
-                <source src="https://drive.google.com/uc?export=download&amp;id=16cPbSvvSZzNOJSabDXc-9jE67RvDjZ6A" type="video/mp4">
-                <source src="https://drive.google.com/uc?export=download&amp;id=1GMUslDMMbxf5dAC40UuA_8BCGa9z5ge-" type="video/mp4">
-                <source src="https://drive.google.com/uc?export=download&amp;id=158Hd5_KvtJZdJq-gMelM-0t_c8UXhaEB" type="video/mp4">
-              </video>
+              <div class="carousel slide carousel-fade" id="carousel-example-1z" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <video class="caf d-block" preload="auto" loop="" muted="" autoplay="" poster="https://i.vimeocdn.com/video/611388128_1280x720.jpg?r=pad" data-func="play_video">
+                      <source src="https://drive.google.com/uc?export=download&amp;id=16cPbSvvSZzNOJSabDXc-9jE67RvDjZ6A" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="carousel-item">
+                    <video class="caf d-block" preload="auto" loop="" muted="" autoplay="" poster="https://i.vimeocdn.com/video/611388128_1280x720.jpg?r=pad" data-func="play_video">
+                      <source src="https://drive.google.com/uc?export=download&amp;id=1GMUslDMMbxf5dAC40UuA_8BCGa9z5ge-" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="carousel-item">
+                    <video class="caf d-block" preload="auto" loop="" muted="" autoplay="" poster="https://i.vimeocdn.com/video/611388128_1280x720.jpg?r=pad" data-func="play_video">
+                      <source src="https://drive.google.com/uc?export=download&amp;id=158Hd5_KvtJZdJq-gMelM-0t_c8UXhaEB" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="bg-mask"></div>
             <div class="banner-content">
