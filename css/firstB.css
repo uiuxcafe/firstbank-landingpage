@@ -150,6 +150,32 @@ button {
   .header .navbar-light .navbar-nav .nav-link {
     color: #333848; }
 
+@media (max-width: 575.98px) {
+  .header {
+    height: 60px;
+    background-color: #FFF; }
+    .header .container {
+      -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1); }
+      .header .container .navbar-toggler {
+        border: none;
+        outline: 0;
+        margin-left: -20px; }
+        .header .container .navbar-toggler .navbar-toggler-icon {
+          margin-left: -10px;
+          color: #000;
+          width: 28px; }
+      .header .container .navbar-brand {
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto; }
+        .header .container .navbar-brand img {
+          height: 28px;
+          display: block;
+          margin: auto; }
+      .header .container .navbar-light .navbar-toggler {
+        color: #000; } }
+
 .banner .card {
   width: 100%;
   max-height: 680px;
@@ -497,7 +523,7 @@ button {
       font-size: 12px;
       line-height: 17px; }
     .footer li {
-      padding: 10px 0px; }
+      padding: 5px 0px; }
       .footer li a {
         color: #81838C; }
     .footer ul li:nth-child(1) {
