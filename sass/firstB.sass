@@ -183,8 +183,8 @@ button
             p
                 padding-top: 10px
                 color: #FFF
-    .carousel-fade .carousel-item
-        transition-duration: 1.5s
+        .carousel-fade .carousel-item
+            transition-duration: 1.5s
 @media (max-width: 575.98px)
     .banner
         .col-12
@@ -501,10 +501,12 @@ button
             padding-top: 15px
 @media (max-width: 575.98px)
     .footer
-        padding: 0px 25px
+        padding: 0px 25px 44px 25px
         height: 100%
         img 
             width: 120px
+            margin-left: 0%
+            margin-top: 10px
         h5 
             font-weight: 500
             display: inline
@@ -513,32 +515,37 @@ button
             font-size: 12px
             line-height: 17px
         li 
-            padding: 15px 0px
+            padding: 10px 0px
             a
                 color: #81838C
         ul
             li:nth-child(1)
                 padding-top: 15px
         .col-md-2.mb-md-0.mb-1    
-            padding: 10px 15px
-            // display: flex
+            padding: 10px 15px 0px 15px
+            margin-bottom: 0px
         .footer-collapse
             display: inline-block
             width: 16px
             height: 16px
-            margin-left: 80%
+            // margin-left: 80%
+            float: right
             margin-top: -15px
+            background-color: rgba(0,0,0,0)
+            border: none
             img
                 width: 24px
                 height: 24px
                 filter: invert(0.5) brightness(1.6)
+                //background-image: url(../img/arrow_down.svg)
+        .footer-collapse.collapsed
+            img
                 -moz-transform: scaleY(1)
                 -webkit-transform: scaleY(1)
                 -o-transform: scaleY(1)
                 -ms-transform: scaleY(1)
                 transform: scaleY(1)
-                //background-image: url(../img/arrow_down.svg)
-        .footer-collapse:hover
+        .footer-collapse
             img
                 transform: .3s
                 -moz-transform: scaleY(-1)

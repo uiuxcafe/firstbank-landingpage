@@ -31,13 +31,13 @@ block content
                         #carousel-example-1z.carousel.slide.carousel-fade(data-ride="carousel")
                             .carousel-inner(role="listbox")
                                 .carousel-item.active
-                                    video.caf.d-block(preload='auto', loop='', muted='', autoplay='', poster='https://i.vimeocdn.com/video/611388128_1280x720.jpg?r=pad', data-func='play_video')
+                                    video.caf(preload='auto', loop='', muted='', autoplay='', poster='https://i.vimeocdn.com/video/611388128_1280x720.jpg?r=pad', data-func='play_video')
                                         source(src='https://drive.google.com/uc?export=download&id=16cPbSvvSZzNOJSabDXc-9jE67RvDjZ6A', type='video/mp4')
                                 .carousel-item
-                                    video.caf.d-block(preload='auto', loop='', muted='', autoplay='', poster='https://i.vimeocdn.com/video/611388128_1280x720.jpg?r=pad', data-func='play_video')
+                                    video.caf(preload='auto', loop='', muted='', autoplay='', poster='https://i.vimeocdn.com/video/611388128_1280x720.jpg?r=pad', data-func='play_video')
                                         source(src='https://drive.google.com/uc?export=download&id=1GMUslDMMbxf5dAC40UuA_8BCGa9z5ge-', type='video/mp4',)
                                 .carousel-item
-                                    video.caf.d-block(preload='auto', loop='', muted='', autoplay='', poster='https://i.vimeocdn.com/video/611388128_1280x720.jpg?r=pad', data-func='play_video')
+                                    video.caf(preload='auto', loop='', muted='', autoplay='', poster='https://i.vimeocdn.com/video/611388128_1280x720.jpg?r=pad', data-func='play_video')
                                         source(src='https://drive.google.com/uc?export=download&id=158Hd5_KvtJZdJq-gMelM-0t_c8UXhaEB', type='video/mp4',)
                     .bg-mask
                     .banner-content
@@ -187,8 +187,8 @@ block content
                     .col-md-2.mb-md-0.mb-1
                         h5.text-uppercase.footer-title#footer-1 相關服務
                         div.border-bottom.web
-                        div.footer-collapse.d-md-none(type="button" data-toggle="collapse" data-target="#footer-1-content" aria-expanded="true" aria-controls="footer-1-content")
-                            img.image(src="./img/arrow_down.svg", alt="" οnclick="change()")
+                        span.footer-collapse.d-md-none.collapsed(data-toggle="collapse" data-target="#footer-1-content" aria-expanded="true" aria-controls="footer-1-content")
+                            img.image(src="./img/arrow_down.svg", alt="" )
                         //mobile with collapse
                         #footer-1-content.collapse.d-md-none(aria-labelledby="footer-1" data-parent="#footer-links")
                             ul.list-unstyled
@@ -213,8 +213,8 @@ block content
                     .col-md-2.mb-md-0.mb-1
                         h5.text-uppercase.footer-title#footer-2 聯絡我們
                         div.border-bottom.web
-                        div.footer-collapse.d-md-none(type="button" data-toggle="collapse" data-target="#footer-2-content" aria-expanded="true" aria-controls="footer-2-content")
-                            img.image(src="./img/arrow_down.svg", alt="" οnclick="change()")
+                        span.footer-collapse.d-md-none.collapsed( data-toggle="collapse" data-target="#footer-2-content" aria-expanded="true" aria-controls="footer-2-content")
+                            img.image(src="./img/arrow_down.svg", alt="" )
                         //mobile with collapse
                         #footer-2-content.collapse(aria-labelledby="footer-2" data-parent="#footer-links")
                             ul.list-unstyled
@@ -231,8 +231,8 @@ block content
                     .col-md-2.mb-md-0.mb-1
                         h5.text-uppercase.footer-title#footer-3  客戶服務
                         div.border-bottom.web
-                        div.footer-collapse.d-md-none(type="button" data-toggle="collapse" data-target="#footer-3-content" aria-expanded="true" aria-controls="footer-3-content")
-                            img.image(src="./img/arrow_down.svg", alt="" οnclick="change()")
+                        span.footer-collapse.d-md-none.collapsed(data-toggle="collapse" data-target="#footer-3-content" aria-expanded="true" aria-controls="footer-3-content")
+                            img.image(src="./img/arrow_down.svg", alt="" )
                         //mobile with collapse
                         #footer-3-content.collapse(aria-labelledby="footer-3" data-parent="#footer-links")
                             ul.list-unstyled
@@ -253,7 +253,7 @@ block content
                     .col-md-2.mb-md-0.mb-1
                         h5.text-uppercase.footer-title#footer-4  其他服務
                         div.border-bottom.web
-                        div.footer-collapse.d-md-none(type="button" data-toggle="collapse" data-target="#footer-4-content" aria-expanded="true" aria-controls="footer-4-content")
+                        span.footer-collapse.d-md-none.collapsed( data-toggle="collapse" data-target="#footer-4-content" aria-expanded="true" aria-controls="footer-4-content")
                             img.image(src="./img/arrow_down.svg", alt="" )
                         //mobile with collapse
                         #footer-4-content.collapse(aria-labelledby="footer-4" data-parent="#footer-links")
