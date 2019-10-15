@@ -356,11 +356,22 @@ button {
 .faq .card {
   padding: 53px 85px; }
   .faq .card .rectangle-text {
-    height: 178px;
+    height: auto;
     width: 424px;
     padding: 28px 32px;
     border-radius: 16px;
     background-color: rgba(144, 226, 159, 0.2); }
+    .faq .card .rectangle-text .card-header {
+      border-bottom: 0px;
+      background-color: rgba(0, 0, 0, 0);
+      padding: 0px; }
+      .faq .card .rectangle-text .card-header h5 {
+        margin: 0px; }
+    .faq .card .rectangle-text .card-body {
+      padding: 0px; }
+      .faq .card .rectangle-text .card-body p {
+        padding-top: 8px;
+        margin: 0px; }
   .faq .card .col-md-5 > p {
     padding-left: 32px;
     width: 400px;

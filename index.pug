@@ -146,9 +146,12 @@ block content
                 .col-12.card
                     .row.section-card
                         .col-md-5
-                            div.rectangle-text
-                                h5 申請貸款需要提供哪些資料呢？
-                                p 依法辦理登記之獨資、合夥、有限公司與股份有限公司，財務結構健全、業務經營正常且一年營業額伍仟萬元以下
+                            .rectangle-text
+                                #M1S3.card-header(data-toggle='collapse' data-target='#M1S3-content' aria-expanded='true' aria-controls='M1S3-content') 
+                                    h5 申請貸款需要提供哪些資料呢？
+                                #M1S3-content.collapse(data-toggle='collapse' data-target='#M1S3-content' aria-controls='M1S3-content' aria-labelledby='M1S3' data-parent='#M1C')
+                                    .card-body
+                                        p 依法辦理登記之獨資、合夥、有限公司與股份有限公司，財務結構健全、業務經營正常且一年營業額伍仟萬元以下
                             p 公司貸款跟個人貸款有什麼不一樣？
                             p 申請小型企業貸款需要準備哪些文件呢？
                             p 貸款申請到撥款會經過哪些流程？
@@ -179,7 +182,7 @@ block content
             .container.text-left
                 .row#footer-links
                     .col-md-4.mt-md-0.brand-logo.pb-4
-                        img(src="./footer/logo_firstbank.png", alt="第一銀行")
+                        img(src="./footer/logo_firstbank.svg", alt="第一銀行")
                     //- hr.clearfix.w-100.d-md-none.pb-3
                     .col-md-2.mb-md-0.mb-1
                         h5.text-uppercase.footer-title#footer-1 相關服務
