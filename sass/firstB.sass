@@ -155,7 +155,7 @@ button
         height: 60px
         .navbar
             background-color: #FFF
-            box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1)
+            box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1)       
         .container
             .navbar-toggler
                 border: none
@@ -204,41 +204,56 @@ button
         width: 100%
         max-height: 680px
         background-color: #EAEAEA
-        overflow: hidden
-        
         .bg
             width: 110%
             margin-left: -5%
             video
+                border-radius: .8rem !important
                 width: 120%
                 overflow: hidden
                 margin-left: -5%
                 margin-top: -6%
                 z-index: 0
-                position: relative
-                -webkit-backface-visibility: hidden
-                -moz-backface-visibility: hidden
-                -webkit-transform: translate3d(0, 0, 0)
-                -moz-transform: translate3d(0, 0, 0)
-        .bg-mask
-            width: 150%
-            height: 100%
-            background-color: rgba(0,0,0,0.5)
-            z-index: 2
-            position: absolute
-            margin-left: -5%
-        .banner-content
-            position: absolute
-            padding: 10% 0% 0% 8%
-            z-index: 3
-            h2 
-                font-weight: 410
-                color: #FFF
-            p
-                padding-top: 10px
-                color: #FFF
+            .banner-content
+                position: absolute
+                top: 0px
+                padding: 10% 0% 0% 8%
+                z-index: 5
+                h2 
+                    font-weight: 410
+                    color: #FFF
+                p
+                    padding-top: 10px
+                    color: #FFF
+            .bg-mask
+                width: 150%
+                height: 100%
+                top: 0px
+                background-color: rgba(0,0,0,0.5)
+                z-index: 2
+                position: absolute
+                margin-left: -5%
+
         .carousel-fade .carousel-item
-            transition-duration: 1.5s
+            transition-duration: 2s
+
+@media (max-width: 1024px)
+    .banner
+        .card
+            .bg
+                width: 115%
+                margin-left: -5%
+                max-height: 500px
+                video
+                    width: 125%
+
+@media (max-width: 768px)
+    .banner
+        .card
+            .bg
+                max-height: 450px
+                video
+                    width: 125%
 @media (max-width: 575.98px)
     .banner
         .col-12
