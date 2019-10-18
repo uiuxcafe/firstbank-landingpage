@@ -81,8 +81,14 @@ button
 
 .web
     display: block !important
+    
+@media (max-width: 767.98px)
+    .mobile
+        display: block !important
 
-@media (max-width: 575.98px)
+    .web
+        display: none !important
+@media (max-width: 767.98px)
     html,body
         overflow-x: hidden
     .col-12
@@ -120,12 +126,7 @@ button
             padding-bottom: 0%
         .border-bottom
             margin-bottom: 20px
-    .mobile
-        display: block !important
-
-    .web
-        display: none !important
-
+    
 //header    
 .header
     height: 70px
@@ -157,54 +158,33 @@ button
                 width: 100px
                 button
                     width: 110px
-
-@media (max-width: 575.98px)
-    .header
-        height: 60px
-        .navbar
-            background-color: #FFF
-            box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1)       
-        .container
-            .navbar-toggler
-                border: none
-                outline: 0 
-                margin-left:
-                .navbar-toggler-icon
-                    margin-left: -10px
-                    color: #000
-                    width: 28px
-            .navbar-brand
-                padding: 0px
-                padding-right: 50px
-                margin-left: auto
-                margin-right: auto
-                img
-                    height: 28px
-                    display: block
-                    margin: auto
-            .navbar-light
+@media (max-width: 767.98px)
+        .header
+            height: 60px
+            .navbar
+                background-color: #FFF
+                box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1)       
+            .container
                 .navbar-toggler
-                    color: #000
+                    border: none
+                    outline: 0 
+                    .navbar-toggler-icon
+                        margin-left: -10px
+                        color: #000
+                        width: 28px
+                .navbar-brand
+                    padding: 0px
+                    padding-right: 50px
+                    margin-left: auto
+                    margin-right: auto
+                    img
+                        height: 28px
+                        display: block
+                        margin: auto
+                .navbar-light
+                    .navbar-toggler
+                        color: #000
 
-    .side-collapse-container-left
-        position: relative
-        left: 0
-        transition: left .4s
-    .side-collapse-container-left.out
-        left: 70%
-    
-    .side-collapse-left 
-        top: 50px
-        bottom: 0
-        left: 0
-        width: 70%
-        position: fixed
-        overflow: hidden
-        ransition: width .4s
-    
-    .side-collapse-left.in 
-        width: 0
-    
 
 // banner
 .banner
@@ -254,14 +234,20 @@ button
                 max-height: 500px
                 video
                     width: 125%
-
-@media (max-width: 768px)
+@media (max-width: 767.98px)
     .banner
+        .col-12
+            width: 95% !important
         .card
             .bg
-                max-height: 450px
+                max-height: 400px
                 video
-                    width: 125%
+                    width: 135%
+            .banner-content
+                padding: 10% 0% 0% 5%
+                width: 75%
+                p
+                    padding-top: 0px
 @media (max-width: 575.98px)
     .banner
         .col-12
@@ -276,11 +262,11 @@ button
                 margin-left: -10%
                 margin-top: 0%
                 height: auto
-            .banner-content
-                padding: 10% 0% 0% 5%
-                width: 83%
-                p
-                    padding-top: 0px
+                .banner-content
+                    padding: 10% 0% 0% 10%
+                    width: 75%
+                    p
+                        padding-top: 0px
 @media (max-width: 376px)
     .banner
         .card
@@ -288,6 +274,9 @@ button
             .bg
                 width: 160%
                 margin-left: -30%
+                .banner-content
+                    margin-left: 10%
+                    width: 70%
 @media (max-width: 321px)
     .banner
         .card
@@ -322,6 +311,30 @@ button
                 width: 300px
             img
                 margin-left: -5%            
+@media (max-width: 767.98px)
+    .photo-right
+        .section-card
+            height: 470px
+            padding: 24px 9px 24px 9px
+            .text-area
+                margin-top: 5px
+                margin-left: 8px
+                width: 95%
+            button
+                height: 52px
+                width: 60%
+                padding: .5em .7em
+                border-radius: 30px
+                background: #5FC68B
+                font-size: 20px
+                color: #FFF
+                margin-left: auto
+                margin-right: auto
+            img 
+                width: 100%
+                position: relative
+                margin-left: auto
+                margin-right: auto
 @media (max-width: 575.98px)
     .photo-right
         .section-card
@@ -335,20 +348,7 @@ button
                 margin-left: 8px
                 width: 85%
             button
-                height: 52px
-                // max-width: 303px
                 width: 90%
-                padding: .5em .7em
-                border-radius: 30px
-                background: #5FC68B
-                font-size: 20px
-                color: #FFF
-            img 
-                width: 100%
-                // margin-top: -5%
-                position: relative
-                margin-left: auto
-                margin-right: auto
             
 
 .feature

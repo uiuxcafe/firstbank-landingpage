@@ -87,7 +87,13 @@ button {
 .web {
   display: block !important; }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
+  .mobile {
+    display: block !important; }
+  .web {
+    display: none !important; } }
+
+@media (max-width: 767.98px) {
   html, body {
     overflow-x: hidden; }
   .col-12 {
@@ -120,11 +126,7 @@ button {
   .title-area h2 {
     padding-bottom: 0%; }
   .title-area .border-bottom {
-    margin-bottom: 20px; }
-  .mobile {
-    display: block !important; }
-  .web {
-    display: none !important; } }
+    margin-bottom: 20px; } }
 
 .header {
   height: 70px; }
@@ -156,7 +158,7 @@ button {
     .header .navbar-nav li button {
       width: 110px; } }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .header {
     height: 60px; }
     .header .navbar {
@@ -180,25 +182,7 @@ button {
         display: block;
         margin: auto; }
     .header .container .navbar-light .navbar-toggler {
-      color: #000; }
-  .side-collapse-container-left {
-    position: relative;
-    left: 0;
-    -webkit-transition: left .4s;
-    -o-transition: left .4s;
-    transition: left .4s; }
-  .side-collapse-container-left.out {
-    left: 70%; }
-  .side-collapse-left {
-    top: 50px;
-    bottom: 0;
-    left: 0;
-    width: 70%;
-    position: fixed;
-    overflow: hidden;
-    ransition: width .4s; }
-  .side-collapse-left.in {
-    width: 0; } }
+      color: #000; } }
 
 .banner .card {
   width: 100%;
@@ -246,11 +230,18 @@ button {
     .banner .card .bg video {
       width: 125%; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
+  .banner .col-12 {
+    width: 95% !important; }
   .banner .card .bg {
-    max-height: 450px; }
+    max-height: 400px; }
     .banner .card .bg video {
-      width: 125%; } }
+      width: 135%; }
+  .banner .card .banner-content {
+    padding: 10% 0% 0% 5%;
+    width: 75%; }
+    .banner .card .banner-content p {
+      padding-top: 0px; } }
 
 @media (max-width: 575.98px) {
   .banner .col-12 {
@@ -265,18 +256,21 @@ button {
       margin-left: -10%;
       margin-top: 0%;
       height: auto; }
-    .banner .card .banner-content {
-      padding: 10% 0% 0% 5%;
-      width: 83%; }
-      .banner .card .banner-content p {
-        padding-top: 0px; } }
+      .banner .card .bg .banner-content {
+        padding: 10% 0% 0% 10%;
+        width: 75%; }
+        .banner .card .bg .banner-content p {
+          padding-top: 0px; } }
 
 @media (max-width: 376px) {
   .banner .card {
     height: 300px; }
     .banner .card .bg {
       width: 160%;
-      margin-left: -30%; } }
+      margin-left: -30%; }
+      .banner .card .bg .banner-content {
+        margin-left: 10%;
+        width: 70%; } }
 
 @media (max-width: 321px) {
   .banner .card {
@@ -308,6 +302,30 @@ button {
   .photo-right .section-card img {
     margin-left: -5%; } }
 
+@media (max-width: 767.98px) {
+  .photo-right .section-card {
+    height: 470px;
+    padding: 24px 9px 24px 9px; }
+    .photo-right .section-card .text-area {
+      margin-top: 5px;
+      margin-left: 8px;
+      width: 95%; }
+    .photo-right .section-card button {
+      height: 52px;
+      width: 60%;
+      padding: .5em .7em;
+      border-radius: 30px;
+      background: #5FC68B;
+      font-size: 20px;
+      color: #FFF;
+      margin-left: auto;
+      margin-right: auto; }
+    .photo-right .section-card img {
+      width: 100%;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto; } }
+
 @media (max-width: 575.98px) {
   .photo-right .section-card {
     height: 455px;
@@ -323,18 +341,7 @@ button {
       margin-left: 8px;
       width: 85%; }
     .photo-right .section-card button {
-      height: 52px;
-      width: 90%;
-      padding: .5em .7em;
-      border-radius: 30px;
-      background: #5FC68B;
-      font-size: 20px;
-      color: #FFF; }
-    .photo-right .section-card img {
-      width: 100%;
-      position: relative;
-      margin-left: auto;
-      margin-right: auto; } }
+      width: 90%; } }
 
 .feature .card {
   padding: 60px 40px; }
