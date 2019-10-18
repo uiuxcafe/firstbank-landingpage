@@ -179,7 +179,8 @@ button {
 .banner .card {
   width: 100%;
   max-height: 680px;
-  background-color: #EAEAEA; }
+  background-color: #EAEAEA;
+  overflow: hidden; }
   .banner .card .bg {
     width: 110%;
     margin-left: -5%; }
@@ -188,7 +189,12 @@ button {
       overflow: hidden;
       margin-left: -5%;
       margin-top: -6%;
-      z-index: 0; }
+      z-index: 0;
+      position: relative;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0); }
   .banner .card .bg-mask {
     width: 150%;
     height: 100%;
@@ -268,7 +274,7 @@ button {
     align-items: flex-start;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    padding: 24px 15px 24px 15px; }
+    padding: 24px 9px 24px 9px; }
     .photo-right .section-card .text-area {
       margin-top: 5px;
       margin-left: 8px;
@@ -282,8 +288,10 @@ button {
       font-size: 20px;
       color: #FFF; }
     .photo-right .section-card img {
-      width: 115%;
-      margin-top: -5%; } }
+      width: 100%;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto; } }
 
 .feature .card {
   padding: 60px 40px; }
@@ -322,15 +330,17 @@ button {
 @media (max-width: 575.98px) {
   .photo-left .section-card {
     height: 416px; }
+    .photo-left .section-card .col-md-7.order-md-1.d-flex {
+      padding: 0px; }
     .photo-left .section-card img {
-      width: 125%;
-      margin-top: -40px;
+      width: 150%;
+      margin-top: -30px;
       overflow: hidden;
-      margin-left: -5%; }
+      margin-left: auto; }
     .photo-left .section-card .text-area {
       margin-top: 0%;
       margin-left: 0px;
-      padding: 24px 13px;
+      padding: 25px 13px;
       width: 100%; }
       .photo-left .section-card .text-area h1 {
         color: #39AE6B; }

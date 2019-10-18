@@ -181,6 +181,8 @@ button
         width: 100%
         max-height: 680px
         background-color: #EAEAEA
+        overflow: hidden
+        
         .bg
             width: 110%
             margin-left: -5%
@@ -190,6 +192,11 @@ button
                 margin-left: -5%
                 margin-top: -6%
                 z-index: 0
+                position: relative
+                -webkit-backface-visibility: hidden
+                -moz-backface-visibility: hidden
+                -webkit-transform: translate3d(0, 0, 0)
+                -moz-transform: translate3d(0, 0, 0)
         .bg-mask
             width: 150%
             height: 100%
@@ -267,7 +274,7 @@ button
             position: flex
             align-items: flex-start
             justify-content: space-around 
-            padding: 24px 15px 24px 15px
+            padding: 24px 9px 24px 9px
             .text-area
                 margin-top: 5px
                 margin-left: 8px
@@ -282,8 +289,11 @@ button
                 font-size: 20px
                 color: #FFF
             img 
-                width: 115%
-                margin-top: -5%
+                width: 100%
+                // margin-top: -5%
+                position: relative
+                margin-left: auto
+                margin-right: auto
             
 
 .feature
@@ -327,15 +337,17 @@ button
     .photo-left
         .section-card
             height: 416px
+            .col-md-7.order-md-1.d-flex
+                padding: 0px
             img
-                width: 125%
-                margin-top: -40px
+                width: 150%
+                margin-top: -30px
                 overflow: hidden
-                margin-left: -5%
+                margin-left: auto
             .text-area
                 margin-top: 0%
                 margin-left: 0px
-                padding: 24px 13px
+                padding: 25px 13px
                 width: 100%
                 h1 
                     color: #39AE6B
