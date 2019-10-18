@@ -153,19 +153,21 @@ button
 @media (max-width: 575.98px)
     .header
         height: 60px
-        background-color: #FFF
-        .container
+        .navbar
+            background-color: #FFF
             box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1)
+        .container
             .navbar-toggler
                 border: none
                 outline: 0 
-                margin-left: -20px
+                margin-left:
                 .navbar-toggler-icon
                     margin-left: -10px
                     color: #000
                     width: 28px
             .navbar-brand
                 padding: 0px
+                padding-right: 50px
                 margin-left: auto
                 margin-right: auto
                 img
@@ -175,6 +177,27 @@ button
             .navbar-light
                 .navbar-toggler
                     color: #000
+
+    .side-collapse-container-left
+        position: relative
+        left: 0
+        transition: left .4s
+    .side-collapse-container-left.out
+        left: 70%
+    
+    .side-collapse-left 
+        top: 50px
+        bottom: 0
+        left: 0
+        width: 70%
+        position: fixed
+        overflow: hidden
+        ransition: width .4s
+    
+    .side-collapse-left.in 
+        width: 0
+    
+
 // banner
 .banner
     .card
@@ -225,7 +248,8 @@ button
             margin-left: auto
             margin-right: auto
             .bg
-                width: 125%
+                width: 130%
+                height: 100%
                 margin-left: -10%
                 margin-top: 0%
                 height: auto
@@ -239,14 +263,14 @@ button
         .card
             height: 300px
             .bg
-                width: 155%
+                width: 160%
                 margin-left: -30%
 @media (max-width: 321px)
     .banner
         .card
             height: 260px
             .bg
-                width: 160%
+                width: 165%
                 margin-left: -30% 
             .banner-content
                 h2 
