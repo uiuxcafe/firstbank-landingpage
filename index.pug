@@ -67,12 +67,13 @@ block content
                     .section-card.row
                         .col-md-5
                             .text-area
-                                h2 你可以從現在開始
-                                p 第一銀行過去8年協助過超過73萬個微型創業遍及台、美、亞洲各地，讓第一銀行陪您開創事業
+                                img(src="", alt="微企e時代")
+                                h2.py-md-3 現在開始做自己的老闆
+                                //p 第一銀行過去8年協助過超過73萬個微型創業遍及台、美、亞洲各地，讓第一銀行陪您開創事業
                                 button.btn.web 立即申辦
                         .col-md-7
                             img(src="./im/im_01.svg", alt="im_01" title="im_01")
-                        button.button.btn.mobile 立即申辦
+                        button.btn.mobile 立即申辦
     
     section.feature#feature.py-4
         .container
@@ -101,20 +102,20 @@ block content
                         .col-md-4
                             .icon
                                 img(src="./ic/ic_04.svg", alt="ic_04" title="ic_04")
+                                h2 對象
+                                p 移送中小企業信用保證基金保證。負責人及實際經營者須擔任保證人
+                        .col-md-4
+                            .icon
+                                img(src="./ic/ic_05.svg", alt="ic_05" title="ic_05")
                                 h2 擔保
                                 p.web 移送中小企業信用保證基金保證。負責人及實際經營者須擔任保證人
                                 p.mobile 移送中小企業信用保證基金保證。<br>負責人及實際經營者須擔任保證人
                         .col-md-4
                             .icon
-                                img(src="./ic/ic_05.svg", alt="ic_05" title="ic_05")
-                                h2 對象
-                                p 本國依法設立登記公司成立滿一年
-                        .col-md-4
-                            .icon
                                 img(src="./ic/ic_06.svg", alt="ic_06" title="ic_06")
-                                h2 5000元
-                                p.web 開辦免壓力<br>超低開辦費用
-                                p.mobile 開辦免壓力，超低開辦費用
+                                h2 保證人
+                                p.web 負責人及實際經營者<br>須擔任保證人
+                                p.mobile 負責人及實際經營者須擔任保證人
 
     section.photo-left.py-4
         .container
@@ -124,9 +125,9 @@ block content
 
                         .col-md-5.order-md-2
                             .text-area
-                                h2 協助企業遍及全球
-                                h1 729,371
-                                p 第一銀行過去8年協助過超過73萬個微型創業遍及台、美、亞洲各地，讓第一銀行陪您開創事業
+                                h2 第一銀行成立 120 年
+                                //h1 729,371
+                                p.pt-md-3 中小企業放款已連續九年市佔第一
                         .col-md-7.order-md-1.d-flex
                             img(src="./im/im_02.svg", alt="im_02" title="im_02")
 
@@ -142,13 +143,13 @@ block content
                         .col-md-4.col-12
                             .icon
                                 img(src="./im/im_03.svg", alt="im_03" title="im_03")
-                                h3 試算額度利率
-                                p 3分鐘即可得知專屬信貸報價
+                                h3 試算額度
+                                p 3分鐘即可得知可貸額度
                         .col-md-4.col-12
                             .icon
                                 img(src="./im/im_04.svg", alt="im_04" title="im_04")
                                 h3 填寫基本資料
-                                p 填寫基本資料即完成申請<br>最快 n 天得知審核結果
+                                p 填寫基本資料即完成申請<br>最快 1 天得知審核結果
                         .col-md-4.col-12
                             .icon
                                 img(src="./im/im_05.svg", alt="im_05" title="im_05")
@@ -167,14 +168,15 @@ block content
                         .col-md-5
                             .rectangle-text
                                 #M1S3.card-header(data-toggle='collapse' data-target='#M1S3-content' aria-expanded='true' aria-controls='M1S3-content') 
-                                    h5 申請貸款需要提供哪些資料呢？
+                                    h5 貸款需要提供甚麼資料？
                                 #M1S3-content.collapse(data-toggle='collapse' data-target='#M1S3-content' aria-controls='M1S3-content' aria-labelledby='M1S3' data-parent='#M1C')
                                     .card-body
-                                        p 依法辦理登記之獨資、合夥、有限公司與股份有限公司，財務結構健全、業務經營正常且一年營業額伍仟萬元以下
-                            p 公司貸款跟個人貸款有什麼不一樣？
-                            p 申請小型企業貸款需要準備哪些文件呢？
-                            p 貸款申請到撥款會經過哪些流程？
-                            p 要如何知道哪種貸款模式最適合我？
+                                        p 資料表、核准設立文件、近三年財務報表及最近一期暫結報表、負責人及保證人身分證影本等。
+                            p 如何得知可貸額度？
+                            p 利率多少？
+                            p 什麼是信保基金？
+                            p 申請後銀行多久會撥款？
+                            p 如何申辦？
                         .col-md-7
                             img(src="./im/im_06.svg", alt="im_06" title="im_06")
 
@@ -193,7 +195,7 @@ block content
                         .col-12
                             .input-group-lg.phoneNunber
                                 input.form-control#phoneNunber(type="tel" name='手機號碼' placeholder='請輸入您的手機號碼' required="required" minlength="10" maxlength="10")
-                                button
+                                span.button
                                     img(src="./Button/btn_oval.svg", alt="Button")
 
     section.footer
@@ -201,7 +203,7 @@ block content
             .container.text-left
                 .row#footer-links
                     .col-md-4.mt-md-0.brand-logo.pb-4
-                        img(src="./footer/logo_firstbank.svg", alt="第一銀行")
+                        img(src="./header/logo_firstbank@2x.png", alt="第一銀行")
                     //- hr.clearfix.w-100.d-md-none.pb-3
                     .col-md-2.mb-md-0.mb-1
                         h5.text-uppercase.footer-title#footer-1 相關服務

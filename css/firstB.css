@@ -58,7 +58,7 @@ li, a {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0); }
 
-.button {
+.button, button {
   border: 0px;
   display: inline-block;
   -webkit-transform: scale(1);
@@ -71,12 +71,12 @@ li, a {
   text-align: center;
   cursor: pointer;
   outline: 0; }
-  .button:hover {
+  .button:hover, button:hover {
     text-decoration: none;
     -webkit-transform: scale(1.04);
     -ms-transform: scale(1.04);
     transform: scale(1.04); }
-  .button:active {
+  .button:active, button:active {
     -webkit-transform: scale(0.94);
     -ms-transform: scale(0.94);
     transform: scale(0.94); }
@@ -431,7 +431,7 @@ li, a {
     margin-left: -20px; }
   .photo-left .section-card .text-area {
     margin-top: 30%;
-    margin-left: 20px;
+    margin-left: 45px;
     width: 395px; }
     .photo-left .section-card .text-area h1 {
       color: #39AE6B; }
@@ -444,12 +444,12 @@ li, a {
     margin-top: 100px; }
   .photo-left .section-card .text-area {
     margin-top: 25%;
-    margin-left: 0px;
-    width: 260px; } }
+    margin-left: 25px;
+    width: 220px; } }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .photo-left .section-card {
-    height: 416px; }
+    max-height: 416px; }
     .photo-left .section-card .col-md-7.order-md-1.d-flex {
       padding: 0px; }
     .photo-left .section-card img {
@@ -461,6 +461,26 @@ li, a {
       margin-top: 0%;
       margin-left: 0px;
       padding: 25px 13px;
+      width: 100%; }
+      .photo-left .section-card .text-area h1 {
+        color: #39AE6B; }
+      .photo-left .section-card .text-area p {
+        color: #81838C; } }
+
+@media (max-width: 575.98px) {
+  .photo-left .section-card {
+    max-height: 416px; }
+    .photo-left .section-card .col-md-7.order-md-1.d-flex {
+      padding: 0px; }
+    .photo-left .section-card img {
+      width: 150%;
+      margin-top: -30px;
+      overflow: hidden;
+      margin-left: auto; }
+    .photo-left .section-card .text-area {
+      margin-top: 5%;
+      margin-left: 0px;
+      padding: 25px 13px 0px 13px;
       width: 100%; }
       .photo-left .section-card .text-area h1 {
         color: #39AE6B; }
@@ -506,7 +526,7 @@ li, a {
       .apply .card .icon p {
         padding-top: 12px; } }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .apply .card {
     padding: 20px 16px 16px 20px; }
     .apply .card .col-md-4.col-12 {
@@ -564,7 +584,7 @@ li, a {
       margin-left: 100px;
       max-height: 400px; } }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .faq .card {
     padding: 10px 0px;
     background-color: #FAFAFA;
@@ -612,11 +632,11 @@ li, a {
     box-shadow: 0 0 0 1px #5FC68B; }
   .contact .card .phoneNunber {
     padding-top: 15px; }
-  .contact .card button {
+  .contact .card span {
     outline: 0;
     position: absolute;
-    margin-top: -65px;
-    margin-left: 290px; }
+    margin-top: -64px;
+    margin-left: 298px; }
 
 @media (max-width: 575.98px) {
   .contact .card {
@@ -631,20 +651,20 @@ li, a {
       padding: 0 0 0 28px; }
     .contact .card .phoneNunber {
       position: relative; }
-    .contact .card button {
+    .contact .card span {
       outline: 0;
       position: absolute;
       top: 122%;
       left: -14%; }
-      .contact .card button img {
+      .contact .card span img {
         width: 44px; } }
 
 @media (max-width: 376px) {
-  .contact .card button {
+  .contact .card span {
     left: -16%; } }
 
 @media (max-width: 321px) {
-  .contact .card button {
+  .contact .card span {
     left: -35%; } }
 
 .footer {
@@ -668,9 +688,9 @@ li, a {
   .footer {
     padding: 20px 100px 0px 100px; } }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .footer {
-    padding: 0px 25px 44px 25px;
+    padding: 0px 30px 44px 30px;
     height: 100%; }
     .footer img {
       width: 120px;
@@ -689,7 +709,7 @@ li, a {
     .footer ul li:nth-child(1) {
       padding-top: 15px; }
     .footer .col-md-2.mb-md-0.mb-1 {
-      padding: 10px 15px 0px 15px;
+      padding: 10px 30px 0px 30px;
       margin-bottom: 0px; }
     .footer .footer-collapse {
       display: inline-block;
@@ -718,10 +738,6 @@ li, a {
       -ms-transform: scaleY(-1);
       transform: scaleY(-1); } }
 
-@media (max-width: 376px) {
-  .footer .footer-collapse {
-    margin-left: 75%; } }
-
-@media (max-width: 321px) {
-  .footer .footer-collapse {
-    margin-left: 70%; } }
+@media (max-width: 575.98px) {
+  .footer .col-md-2.mb-md-0.mb-1 {
+    padding: 10px 15px 0px 15px; } }
