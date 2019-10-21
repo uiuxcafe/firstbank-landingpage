@@ -577,7 +577,7 @@ li, a {
   .faq .card .accordion#QA .card.rectangle-text .card-header.collapsed {
     border-bottom: 0px;
     background-color: rgba(144, 226, 159, 0) !important;
-    padding: 12px 33px;
+    padding: 12px 32px;
     height: auto;
     -webkit-transition: 1s;
     -o-transition: 1s;
