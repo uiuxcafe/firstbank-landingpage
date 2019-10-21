@@ -170,6 +170,8 @@ li,a
             .container
                 width: 100%
                 padding: 0px
+                position: fixed
+                z-index: 1000
                 .navbar-toggler
                     border: none
                     outline: 0 
@@ -179,11 +181,12 @@ li,a
                         width: 28px
                 .navbar-brand
                     padding: 0px
-                    padding-right: 50px
+                    padding-right: 40px
                     margin-left: auto
                     margin-right: auto
                     img
-                        height: 28px
+                        height: 35px
+                        width: auto
                         display: block
                         margin: auto
                 .nav-bg
@@ -379,6 +382,9 @@ li,a
                 margin-top: 5px
                 margin-left: 8px
                 width: 95%
+                img
+                    width: 85%
+                    padding-bottom: 20px
             button
                 height: 52px
                 width: 60%
@@ -405,7 +411,7 @@ li,a
             .text-area
                 margin-top: 5px
                 margin-left: 8px
-                width: 85%
+                width: 90%
             button
                 width: 90%
             
@@ -570,12 +576,13 @@ li,a
                 padding: 0px
                 margin-top: 15px
             .card.rectangle-text
+                //open
                 .card-header
                     border-bottom: 0px
                     background-color: rgba(144,226,159,0.2)
-                    padding: 24px 32px
+                    padding: 12px 32px
                     height: auto
-                    transition: 1s
+                    transition: 2s
                     h5 
                         margin: 0px
                 .show
@@ -587,6 +594,7 @@ li,a
                         transition: .7s
                         p 
                             margin: 0px
+                //close
                 .card-header.collapsed
                     border-bottom: 0px
                     background-color: rgba(144,226,159,0) !important
@@ -599,6 +607,7 @@ li,a
                     .card-body
                         opacity: 0
                         transition: 1s
+                        padding: 0px 32px 28px 32px
 
         .col-md-5 > p
             padding-left: 32px
@@ -636,8 +645,6 @@ li,a
                 height: auto
                 width: 100%
                 padding: 20px 24px
-                //border-radius: 0px
-                //background-color: rgba(144,226,159,0.2)
                 margin-top: -10px
                 p
                     color: #7F7F7F

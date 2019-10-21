@@ -6,6 +6,7 @@ $(document).ready(function(){
   var navbg = $(".nav-bg");
   var overscrolly = $("html");
   var button = $("#apply-btn")
+  var link = $(".nav-link")
   var menuOpen;
   
   function openMenu(){
@@ -35,6 +36,13 @@ $(document).ready(function(){
       openMenu();
     }
   }
+
+      link.on({
+        click: function(){
+          closeMenu();
+        }
+      });
+
       navbg.on({
         click: function(){
           toggleMenu();
@@ -48,26 +56,12 @@ $(document).ready(function(){
       })
 
 });
-
-// QA
-// $(document).ready(function(){
-
-//   $(".yet .card-header").click(function(){
-//     $(".card").addClass("rectangle-text");
-//     $(".card").removeClass("yet");
-//     console.log("2")
-//   });
-
-//   $(".rectangle-text .card-header").click(function(){
-//     $(".card").removeClass("rectangle-text");
-//     console.log("1")
-//   });
-
-//   $(".rectangle-text .card-body").click(function(){
-//     $(".card").removeClass("rectangle-text");
-//     console.log("3")
-//   });
-
-
-//   console.log("5")
-// });
+$(document).ready(function(){
+// 滑動
+  $("#link-1").on("click", function(e){
+    $('html, body').animate({
+      scrollTop: $("#1").offset().top 
+    }, 1000); 
+    e.preventDefault();
+  });
+});
