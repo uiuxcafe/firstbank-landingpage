@@ -165,24 +165,27 @@ button {
       background-color: #FFF;
       -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
       box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1); }
-    .header .container .navbar-toggler {
-      border: none;
-      outline: 0; }
-      .header .container .navbar-toggler .navbar-toggler-icon {
-        margin-left: -10px;
-        color: #000;
-        width: 28px; }
-    .header .container .navbar-brand {
-      padding: 0px;
-      padding-right: 50px;
-      margin-left: auto;
-      margin-right: auto; }
-      .header .container .navbar-brand img {
-        height: 28px;
-        display: block;
-        margin: auto; }
-    .header .container .navbar-light .navbar-toggler {
-      color: #000; } }
+    .header .container {
+      width: 100%;
+      padding: 0px; }
+      .header .container .navbar-toggler {
+        border: none;
+        outline: 0; }
+        .header .container .navbar-toggler .navbar-toggler-icon {
+          margin-left: -10px;
+          color: #000;
+          width: 28px; }
+      .header .container .navbar-brand {
+        padding: 0px;
+        padding-right: 50px;
+        margin-left: auto;
+        margin-right: auto; }
+        .header .container .navbar-brand img {
+          height: 28px;
+          display: block;
+          margin: auto; }
+      .header .container .navbar-light .navbar-toggler {
+        color: #000; } }
 
 .banner .card {
   width: 100%;
