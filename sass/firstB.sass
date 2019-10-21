@@ -54,7 +54,7 @@ li,a
     -webkit-transform: translate3d(0, 0, 0)
     -moz-transform: translate3d(0, 0, 0)
 
-button
+.button
     border: 0px
     display: inline-block
     -webkit-transform: scale(1)
@@ -143,7 +143,7 @@ button
                 text-align: center
                 &:hover
                     text-decoration: underline
-            button
+            .button
                 height: 48px
                 width: 120px
                 border-radius: 24px
@@ -161,10 +161,11 @@ button
 @media (max-width: 767.98px)
         .header
             height: 60px
-            
+            z-index: 100
             .navbar
                 background-color: #FFF
-                box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1)       
+                box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1) 
+                z-index: 100 
             .container
                 width: 100%
                 padding: 0px
@@ -184,9 +185,63 @@ button
                         height: 28px
                         display: block
                         margin: auto
+                .nav-bg
+                    position: fixed
+                    background-color: #000
+                    top: 0
+                    left: 0
+                    opacity: 0.6
+                    z-index: 0
+                    height: 100%
+                    width: 100%
+                    display: none
+                .navbar-collapse
+                    overflow-y: scroll
+                    z-index: 1001
+                    margin-left: 0px
+                    max-width: 320px
+                    width: 80%
+                    height: 100%
+                    background: #ffffff
+                    position: fixed
+                    top: 0px
+                    left: -320px
+                    transition: .5s 
+                    .navbar-brand
+                        padding: 12px 22px
+                        img
+                            height: 36px
+                            width: auto
+                            display: block
+                            margin: auto
+                    .brand-bottom,.list-bottom
+                        height: 1px
+                        background-color: #D3D5D7
+                    .brand-bottom
+                        width: 100%
+                    .list-bottom
+                        width: 85%
+                    .navbar-nav
+                        li,#apply-btn
+                            text-align: left
+                        li 
+                            width: 200px
+                            padding: 24px 28px
+                            &:nth-last-child(3)
+                                padding-bottom: 30px
+                            &:nth-last-child(1)
+                                padding-top: 30px
+                        #apply-btn
+                            padding: 0
+                            border: 0
+                            background-color: #FFF
+                            color: #5FC68B
+                        
+
                 .navbar-light
                     .navbar-toggler
                         color: #000
+            
 
 
 // banner

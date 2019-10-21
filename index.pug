@@ -5,25 +5,31 @@ block content
     section.header
         .container
             nav.navbar.navbar-expand-md.navbar-light
-                button.navbar-toggler( data-toggle='collapse' data-target='#first-nav' aria-controls='navbarTogglerDemo01' aria-expanded='ture' aria-label='Toggle navigation')
+                //button.navbar-toggler( data-toggle='collapse' data-target='#first-nav' aria-controls='navbarTogglerDemo01' aria-expanded='ture' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                button.navbar-toggler(type='button', data-target='#first-nav', aria-controls='first-nav',  )
                     span.navbar-toggler-icon
                 a.navbar-brand.mobile(href="#")
                         img(src="./footer/logo_firstbank.svg", alt="第一銀行")
-                #first-nav.collapse.navbar-collapse
-                    a.navbar-brand.web(href='#') 
+                .nav-bg 
+                #first-nav.navbar-collapse  
+                    a.navbar-brand(href='#') 
                         img(src="./header/logo_firstbank@2x.png", alt="第一銀行")
+                    div.brand-bottom.mobile
                     ul.navbar-nav.ml-auto
-                        li.nav-item.d-flex.align-items-center.justify-content-center
+                        li.nav-item.d-flex.align-items-center.justify-content-md-center
                             a.nav-link(href='#1') 信貸方案
-                        li.nav-item.d-flex.align-items-center.justify-content-center
+                        li.nav-item.d-flex.align-items-center.justify-content-md-center
                             a.nav-link(href='#feature') 特色
-                        li.nav-item.d-flex.align-items-center.justify-content-center
+                        li.nav-item.d-flex.align-items-center.justify-content-md-center
                             a.nav-link(href='#faq') FAQ
-                        li.nav-item.d-flex.align-items-center.justify-content-center
+                        li.nav-item.d-flex.align-items-center.justify-content-md-center
                             a.nav-link(href='#apply') 申請流程
-                        li.nav-item.d-flex.align-items-center.justify-content-center.ml-md-2
+                        div.list-bottom.mobile
+                        li.nav-item.d-flex.align-items-center.justify-content-md-center.ml-md-2
                             a.nav-link
-                                button.btn 立即申辦
+                                button#apply-btn.button.btn 立即申辦
+                    
 
     section.banner.py-4
         .container
@@ -66,7 +72,7 @@ block content
                                 button.btn.web 立即申辦
                         .col-md-7
                             img(src="./im/im_01.svg", alt="im_01" title="im_01")
-                        button.btn.mobile 立即申辦
+                        button.button.btn.mobile 立即申辦
     
     section.feature#feature.py-4
         .container
