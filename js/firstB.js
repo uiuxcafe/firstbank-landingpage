@@ -48,3 +48,26 @@ $(document).ready(function(){
       })
 
 });
+
+// QA
+// $(document).ready(function(){
+
+//   $(".yet .card-header").click(function(){
+//     $(".card").addClass("rectangle-text");
+//     $(".card").removeClass("yet");
+//     console.log("2")
+//   });
+
+//   $(".rectangle-text .card-header").click(function(){
+//     $(".card").removeClass("rectangle-text");
+//     console.log("1")
+//   });
+
+//   $(".rectangle-text .card-body").click(function(){
+//     $(".card").removeClass("rectangle-text");
+//     console.log("3")
+//   });
+
+
+//   console.log("5")
+// });

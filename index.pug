@@ -166,17 +166,43 @@ block content
                 .col-12.card
                     .row.section-card
                         .col-md-5
-                            .rectangle-text
-                                #M1S3.card-header(data-toggle='collapse' data-target='#M1S3-content' aria-expanded='true' aria-controls='M1S3-content') 
-                                    h5 貸款需要提供甚麼資料？
-                                #M1S3-content.collapse(data-toggle='collapse' data-target='#M1S3-content' aria-controls='M1S3-content' aria-labelledby='M1S3' data-parent='#M1C')
-                                    .card-body
-                                        p 資料表、核准設立文件、近三年財務報表及最近一期暫結報表、負責人及保證人身分證影本等。
-                            p 如何得知可貸額度？
-                            p 利率多少？
-                            p 什麼是信保基金？
-                            p 申請後銀行多久會撥款？
-                            p 如何申辦？
+                            .accordion#QA
+                                div.card.rectangle-text
+                                    #Q1.card-header(data-toggle='collapse' data-target='#A1' aria-expanded='true' aria-controls='A1') 
+                                        h5 貸款需要提供甚麼資料？
+                                    #A1.collapse.show(data-toggle='collapse' data-target='#A1' aria-controls='A1' aria-labelledby='Q1' data-parent='#QA')
+                                        .card-body
+                                            p 資料表、核准設立文件、近三年財務報表及最近一期暫結報表、負責人及保證人身分證影本等。
+                                div.card.rectangle-text
+                                    #Q2.card-header.collapsed(data-toggle='collapse' data-target='#A2' aria-expanded='true' aria-controls='A2') 
+                                        h5 如何得知可貸額度?
+                                    #A2.collapse(data-toggle='collapse' data-target='#A2' aria-controls='A2' aria-labelledby='Q2' data-parent='#QA')
+                                        .card-body
+                                            p 立即用「微企e時貸」進行試算吧 ! 若線上試算額度不足，還可由專人聯繫洽談提高。
+                                div.card.rectangle-text
+                                    #Q3.card-header.collapsed(data-toggle='collapse' data-target='#A3' aria-expanded='true' aria-controls='A3') 
+                                        h5 利率多少?
+                                    #A3.collapse(data-toggle='collapse' data-target='#A3' aria-controls='A3' aria-labelledby='Q3' data-parent='#QA')
+                                        .card-body
+                                            p 本行將視個案情形給予不同的利率訂價，並以年利率方式計收，貸放期間前三個月，利率最低得以本行一年期定儲存機動利率加碼0.59%以上計收(目前1.68%)。
+                                div.card.rectangle-text
+                                    #Q4.card-header.collapsed(data-toggle='collapse' data-target='#A4' aria-expanded='true' aria-controls='A4') 
+                                        h5 什麼是信保基金？
+                                    #A4.collapse(data-toggle='collapse' data-target='#A4' aria-controls='A4' aria-labelledby='Q4' data-parent='#QA')
+                                        .card-body
+                                            p 信保基金可協助具潛力但擔保品不足之中小企業，向銀行取得融資而提供保證。
+                                div.card.rectangle-text
+                                    #Q5.card-header.collapsed(data-toggle='collapse' data-target='#A5' aria-expanded='true' aria-controls='A5') 
+                                        h5 申請後，銀行多久會撥款？
+                                    #A5.collapse(data-toggle='collapse' data-target='#A5' aria-controls='A5' aria-labelledby='Q4' data-parent='#QA')
+                                        .card-body
+                                            p 文件齊備最快1天得知審核結果，完成開戶最快1天撥款。
+                                div.card.rectangle-text
+                                    #Q6.card-header.collapsed(data-toggle='collapse' data-target='#A6' aria-expanded='true' aria-controls='A6') 
+                                        h5 如何申辦?
+                                    #A6.collapse(data-toggle='collapse' data-target='#A6' aria-controls='A6' aria-labelledby='Q6' data-parent='#QA')
+                                        .card-body
+                                            p 可透過「微企e時貸」進行可貸額度試算，並由專人與您聯繫，亦可透過第一銀行188家分行申請貸款。
                         .col-md-7
                             img(src="./im/im_06.svg", alt="im_06" title="im_06")
 

@@ -544,24 +544,45 @@ li, a {
         padding-top: 0px; } }
 
 .faq .card {
-  padding: 53px 85px; }
-  .faq .card .rectangle-text {
+  padding: 48px 0px 48px 92px; }
+  .faq .card .accordion#QA .card {
+    padding: 0px;
+    margin-top: 15px; }
+  .faq .card .accordion#QA .card.rectangle-text .card-header {
+    border-bottom: 0px;
+    background-color: rgba(144, 226, 159, 0.2);
+    padding: 24px 32px;
     height: auto;
-    width: 424px;
-    padding: 28px 32px;
-    border-radius: 16px;
-    background-color: rgba(144, 226, 159, 0.2); }
-    .faq .card .rectangle-text .card-header {
-      border-bottom: 0px;
-      background-color: rgba(0, 0, 0, 0);
-      padding: 0px; }
-      .faq .card .rectangle-text .card-header h5 {
-        margin: 0px; }
-    .faq .card .rectangle-text .card-body {
-      padding: 0px; }
-      .faq .card .rectangle-text .card-body p {
-        padding-top: 8px;
-        margin: 0px; }
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+    .faq .card .accordion#QA .card.rectangle-text .card-header h5 {
+      margin: 0px; }
+  .faq .card .accordion#QA .card.rectangle-text .show .card-body {
+    opacity: 1;
+    height: auto;
+    padding: 0px 32px 28px 32px;
+    background-color: rgba(144, 226, 159, 0.2);
+    -webkit-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s; }
+    .faq .card .accordion#QA .card.rectangle-text .show .card-body p {
+      margin: 0px; }
+  .faq .card .accordion#QA .card.rectangle-text .card-header.collapsed {
+    border-bottom: 0px;
+    background-color: rgba(144, 226, 159, 0) !important;
+    padding: 12px 33px;
+    height: auto;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+    .faq .card .accordion#QA .card.rectangle-text .card-header.collapsed h5 {
+      margin: 0px; }
+  .faq .card .accordion#QA .card.rectangle-text .collapsed .card-body, .faq .card .accordion#QA .card.rectangle-text .collapsing .card-body {
+    opacity: 0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
   .faq .card .col-md-5 > p {
     padding-left: 32px;
     width: 400px;
@@ -588,8 +609,7 @@ li, a {
   .faq .card {
     padding: 10px 0px;
     background-color: #FAFAFA;
-    border-top-left-radius: 0px !important;
-    border-top-right-radius: 0px !important; }
+    border-radius: 0px !important; }
     .faq .card p {
       font-size: 20px;
       line-height: 28px; }
@@ -597,8 +617,6 @@ li, a {
       height: auto;
       width: 100%;
       padding: 20px 24px;
-      border-radius: 0px;
-      background-color: rgba(144, 226, 159, 0.2);
       margin-top: -10px; }
       .faq .card .rectangle-text p {
         color: #7F7F7F;
