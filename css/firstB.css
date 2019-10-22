@@ -277,9 +277,9 @@ li, a {
       position: absolute;
       margin-left: -5%; }
   .banner .card .carousel-fade .carousel-item {
-    -webkit-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s; }
+    -webkit-transition-duration: 1.2s;
+    -o-transition-duration: 1.2s;
+    transition-duration: 1.2s; }
 
 @media (max-width: 1024px) {
   .banner .card .bg {

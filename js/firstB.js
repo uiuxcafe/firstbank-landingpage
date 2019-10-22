@@ -13,7 +13,7 @@ $(document).ready(function(){
     menu.css("left", "0px");
     navbg.css("display", "block");
     overscrolly.css("overflow-y","hidden")
-    button.removeClass("button");
+    button.remov eClass("button");
     button.removeClass("btn");
     menuOpen = true;
     console.log(menuOpen);
