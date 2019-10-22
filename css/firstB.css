@@ -550,52 +550,54 @@ li, a {
 
 .faq .card {
   padding: 48px 0px 48px 92px; }
-  .faq .card .accordion#QA .card {
-    padding: 0px;
-    margin-top: 15px; }
-  .faq .card .accordion#QA .card.rectangle-text .card-header {
-    border-bottom: 0px;
-    background-color: rgba(144, 226, 159, 0.2);
-    padding: 12px 32px;
-    height: auto;
-    -webkit-animation-delay: .3s;
-    animation-delay: .3s;
-    -webkit-transition: 2.5s;
-    -o-transition: 2.5s;
-    transition: 2.5s; }
-    .faq .card .accordion#QA .card.rectangle-text .card-header h5 {
-      margin: 0px; }
-  .faq .card .accordion#QA .card.rectangle-text .show .card-body {
-    opacity: 1;
-    padding: 0px 32px 28px 32px;
-    background-color: rgba(144, 226, 159, 0.2);
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    -webkit-transition-property: color;
-    -o-transition-property: color;
-    transition-property: color;
-    -webkit-transition: .8s;
-    -o-transition: .8s;
-    transition: .8s; }
-    .faq .card .accordion#QA .card.rectangle-text .show .card-body p {
-      margin: 0px; }
-  .faq .card .accordion#QA .card.rectangle-text .card-header.collapsed {
-    border-bottom: 0px;
-    background-color: rgba(144, 226, 159, 0) !important;
-    padding: 12px 32px;
-    height: auto;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s; }
-    .faq .card .accordion#QA .card.rectangle-text .card-header.collapsed h5 {
-      margin: 0px; }
-  .faq .card .accordion#QA .card.rectangle-text .collapsed .card-body, .faq .card .accordion#QA .card.rectangle-text .collapsing .card-body {
-    opacity: 0;
-    height: 0px;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    padding: 0px 32px 28px 32px; }
+  .faq .card .accordion#QA {
+    height: 550px; }
+    .faq .card .accordion#QA .card {
+      padding: 0px;
+      margin-top: 15px; }
+    .faq .card .accordion#QA .card.rectangle-text .card-header {
+      border-bottom: 0px;
+      background-color: rgba(144, 226, 159, 0.2);
+      padding: 12px 32px;
+      height: auto;
+      -webkit-animation-delay: .3s;
+      animation-delay: .3s;
+      -webkit-transition: 2.5s;
+      -o-transition: 2.5s;
+      transition: 2.5s; }
+      .faq .card .accordion#QA .card.rectangle-text .card-header h5 {
+        margin: 0px; }
+    .faq .card .accordion#QA .card.rectangle-text .show .card-body {
+      opacity: 1;
+      padding: 0px 32px 28px 32px;
+      background-color: rgba(144, 226, 159, 0.2);
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      -webkit-transition-property: color;
+      -o-transition-property: color;
+      transition-property: color;
+      -webkit-transition: .8s;
+      -o-transition: .8s;
+      transition: .8s; }
+      .faq .card .accordion#QA .card.rectangle-text .show .card-body p {
+        margin: 0px; }
+    .faq .card .accordion#QA .card.rectangle-text .card-header.collapsed {
+      border-bottom: 0px;
+      background-color: rgba(144, 226, 159, 0) !important;
+      padding: 12px 32px;
+      height: auto;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s; }
+      .faq .card .accordion#QA .card.rectangle-text .card-header.collapsed h5 {
+        margin: 0px; }
+    .faq .card .accordion#QA .card.rectangle-text .collapsed .card-body, .faq .card .accordion#QA .card.rectangle-text .collapsing .card-body {
+      opacity: 0;
+      height: 0px;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+      padding: 0px 32px 28px 32px; }
   .faq .card .col-md-5 > p {
     padding-left: 32px;
     width: 400px;
