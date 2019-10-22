@@ -56,12 +56,3 @@ $(document).ready(function(){
       })
 
 });
-$(document).ready(function(){
-// 滑動
-  $("#link-1").on("click", function(e){
-    $('html, body').animate({
-      scrollTop: $("#1").offset().top 
-    }, 1000); 
-    e.preventDefault();
-  });
-});
