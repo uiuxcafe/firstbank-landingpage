@@ -56,3 +56,13 @@ $(document).ready(function(){
       })
 
 });
+//輪播後先reload video 至 0 秒 使其重新開始播放
+// $(document).ready(function(){
+
+//   function myFunction() { 
+
+//     document.getElementsByTagName("video").load();
+
+//   } 
+
+// });
