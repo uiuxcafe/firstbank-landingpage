@@ -13,7 +13,7 @@ $(document).ready(function(){
     menu.css("left", "0px");
     navbg.css("display", "block");
     overscrolly.css("overflow-y","hidden")
-    button.remov eClass("button");
+    button.removeClass("button");
     button.removeClass("btn");
     menuOpen = true;
     console.log(menuOpen);
@@ -56,13 +56,3 @@ $(document).ready(function(){
       })
 
 });
-//輪播後先reload video 至 0 秒 使其重新開始播放
-// $(document).ready(function(){
-
-//   function myFunction() { 
-
-//     document.getElementsByTagName("video").load();
-
-//   } 
-
-// });
