@@ -131,10 +131,12 @@ li,a
 //header    
 .header
     height: 70px
+    position: relative
     .container
         position: fixed
         left: 50%
         transform: translateX(-50%)
+        width: 100%
         z-index: 1000
         background-color: #FAFAFA
     .navbar-brand
@@ -172,9 +174,11 @@ li,a
             .navbar
                 background-color: #FFF
                 box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1) 
-                z-index: 100 
+                z-index: 1500 
             .container
                 width: 100%
+                left: 0
+                transform: none
                 padding: 0px
                 position: fixed
                 z-index: 1000
@@ -207,16 +211,18 @@ li,a
                     display: none
                 .navbar-collapse
                     //overflow-y: scroll
-                    z-index: 1001
+                    //transform: translateX(-50%)
+                    z-index: 1501
                     margin-left: 0px
                     max-width: 320px
                     width: 80%
-                    height: 100%
-                    background: #ffffff
+                    height: 100% !important
+                    background: #ffffff !important
                     position: fixed
                     top: 0px
                     left: -320px
-                    transition: .5s 
+                    transition: .5s
+                    z-index: 1500 
                     .navbar-brand
                         padding: 12px 22px
                         img
@@ -232,6 +238,7 @@ li,a
                     .list-bottom
                         width: 85%
                     .navbar-nav
+                        z-index: 1500 
                         li,#apply-btn
                             text-align: left
                         li 
