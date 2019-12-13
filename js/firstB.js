@@ -1,8 +1,9 @@
-$(document).ready(function() {
+$(window).on('load',function() {
 
-  $("#services").owlCarousel({
+  var $owl = $("#services").owlCarousel({
     items: 3,
     loop: true,
+    lazyLoad : true,
     dots: false,
     autoWidth: true,
     autoplay: true,
@@ -18,6 +19,7 @@ $(document).ready(function() {
     },
   });
 
+  $owl.trigger('initialized.owl.carousel');
 });
 
 // mobile menu
