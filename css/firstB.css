@@ -807,6 +807,10 @@ li, a {
   .more-service .owl-nav [class*=owl-]:hover span {
     color: #FFF; }
 
+@media (max-width: 575.98px) {
+  .owl-nav {
+    display: none; } }
+
 .footer {
   padding: 55px 220px 0px 220px;
   height: 380px; }

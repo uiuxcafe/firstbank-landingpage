@@ -6,7 +6,7 @@ $(document).ready(function() {
     dots: false,
     autoWidth: true,
     autoplay: true,
-    autoplayTimeout: 1000,
+    autoplayTimeout: 2000,
     autoplayHoverPause: true,
     nav: true,
     responsive: {
