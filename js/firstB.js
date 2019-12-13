@@ -1,3 +1,25 @@
+$(document).ready(function() {
+
+  $("#services").owlCarousel({
+    items: 3,
+    loop: true,
+    dots: false,
+    autoWidth: true,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+    nav: true,
+    responsive: {
+      0: {
+          items: 1,
+      },768 : {
+          items: 2,
+      }
+    },
+  });
+
+});
+
 // mobile menu
 $(document).ready(function(){
   
@@ -56,3 +78,4 @@ $(document).ready(function(){
       })
 
 });
+

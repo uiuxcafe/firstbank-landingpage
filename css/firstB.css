@@ -725,6 +725,88 @@ li, a {
   .contact .card span {
     left: -35%; } }
 
+.more-service .owl-stage-outer {
+  width: 100%;
+  margin: 0 auto; }
+  .more-service .owl-stage-outer .owl-stage .owl-item {
+    list-style: none;
+    width: 90%; }
+    .more-service .owl-stage-outer .owl-stage .owl-item .service {
+      width: calc(100% - 24px);
+      margin: 0 auto;
+      border-radius: 16px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      max-width: 385px;
+      max-height: 221px;
+      -webkit-transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+      -o-transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+      transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); }
+      .more-service .owl-stage-outer .owl-stage .owl-item .service .bg {
+        background: rgba(0, 0, 0, 0);
+        width: calc(100% - 24px);
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border-radius: 16px;
+        -webkit-transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        -o-transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); }
+      .more-service .owl-stage-outer .owl-stage .owl-item .service .svg {
+        width: 55px;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 55px;
+        z-index: 2;
+        opacity: 0;
+        -webkit-transition: 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+        -o-transition: 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+        transition: 0.2s cubic-bezier(0.2, 0.8, 0.2, 1); }
+  .more-service .owl-stage-outer .owl-stage .owl-item:hover .service .bg {
+    background: rgba(0, 0, 0, 0.6); }
+  .more-service .owl-stage-outer .owl-stage .owl-item:hover .service .svg {
+    opacity: 1; }
+    .more-service .owl-stage-outer .owl-stage .owl-item:hover .service .svg:hover {
+      width: 50px; }
+    .more-service .owl-stage-outer .owl-stage .owl-item:hover .service .svg:active {
+      width: 58px; }
+
+.more-service .owl-prev, .more-service .owl-next {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0; }
+
+.more-service .owl-prev {
+  border-radius: 25px 0 0 25px !important; }
+
+.more-service .owl-next {
+  border-radius: 0 25px 25px 0 !important; }
+
+.more-service .owl-theme .owl-nav [class*=owl-] {
+  height: 50px;
+  margin: 15px 0px;
+  background: #E9F4EE;
+  outline: none; }
+  .more-service .owl-theme .owl-nav [class*=owl-] span {
+    color: #5DC58A;
+    font-size: 28px; }
+
+.more-service .owl-nav [class*=owl-]:hover {
+  background: #5DC58A; }
+  .more-service .owl-nav [class*=owl-]:hover span {
+    color: #FFF; }
+
 .footer {
   padding: 55px 220px 0px 220px;
   height: 380px; }
