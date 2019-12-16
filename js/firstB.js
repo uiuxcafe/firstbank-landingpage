@@ -8,7 +8,6 @@ $(window).on('load',function() {
     autoWidth: true,
     autoplay: true,
     autoplayTimeout: 2000,
-    autoplayHoverPause: true,
     nav: true,
     responsive: {
       0: {
