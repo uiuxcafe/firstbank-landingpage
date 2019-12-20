@@ -815,6 +815,10 @@ li, a {
   .owl-nav {
     display: none; } }
 
+@media (max-width: 385px) {
+  .more-service .owl-stage-outer .owl-stage .owl-item .service {
+    width: 70%; } }
+
 .footer {
   padding: 55px 220px 0px 220px;
   height: 380px; }
