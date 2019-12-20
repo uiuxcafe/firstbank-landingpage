@@ -727,27 +727,29 @@ li, a {
 
 .more-service .owl-stage-outer {
   width: 100%;
-  margin: 0 auto;
-  max-height: 240px; }
+  margin: 0 auto; }
   .more-service .owl-stage-outer .owl-stage {
-    max-height: 240px; }
+    width: calc(100% - 24px) !important;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box; }
     .more-service .owl-stage-outer .owl-stage .owl-item {
       list-style: none;
-      width: 100%; }
+      width: 90%; }
       .more-service .owl-stage-outer .owl-stage .owl-item .service {
-        width: calc(100% - 30px);
-        height: auto;
+        width: calc(100% - 24px);
         margin: 0 auto;
         border-radius: 16px;
         border: 1px solid rgba(0, 0, 0, 0.1);
         overflow: hidden;
         max-width: 385px;
-        max-height: 221px;
         -webkit-transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
         -o-transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
         transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); }
         .more-service .owl-stage-outer .owl-stage .owl-item .service .bg {
           background: rgba(0, 0, 0, 0);
+          max-width: 385px;
           width: calc(100% - 24px);
           height: 100%;
           position: absolute;
@@ -814,10 +816,6 @@ li, a {
 @media (max-width: 575.98px) {
   .owl-nav {
     display: none; } }
-
-@media (max-width: 385px) {
-  .more-service .owl-stage-outer .owl-stage .owl-item .service {
-    width: 70%; } }
 
 .footer {
   padding: 55px 220px 0px 220px;

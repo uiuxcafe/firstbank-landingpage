@@ -3,13 +3,13 @@ $(window).on('load',function() {
   var $owl = $("#services").owlCarousel({
     items: 3,
     loop: true,
-    lazyLoad : true,
     dots: false,
-    autoWidth: true,
     autoplay: true,
     autoplayTimeout: 2000,
     nav: true,
     center:true,
+    autoWidth:true,
+    responsiveClass: true,
     responsive: {
       0: {
           items: 1,
