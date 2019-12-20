@@ -752,12 +752,15 @@ li,a
             // padding: 12px
             width: 100%
             margin: 0 auto
+            max-height: 240px
             .owl-stage
+                max-height: 240px
                 .owl-item
                     list-style: none
-                    width: 90%
+                    width: 100%
                     .service
-                        width: calc(100% - 24px)
+                        width: calc(100% - 30px)
+                        height: auto
                         margin: 0 auto
                         border-radius: 16px
                         border: 1px solid rgba(0,0,0,0.1)
@@ -822,6 +825,7 @@ li,a
 @media (max-width: 575.98px)
     .owl-nav
         display: none
+    
 .footer
     padding: 55px 220px 0px 220px
     height: 380px

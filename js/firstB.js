@@ -9,6 +9,7 @@ $(window).on('load',function() {
     autoplay: true,
     autoplayTimeout: 2000,
     nav: true,
+    center:true,
     responsive: {
       0: {
           items: 1,

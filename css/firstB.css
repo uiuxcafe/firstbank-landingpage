@@ -727,59 +727,63 @@ li, a {
 
 .more-service .owl-stage-outer {
   width: 100%;
-  margin: 0 auto; }
-  .more-service .owl-stage-outer .owl-stage .owl-item {
-    list-style: none;
-    width: 90%; }
-    .more-service .owl-stage-outer .owl-stage .owl-item .service {
-      width: calc(100% - 24px);
-      margin: 0 auto;
-      border-radius: 16px;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      max-width: 385px;
-      max-height: 221px;
-      -webkit-transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
-      -o-transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
-      transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); }
-      .more-service .owl-stage-outer .owl-stage .owl-item .service .bg {
-        background: rgba(0, 0, 0, 0);
-        width: calc(100% - 24px);
-        height: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+  margin: 0 auto;
+  max-height: 240px; }
+  .more-service .owl-stage-outer .owl-stage {
+    max-height: 240px; }
+    .more-service .owl-stage-outer .owl-stage .owl-item {
+      list-style: none;
+      width: 100%; }
+      .more-service .owl-stage-outer .owl-stage .owl-item .service {
+        width: calc(100% - 30px);
+        height: auto;
+        margin: 0 auto;
         border-radius: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        max-width: 385px;
+        max-height: 221px;
         -webkit-transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
         -o-transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
         transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); }
-      .more-service .owl-stage-outer .owl-stage .owl-item .service .svg {
-        width: 55px;
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        background: rgba(255, 255, 255, 0.3);
-        border-radius: 55px;
-        z-index: 2;
-        opacity: 0;
-        -webkit-transition: 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
-        -o-transition: 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
-        transition: 0.2s cubic-bezier(0.2, 0.8, 0.2, 1); }
-  .more-service .owl-stage-outer .owl-stage .owl-item:hover .service .bg {
-    background: rgba(0, 0, 0, 0.6); }
-  .more-service .owl-stage-outer .owl-stage .owl-item:hover .service .svg {
-    opacity: 1; }
-    .more-service .owl-stage-outer .owl-stage .owl-item:hover .service .svg:hover {
-      width: 50px; }
-    .more-service .owl-stage-outer .owl-stage .owl-item:hover .service .svg:active {
-      width: 58px; }
+        .more-service .owl-stage-outer .owl-stage .owl-item .service .bg {
+          background: rgba(0, 0, 0, 0);
+          width: calc(100% - 24px);
+          height: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          border-radius: 16px;
+          -webkit-transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+          -o-transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+          transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); }
+        .more-service .owl-stage-outer .owl-stage .owl-item .service .svg {
+          width: 55px;
+          height: auto;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          background: rgba(255, 255, 255, 0.3);
+          border-radius: 55px;
+          z-index: 2;
+          opacity: 0;
+          -webkit-transition: 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+          -o-transition: 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+          transition: 0.2s cubic-bezier(0.2, 0.8, 0.2, 1); }
+    .more-service .owl-stage-outer .owl-stage .owl-item:hover .service .bg {
+      background: rgba(0, 0, 0, 0.6); }
+    .more-service .owl-stage-outer .owl-stage .owl-item:hover .service .svg {
+      opacity: 1; }
+      .more-service .owl-stage-outer .owl-stage .owl-item:hover .service .svg:hover {
+        width: 50px; }
+      .more-service .owl-stage-outer .owl-stage .owl-item:hover .service .svg:active {
+        width: 58px; }
 
 .more-service .owl-prev, .more-service .owl-next {
   width: 50px;
