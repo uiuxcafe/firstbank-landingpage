@@ -3,7 +3,7 @@ body
 
 h1,h2,h3,h4,h5,p,li,a,button,input,span
     color: #333848
-    font-family: "PingFang TC", "Roboto", "Noto Sans TC", sans-serif
+    font-family: "PingFang TC", "Roboto", "Noto Sans TC","微軟正黑體", sans-serif
 	
 h1,h2,h3
     font-weight: 600
@@ -600,6 +600,7 @@ li,a
                 padding: 0px
                 margin-top: 15px
             .card.rectangle-text
+                cursor: pointer
                 //open
                 .card-header
                     border-bottom: 0px
@@ -608,8 +609,11 @@ li,a
                     height: auto
                     animation-delay: .3s
                     transition: 2.5s
+                    cursor: pointer
                     h5 
                         margin: 0px
+                        font-weight: bold
+                        cursor: pointer
                 .show
                     .card-body
                         opacity: 1
@@ -620,9 +624,11 @@ li,a
                         transform: perspective(1px) translateZ(0)
                         -webkit-transition-property: color
                         transition-property: color
-                        transition: .8s                      
+                        transition: .8s  
+                        cursor: pointer                    
                         p 
                             margin: 0px
+                            cursor: pointer
                 //close
                 .card-header.collapsed
                     border-bottom: 0px
@@ -905,3 +911,8 @@ li,a
      .footer
             .col-md-2.mb-md-0.mb-1    
                 padding: 10px 15px 0px 15px
+
+.owl-drag.owl-carousel .owl-item
+    min-width: 200px
+
+

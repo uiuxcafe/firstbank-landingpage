@@ -20,6 +20,7 @@ $(window).on('load',function() {
   });
 
   $owl.trigger('initialized.owl.carousel');
+  $owl.trigger('refresh.owl.carousel')
 });
 
 // mobile menu
@@ -81,3 +82,21 @@ $(document).ready(function(){
 
 });
 
+
+$(document).ready(function(){
+
+  $('a').click(function() {
+
+      var target = $(this.hash);
+
+      $('html,body').animate({
+
+          scrollTop: target.offset().top
+
+      }, 800);
+
+      return false;
+
+  });
+
+});
