@@ -9,6 +9,7 @@ $(window).on('load',function() {
     nav: true,
     center:true,
     autoWidth:true,
+    autoHeight:true,
     responsiveClass: true,
     responsive: {
       0: {
@@ -99,4 +100,14 @@ $(document).ready(function(){
 
   });
 
+});
+
+$(document).ready(function(){
+  var card = $("#faq .accordion .card");
+  var title = $(".card-header");
+  var body = $(".collapse");
+  var isOpen = true;
+  if (!!window.ActiveXObject || "ActiveXObject" in window){
+   
+  }
 });
