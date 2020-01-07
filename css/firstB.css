@@ -180,7 +180,8 @@ li, a {
       color: #FFF;
       font-size: 16px;
       position: absolute;
-      right: 12px; }
+      right: 12px;
+      top: 7px; }
     .header .navbar {
       background-color: #FFF;
       -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
@@ -737,11 +738,7 @@ li, a {
   width: 100%;
   margin: 0 auto; }
   .more-service .owl-stage-outer .owl-stage {
-    width: calc(100% - 24px) !important;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-box;
-    display: box; }
+    position: relative; }
     .more-service .owl-stage-outer .owl-stage .owl-item {
       list-style: none;
       width: 90%; }
@@ -749,7 +746,7 @@ li, a {
         width: calc(100% - 24px);
         margin: 0 auto;
         border-radius: 16px;
-        border: 1px solid rgba(0, 0, 0, 0.1);
+        border: 1px solid #130b0b1a;
         overflow: hidden;
         max-width: 385px;
         -webkit-transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);

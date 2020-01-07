@@ -179,7 +179,9 @@ li,a
                 color: #FFF
                 font-size: 16px
                 position: absolute
-                right: 12px                    
+                right: 12px
+                // 為了IE
+                top: 7px                 
             .navbar
                 background-color: #FFF
                 box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1) 
@@ -759,19 +761,23 @@ li,a
             width: 100%
             margin: 0 auto
             .owl-stage
-                width: calc(100% - 24px) !important
-                display: -webkit-box
-                display: -moz-box
-                display: -ms-box
-                display: box
+                // width: calc(100% - 24px) !important
+                // display: -webkit-box !important
+                // display: -moz-box
+                // display: -webkit-flex 
+                // display: -moz-flex 
+                // display: -ms-flexbox
+                // display: flex
+                position: relative
                 .owl-item
                     list-style: none
                     width: 90%
+                    
                     .service
                         width: calc(100% - 24px)
                         margin: 0 auto
                         border-radius: 16px
-                        border: 1px solid rgba(0,0,0,0.1)
+                        border: 1px solid #130b0b1a
                         overflow: hidden
                         max-width: 385px
                         // max-height: 221px

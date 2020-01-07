@@ -10,7 +10,9 @@ $(window).on('load',function() {
     center:true,
     autoWidth:true,
     autoHeight:true,
+    checkVisibility: true,
     responsiveClass: true,
+    mergeFit: true,
     responsive: {
       0: {
           items: 1,
