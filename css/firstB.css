@@ -896,3 +896,41 @@ li, a {
 @media (max-width: 575.98px) {
   .footer .col-md-2.mb-md-0.mb-1 {
     padding: 10px 15px 0px 15px; } }
+
+.story .owl-stage-outer {
+  width: 100%;
+  margin: 0 auto; }
+  .story .owl-stage-outer .owl-stage {
+    position: relative;
+    width: 100%; }
+    .story .owl-stage-outer .owl-stage .owl-item {
+      list-style: none;
+      width: 100%; }
+      .story .owl-stage-outer .owl-stage .owl-item .person {
+        width: calc(100% - 24px); }
+
+.story .owl-prev, .story .owl-next {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0; }
+
+.story .owl-prev {
+  border-radius: 25px 0 0 25px !important; }
+
+.story .owl-next {
+  border-radius: 0 25px 25px 0 !important; }
+
+.story .owl-theme .owl-nav [class*=owl-] {
+  height: 50px;
+  margin: 15px 0px;
+  background: #E9F4EE;
+  outline: none; }
+  .story .owl-theme .owl-nav [class*=owl-] span {
+    color: #5DC58A;
+    font-size: 28px; }
+
+.story .owl-nav [class*=owl-]:hover {
+  background: #5DC58A; }
+  .story .owl-nav [class*=owl-]:hover span {
+    color: #FFF; }

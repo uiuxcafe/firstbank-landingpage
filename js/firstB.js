@@ -1,3 +1,33 @@
+//story
+$(window).on('load',function() {
+
+  var $owl = $("#story").owlCarousel({
+    items: 5,
+    loop: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    nav: true,
+    center:true,
+    checkVisibility: true,
+    responsiveClass: true,
+    mergeFit: true,
+    responsive: {
+      0: {
+        items: 2,
+      },768 : {
+        items: 3,
+      },1024:{
+        items: 5,
+      }
+    },
+    items: 5,
+  });
+
+  $owl.trigger('initialized.owl.carousel');
+  $owl.trigger('refresh.owl.carousel')
+});
+
 $(window).on('load',function() {
 
   var $owl = $("#services").owlCarousel({
