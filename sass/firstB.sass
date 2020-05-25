@@ -832,6 +832,8 @@ li,a
 @media (max-width: 575.98px)
     .owl-nav
         display: none
+
+    
 .footer
     padding: 55px 220px 0px 220px
     height: 380px
@@ -913,34 +915,109 @@ li,a
 .story
     .owl-stage-outer
         width: 100%
-        margin: 0 auto
         .owl-stage
             position: relative
-            width: 100%
+            margin-left: 110px
             .owl-item
                 list-style: none
-                width: 100%
+                width: auto
                 .person
-                    width: calc(100% - 24px)
+                    padding: 20px 20px
+                    display: grid
+                    justify-items: center
+                    align-items: center
+                    height: 400px
+                    .img-area
+                        max-width: 400px
+                        .icon
+                            margin: 0 auto
+                            border-radius: 100%
+                            overflow: hidden
+                            width: 100%
+                            height: auto
+                            max-width: 140px
+                            max-height: 140px
+                            display: flex
+                            justify-content: center
+                            border: 3px solid #FFFFFF
+                            box-shadow: 4px 6px 10px 0 rgba(0,0,0,0.2);
+                            img
+                                height: 140px
+                                width: auto
+                                margin: 0 auto
+                    .text-area
+                        display: none
+                        width: 400px
+                        
+            .owl-item.active.center
+                .person
+                    padding: 20px 0px
+                    height: auto
+                    .img-area
+                        max-width: 100px
+                        .icon
+                            width: 100px
+                            height: 100px
+                            border: 2px solid #FFFFFF
+                            img
+                                height: 100px
+                                width: auto
+                    .text-area
+                        max-width: 400px
+                        display: block
+                        margin-top: 20px
+                        background: #FFF
+                        border-radius: 16px
+                        padding: 20px 24px
+                        box-shadow: inset -1px -1px 0 0 rgba(0,0,0,0.1), inset 1px 1px 0 0 rgba(0,0,0,0.1)
+                        h3,p
+                            text-align: center
+                            color: #333848
+                            letter-spacing: 0
+                        h3
+                            font-size: 28px
+                            font-weight: 600
+                            line-height: 40px
+                        p
+                            font-size: 20px 
+                            line-height: 28px
+                        .company
+                            color: #39AE6B
+                            font-size: 16px
+                            font-weight: 600
+                            line-height: 24px
+
+                            
+    .owl-nav
+        max-width: 100px
+        margin: 0 auto
     .owl-prev, .owl-next
         width: 50px
         height: 50px
         margin: 0
         padding: 0
+        outline: none
+        height: 50px
+        margin: 15px 0px
+        background: #E9F4EE
+        span
+            color: #5DC58A
+            font-size: 28px
+    .owl-prev:hover , .owl-next:hover 
+        background: #5DC58A
+        span
+            color: #FFF
     .owl-prev
         border-radius: 25px 0 0 25px !important
     .owl-next
         border-radius: 0 25px 25px 0 !important
-    .owl-theme .owl-nav [class*=owl-]
-            height: 50px
-            margin: 15px 0px
-            background: #E9F4EE
-            outline: none
-            span
-                color: #5DC58A
-                font-size: 28px
-    .owl-nav [class*=owl-]:hover 
-        background: #5DC58A
-        span
-            color: #FFF
-                    
+@media (max-width: 767.98px)
+    .story
+        .owl-stage-outer
+            .owl-stage
+                margin-left: 110px
+@media (max-width: 575.98px)
+    .story
+        .owl-stage-outer
+            .owl-stage
+                margin-left: 110px
