@@ -1092,7 +1092,8 @@ li, a {
 
 .story-detail .article-area img {
   width: 100%;
-  padding: 40px 0; }
+  border-radius: 16px;
+  margin: 40px 0; }
 
 .story-detail .article-area p {
   color: #333848;
