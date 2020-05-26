@@ -32,7 +32,14 @@ li,a
     font-weight: 350
 .title-area
     h2 
-        padding-bottom: 10%
+        //padding-bottom: 10%
+    p 
+        color: #81838C
+        font-size: 20px
+        letter-spacing: 1px
+        line-height: 28px
+        text-align: center
+        padding-bottom: 10px
     .border-bottom
         height: 5px
         width: 100px
@@ -124,6 +131,7 @@ li,a
     .title-area
         h2 
             padding-bottom: 0%
+        
         .border-bottom
             margin-bottom: 20px
     
@@ -468,7 +476,7 @@ li,a
                     h2
                         padding-top: 8px
 
-
+    
 .photo-left
     .section-card
         height: 400px
@@ -756,90 +764,84 @@ li,a
                 left: -35%
 
 .more-service
-        .owl-stage-outer
-            // padding: 12px
-            width: 100%
-            margin: 0 auto
-            .owl-stage
-                // width: calc(100% - 24px) !important
-                // display: -webkit-box !important
-                // display: -moz-box
-                // display: -webkit-flex 
-                // display: -moz-flex 
-                // display: -ms-flexbox
-                // display: flex
-                position: relative
-                .owl-item
-                    list-style: none
-                    width: 90%
-                    
-                    .service
-                        width: calc(100% - 24px)
-                        margin: 0 auto
-                        border-radius: 16px
-                        border: 1px solid #130b0b1a
-                        overflow: hidden
+    .owl-stage-outer
+        // padding: 12px
+        width: 100%
+        margin: 0 auto
+        .owl-stage
+            position: relative
+            .owl-item
+                list-style: none
+                width: 90%
+                .service
+                    width: calc(100% - 24px)
+                    margin: 0 auto
+                    border-radius: 16px
+                    border: 1px solid #130b0b1a
+                    overflow: hidden
+                    max-width: 385px
+                    // max-height: 221px
+                    transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1.0)
+                    .bg
+                        background: rgba(0,0,0,0)
                         max-width: 385px
-                        // max-height: 221px
+                        width: calc(100% - 24px)
+                        height: 100%
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        border-radius: 16px
                         transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1.0)
-                        .bg
-                            background: rgba(0,0,0,0)
-                            max-width: 385px
-                            width: calc(100% - 24px)
-                            height: 100%
-                            position: absolute
-                            top: 50%
-                            left: 50%
-                            transform: translate(-50%, -50%)
-                            border-radius: 16px
-                            transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1.0)
-                        .svg
-                            width: 55px
-                            height: auto
-                            position: absolute
-                            top: 50%
-                            left: 50%
-                            transform: translate(-50%, -50%)
-                            background: rgba(255,255,255,0.3)
-                            border-radius: 55px
-                            z-index: 2
-                            opacity: 0
-                            transition: 0.2s cubic-bezier(0.2, 0.8, 0.2, 1.0)
+                    .svg
+                        width: 55px
+                        height: auto
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        background: rgba(255,255,255,0.3)
+                        border-radius: 55px
+                        z-index: 2
+                        opacity: 0
+                        transition: 0.2s cubic-bezier(0.2, 0.8, 0.2, 1.0)
                 
-                .owl-item:hover 
-                    .service
-                        .bg
-                            background: rgba(0,0,0,0.6)
-                        .svg
-                            opacity: 1
-                            &:hover
-                                width: 50px
-                            &:active
-                                width: 58px
-        .owl-prev, .owl-next
-            width: 50px
+            .owl-item:hover 
+                .service
+                    .bg
+                        background: rgba(0,0,0,0.6)
+                    .svg
+                        opacity: 1
+                        &:hover
+                            width: 50px
+                        &:active
+                            width: 58px
+    .owl-prev, .owl-next
+        width: 50px
+        height: 50px
+        margin: 0
+        padding: 0
+    .owl-prev
+        border-radius: 25px 0 0 25px !important
+    .owl-next
+        border-radius: 0 25px 25px 0 !important
+    .owl-theme .owl-nav [class*=owl-]
             height: 50px
-            margin: 0
-            padding: 0
-        .owl-prev
-            border-radius: 25px 0 0 25px !important
-        .owl-next
-            border-radius: 0 25px 25px 0 !important
-        .owl-theme .owl-nav [class*=owl-]
-                height: 50px
-                margin: 15px 0px
-                background: #E9F4EE
-                outline: none
-                span
-                    color: #5DC58A
-                    font-size: 28px
-        .owl-nav [class*=owl-]:hover 
-            background: #5DC58A
+            margin: 15px 0px
+            background: #E9F4EE
+            outline: none
             span
-                color: #FFF
+                color: #5DC58A
+                font-size: 28px
+    .owl-nav [class*=owl-]:hover 
+        background: #5DC58A
+        span
+            color: #FFF
 @media (max-width: 575.98px)
     .owl-nav
         display: none
+
+    
 .footer
     padding: 55px 220px 0px 220px
     height: 380px
@@ -918,3 +920,198 @@ li,a
             .col-md-2.mb-md-0.mb-1    
                 padding: 10px 15px 0px 15px
 
+.story
+    .container
+        position: relative
+    .owl-stage-outer
+        width: 100%
+        .owl-stage
+            position: relative
+            margin-left: 110px
+            .owl-item
+                list-style: none
+                width: auto
+                .person
+                    padding: 20px 20px
+                    display: grid
+                    justify-items: center
+                    align-items: center
+                    height: 400px
+                    .img-area
+                        max-width: 400px
+                        .icon
+                            margin: 0 auto
+                            border-radius: 100%
+                            overflow: hidden
+                            width: 100%
+                            height: auto
+                            max-width: 140px
+                            max-height: 140px
+                            display: flex
+                            justify-content: center
+                            border: 3px solid #FFFFFF
+                            box-shadow: 4px 6px 10px 0 rgba(0,0,0,0.2);
+                            img
+                                height: 140px
+                                width: auto
+                                margin: 0 auto
+                    .text-area
+                        display: none
+                        width: 400px
+                        
+            .owl-item.active.center
+                .person
+                    padding: 20px 0px
+                    height: auto
+                    .img-area
+                        max-width: 100px
+                        .icon
+                            width: 100px
+                            height: 100px
+                            border: 2px solid #FFFFFF
+                            img
+                                height: 100px
+                                width: auto
+                    .text-area
+                        max-width: 400px
+                        display: block
+                        margin-top: 20px
+                        background: #FFF
+                        border-radius: 16px
+                        padding: 20px 24px
+                        box-shadow: inset -1px -1px 0 0 rgba(0,0,0,0.1), inset 1px 1px 0 0 rgba(0,0,0,0.1)
+                        h3,p
+                            text-align: center
+                            color: #333848
+                            letter-spacing: 0
+                        h3
+                            font-size: 28px
+                            font-weight: 600
+                            line-height: 40px
+                        p
+                            font-size: 20px 
+                            line-height: 28px
+                        .company
+                            color: #39AE6B
+                            font-size: 16px
+                            font-weight: 600
+                            line-height: 24px
+                        .more
+                            width: 24px
+                            position: absolute
+                            right: 10px
+    //nav               
+    .owl-nav
+        max-width: 100px
+        margin: 0 auto
+    .owl-prev, .owl-next
+        width: 50px
+        height: 50px
+        margin: 0
+        padding: 0
+        outline: none
+        height: 50px
+        margin: 15px 0px
+        background: #E9F4EE
+        span
+            color: #5DC58A
+            font-size: 28px
+    .owl-prev:hover , .owl-next:hover 
+        background: #5DC58A
+        span
+            color: #FFF
+    .owl-prev
+        border-radius: 25px 0 0 25px !important
+    .owl-next
+        border-radius: 0 25px 25px 0 !important
+    //link
+    .more-link
+        position: absolute
+        right: 0
+        bottom: 0px
+        display: grid
+        grid-template-columns: repeat(2,auto)
+        z-index: 2
+        p
+            color: #39ae6b
+            font-size: 16px
+            font-weight: 600
+            letter-spacing: 0
+            line-height: 22px
+            text-align: center
+        img
+            width: 30px
+            padding-left: 8px
+        &:hover
+            color: #39ae6b
+            text-decoration: none
+@media (max-width: 767.98px)
+    .story
+        .owl-stage-outer
+            .owl-stage
+                margin-left: 110px
+@media (max-width: 575.98px)
+    .story
+        .owl-stage-outer
+            .owl-stage
+                margin-left: 110px
+
+.story-list
+    .card
+        border: 1px solid #D5D5D5
+        border-radius: 10px
+        background-color: #FFFFFF
+        .img-area
+            img
+                width: 100%
+        .text-area
+            padding: 16px 24px
+            h3,p
+                letter-spacing: 0
+                margin: 0
+            h3
+                color: #333848
+                font-size: 24px
+                line-height: 32px
+                font-weight: 600
+                overflow: hidden
+                text-overflow: ellipsis
+                display: -webkit-box
+                -webkit-line-clamp: 1
+                -webkit-box-orient: vertical
+            p
+                color: #81838C
+                font-size: 20px
+                line-height: 28px
+                overflow: hidden
+                text-overflow: ellipsis
+                display: -webkit-box
+                -webkit-line-clamp: 2
+                -webkit-box-orient: vertical
+            .company
+                color: #39AE6B
+                font-size: 16px
+                line-height: 24px
+                font-weight: 600
+                margin-bottom: 4px
+        &:hover
+            text-decoration: none
+            .text-area
+                background-color: #F2F2F2
+                -webkit-transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1.0)
+                -o-transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1.0)
+                transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1.0)
+    .card-bottom
+        height: 20px
+
+.story-detail
+    .article-area
+        img 
+            width: 100%
+            border-radius: 16px
+            margin: 40px 0
+        p 
+            color: #333848
+            font-size: 20px
+            letter-spacing: 0
+            line-height: 28px

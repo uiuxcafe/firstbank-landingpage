@@ -1,0 +1,157 @@
+extends ../layouts/layout_2.pug
+block page-title
+    title 微企e時貸
+block content
+    section.header
+        .container
+            nav.navbar.navbar-expand-md.navbar-light
+                //button.navbar-toggler( data-toggle='collapse' data-target='#first-nav' aria-controls='navbarTogglerDemo01' aria-expanded='ture' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                button.navbar-toggler(type='button', data-target='#first-nav', aria-controls='first-nav',  )
+                    span.navbar-toggler-icon
+                a.navbar-brand.mobile(href="#")
+                    img(src="../img/header/logo_firstbank@2x.png", alt="第一銀行")
+                button#apply-btn-header.button.btn.mobile 立即申辦
+                .nav-bg 
+                #first-nav.navbar-collapse  
+                    a.navbar-brand(href='#') 
+                        img(src="../img/header/logo_firstbank@2x.png", alt="第一銀行")
+                    div.brand-bottom.mobile
+                    ul.navbar-nav.ml-auto
+                        li.nav-item.d-flex.align-items-center.justify-content-md-center
+                            a.nav-link#link-1(href='../index.html#1') 信貸方案
+                        li.nav-item.d-flex.align-items-center.justify-content-md-center
+                            a.nav-link#link-2(href='../index.html#feature') 信貸特色
+                        li.nav-item.d-flex.align-items-center.justify-content-md-center
+                            a.nav-link#link-3(href='../index.html#faq') FAQ
+                        li.nav-item.d-flex.align-items-center.justify-content-md-center
+                            a.nav-link#link-4(href='../index.html#apply') 申請流程
+                        li.nav-item.d-flex.align-items-center.justify-content-md-center
+                            a.nav-link#link-4(href='../index.html#story') 封面故事
+                        div.list-bottom.mobile
+                        li.nav-item.d-flex.align-items-center.justify-content-md-center.ml-md-2
+                            a.nav-link
+                                button#apply-btn.button.btn 立即申辦
+
+    section.story-detail.py-4
+        .container
+            .row.justify-content-center.py-5
+                .title-area.text-center
+                    h2 Dr.Sole
+                    p 舊物翻新後，賦予過去一點意義，讓它融入在生活中，隨著年代的更迭，不會被忘記。
+                    div.border-bottom
+            .row.justify-content-center
+                .col-md-9.article-area
+                    p 光復初期，一般學生大多是打赤腳走路上學。
+                    p 即便後來規定上學需要穿鞋，卻因為怕把鞋子穿壞，只選擇在升旗時穿上，其餘時間都把鞋子掛在脖子上。直到後來製鞋廠商生產一種以生膠製成的鞋底並搭配帆布鞋面，才讓一般學生可以用較便宜的價格買到鞋子。
+                    p 在過去，鞋子是件奢持品，是富裕人家的象徵，也因為這樣，鞋匠製鞋時總是抱持一輩子都能穿著使用，甚至傳承給下一代的心情。
+                    p 現在的鞋子，卻成為了快速淘汰品。
+                    p 更依據搭配的服裝同時擁有好幾雙鞋，這樣的習慣，卻反而失去對很多事物的珍惜感。
+                    p 常在想，一昧追求流行的意義是什麼？
+                    p 回想起在經濟能力有限的學生時代，常存上近一年的積蓄，就為了買雙合意又合腳的好鞋。
+                    img(src="../img/story/v1_03.png", alt="")
+                    p 談不上追求流行，或許是追求心中那份對鞋靴的狂熱與堅持。
+                    p 萬事起頭難，在成為社會新鮮人之初，毅然選擇進入鞋底廠工作，從最基礎慢慢磨練自我，更利用空閒時間不斷嘗試用各種方法精進自我，經過多年的慢熬，秉持對古老工藝與鞋靴的著迷，不想讓鞋子變成快速淘汰品的精神，在現有的市場及消費風氣中，注入自己的想法，打造了自有鞋底品牌，也建立起實體店提供鞋靴修復服務。
+                    p 上選的質料、細膩的製法、經典的設計，珍惜自己鞋子人一定能懂，不放過任何細節，雖然鞋履對全身造型而言，只佔很小一部分，卻深深影響日常生活每個環節。
+                    p ⸢一雙好鞋能讓你上天堂。⸥ 試想一早出門穿上一雙自己滿意的好鞋，便能充滿自信地開啟新的一天，不只讓外在打扮增添風格，更連帶詮釋對工藝和品味的執著。
+                    p 追求流行的意義是什麼？
+                    p 如果可以，在舊物翻新後，賦予過去一點意義，讓它融入在生活中，隨著年代的更迭，不會被忘記。
+                    p 或許，這樣的流行就顯得更有價值。
+
+    section.footer
+        footer.page-footer.font-small.blue.pt-4
+            .container.text-left
+                .row#footer-links
+                    .col-md-4.mt-md-0.brand-logo.pb-4
+                        img(src="../img/header/logo_firstbank@2x.png", alt="第一銀行")
+                    //- hr.clearfix.w-100.d-md-none.pb-3
+                    .col-md-2.mb-md-0.mb-1
+                        h5.text-uppercase.footer-title#footer-1 相關服務
+                        div.border-bottom.web
+                        span.footer-collapse.d-md-none.collapsed(data-toggle="collapse" data-target="#footer-1-content" aria-expanded="true" aria-controls="footer-1-content")
+                            img.image(src="../img/img/arrow_down.svg", alt="" )
+                        //mobile with collapse
+                        #footer-1-content.collapse.d-md-none(aria-labelledby="footer-1" data-parent="#footer-links")
+                            ul.list-unstyled
+                                li
+                                    a(href='#!') 第一金控
+                                li
+                                    a(href='#!') 活動專區
+                                li
+                                    a(href='#!') 線上徵才
+                                li
+                                    a(href='#!') 帳單繳費
+                        //Web no collapse
+                        ul.list-unstyled.web
+                            li
+                                a(href='#!') 第一金控
+                            li
+                                a(href='#!') 活動專區
+                            li
+                                a(href='#!') 線上徵才
+                            li
+                                a(href='#!') 帳單繳費
+                    .col-md-2.mb-md-0.mb-1
+                        h5.text-uppercase.footer-title#footer-2 聯絡我們
+                        div.border-bottom.web
+                        span.footer-collapse.d-md-none.collapsed( data-toggle="collapse" data-target="#footer-2-content" aria-expanded="true" aria-controls="footer-2-content")
+                            img.image(src="../img/img/arrow_down.svg", alt="" )
+                        //mobile with collapse
+                        #footer-2-content.collapse(aria-labelledby="footer-2" data-parent="#footer-links")
+                            ul.list-unstyled
+                                li
+                                    a(href='#!') 線上e專員
+                                li
+                                    a(href='#!') 分行查詢
+                        //Web no collapse
+                        ul.list-unstyled.web
+                            li
+                                a(href='#!') 線上e專員
+                            li
+                                a(href='#!') 分行查詢
+                    .col-md-2.mb-md-0.mb-1
+                        h5.text-uppercase.footer-title#footer-3  客戶服務
+                        div.border-bottom.web
+                        span.footer-collapse.d-md-none.collapsed(data-toggle="collapse" data-target="#footer-3-content" aria-expanded="true" aria-controls="footer-3-content")
+                            img.image(src="../img/img/arrow_down.svg", alt="" )
+                        //mobile with collapse
+                        #footer-3-content.collapse(aria-labelledby="footer-3" data-parent="#footer-links")
+                            ul.list-unstyled
+                                li
+                                    a(href='#!') 申請書下載
+                                li
+                                    a(href='#!') 營業規章
+                                li
+                                    a(href='#!') 公告資訊
+                        //Web no collapse
+                        ul.list-unstyled.web
+                            li
+                                a(href='#!') 申請書下載
+                            li
+                                a(href='#!') 營業規章
+                            li
+                                a(href='#!') 公告資訊    
+                    .col-md-2.mb-md-0.mb-1
+                        h5.text-uppercase.footer-title#footer-4  其他服務
+                        div.border-bottom.web
+                        span.footer-collapse.d-md-none.collapsed( data-toggle="collapse" data-target="#footer-4-content" aria-expanded="true" aria-controls="footer-4-content")
+                            img.image(src="../img/img/arrow_down.svg", alt="" )
+                        //mobile with collapse
+                        #footer-4-content.collapse(aria-labelledby="footer-4" data-parent="#footer-links")
+                            ul.list-unstyled
+                                li
+                                    a(href='#!') 第一數速貸
+                                li
+                                    a(href='#!') iLeo
+                        //Web no collapse
+                        ul.list-unstyled.web
+                            li
+                                a(href='#!') 第一數速貸
+                            li
+                                a(href='#!') iLeo
+
+
+
+
+
+

@@ -1,0 +1,152 @@
+extends ../layouts/layout_2.pug
+block page-title
+    title 微企e時貸
+block content
+    section.header
+        .container
+            nav.navbar.navbar-expand-md.navbar-light
+                //button.navbar-toggler( data-toggle='collapse' data-target='#first-nav' aria-controls='navbarTogglerDemo01' aria-expanded='ture' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                button.navbar-toggler(type='button', data-target='#first-nav', aria-controls='first-nav',  )
+                    span.navbar-toggler-icon
+                a.navbar-brand.mobile(href="#")
+                    img(src="../img/header/logo_firstbank@2x.png", alt="第一銀行")
+                button#apply-btn-header.button.btn.mobile 立即申辦
+                .nav-bg 
+                #first-nav.navbar-collapse  
+                    a.navbar-brand(href='#') 
+                        img(src="../img/header/logo_firstbank@2x.png", alt="第一銀行")
+                    div.brand-bottom.mobile
+                    ul.navbar-nav.ml-auto
+                        li.nav-item.d-flex.align-items-center.justify-content-md-center
+                            a.nav-link#link-1(href='../index.html#1') 信貸方案
+                        li.nav-item.d-flex.align-items-center.justify-content-md-center
+                            a.nav-link#link-2(href='../index.html#feature') 信貸特色
+                        li.nav-item.d-flex.align-items-center.justify-content-md-center
+                            a.nav-link#link-3(href='../index.html#faq') FAQ
+                        li.nav-item.d-flex.align-items-center.justify-content-md-center
+                            a.nav-link#link-4(href='../index.html#apply') 申請流程
+                        li.nav-item.d-flex.align-items-center.justify-content-md-center
+                            a.nav-link#link-4(href='../index.html#story') 封面故事
+                        div.list-bottom.mobile
+                        li.nav-item.d-flex.align-items-center.justify-content-md-center.ml-md-2
+                            a.nav-link
+                                button#apply-btn.button.btn 立即申辦
+
+    section.story-detail.py-4
+        .container
+            .row.justify-content-center.py-5
+                .title-area.text-center
+                    h2 手作美學
+                    p 一杯外帶好咖啡的執著，是從媒合咖啡職人選豆開始
+                    div.border-bottom
+            .row.justify-content-center
+                .col-md-9.article-area
+                    p 「一杯外帶好咖啡的執著，是從媒合咖啡職人選豆開始，到如何熱呼呼送至顧客面前飲用」，要做好這整串的服務，才能提供消費者享有至高的享受，因此，儘管只是一杯簡單的咖啡，我們都在意每一個小細節對風味上的呈現，毫不馬虎。
+                    p 台灣咖啡市場的盛行，咖啡杯杯以獨立精品咖啡店為合作對象，挑選專業咖啡烘培職人，看準平日辦公室族群對咖啡的高需求，打造以「全球第一台智慧綠能行動咖啡車」到點現煮的方式解決咖啡產業痛點，掌握咖啡最佳賞味時間，追求「高品質咖啡的遞送」，打破傳統咖啡外送模式，創造咖啡價值鏈新生態。
+                    img(src="../img/story/v4_01.png", alt="")
+                    p 杯杯職人行動咖啡車是新一代的智慧綠能行動咖啡館，除了具備機動性高、無污染、低燥音、高產能等優勢外，可線上下單、線下接單、開立發票、實時監控，有效的延長傳統行動咖啡車適合的營業時段，增加更多的收益。
+                    p 「即使只是ㄧ杯簡單的咖啡，我們都在意每一個小細節對風味呈現上的影響；即使只有一杯的外送，我們也堅持顧客拿在手上的是熱呼呼，又或是冰塊沒有融化的咖啡。」
+                    p 追求 " 高品質咖啡的遞送"，直接把精品咖啡館移動到指定地點現煮。
+                    p 當傳統的咖啡外送，受限於運送距離及時間的因素，而無法將極易受到溫度而影響品質的咖啡做高品質的送到時，往往造成消費者對咖啡品質的不滿時。當你不想不出門，就想享受一杯高品質的咖啡時， 最好的方式就是呼叫杯杯職人行動咖啡車的到點現煮服務。咖啡杯杯直接把咖啡館搬到你面前，到點現煮，立即享用，正是最佳的解決方案。
+
+
+
+                
+    section.footer
+        footer.page-footer.font-small.blue.pt-4
+            .container.text-left
+                .row#footer-links
+                    .col-md-4.mt-md-0.brand-logo.pb-4
+                        img(src="../img/header/logo_firstbank@2x.png", alt="第一銀行")
+                    //- hr.clearfix.w-100.d-md-none.pb-3
+                    .col-md-2.mb-md-0.mb-1
+                        h5.text-uppercase.footer-title#footer-1 相關服務
+                        div.border-bottom.web
+                        span.footer-collapse.d-md-none.collapsed(data-toggle="collapse" data-target="#footer-1-content" aria-expanded="true" aria-controls="footer-1-content")
+                            img.image(src="../img/img/arrow_down.svg", alt="" )
+                        //mobile with collapse
+                        #footer-1-content.collapse.d-md-none(aria-labelledby="footer-1" data-parent="#footer-links")
+                            ul.list-unstyled
+                                li
+                                    a(href='#!') 第一金控
+                                li
+                                    a(href='#!') 活動專區
+                                li
+                                    a(href='#!') 線上徵才
+                                li
+                                    a(href='#!') 帳單繳費
+                        //Web no collapse
+                        ul.list-unstyled.web
+                            li
+                                a(href='#!') 第一金控
+                            li
+                                a(href='#!') 活動專區
+                            li
+                                a(href='#!') 線上徵才
+                            li
+                                a(href='#!') 帳單繳費
+                    .col-md-2.mb-md-0.mb-1
+                        h5.text-uppercase.footer-title#footer-2 聯絡我們
+                        div.border-bottom.web
+                        span.footer-collapse.d-md-none.collapsed( data-toggle="collapse" data-target="#footer-2-content" aria-expanded="true" aria-controls="footer-2-content")
+                            img.image(src="../img/img/arrow_down.svg", alt="" )
+                        //mobile with collapse
+                        #footer-2-content.collapse(aria-labelledby="footer-2" data-parent="#footer-links")
+                            ul.list-unstyled
+                                li
+                                    a(href='#!') 線上e專員
+                                li
+                                    a(href='#!') 分行查詢
+                        //Web no collapse
+                        ul.list-unstyled.web
+                            li
+                                a(href='#!') 線上e專員
+                            li
+                                a(href='#!') 分行查詢
+                    .col-md-2.mb-md-0.mb-1
+                        h5.text-uppercase.footer-title#footer-3  客戶服務
+                        div.border-bottom.web
+                        span.footer-collapse.d-md-none.collapsed(data-toggle="collapse" data-target="#footer-3-content" aria-expanded="true" aria-controls="footer-3-content")
+                            img.image(src="../img/img/arrow_down.svg", alt="" )
+                        //mobile with collapse
+                        #footer-3-content.collapse(aria-labelledby="footer-3" data-parent="#footer-links")
+                            ul.list-unstyled
+                                li
+                                    a(href='#!') 申請書下載
+                                li
+                                    a(href='#!') 營業規章
+                                li
+                                    a(href='#!') 公告資訊
+                        //Web no collapse
+                        ul.list-unstyled.web
+                            li
+                                a(href='#!') 申請書下載
+                            li
+                                a(href='#!') 營業規章
+                            li
+                                a(href='#!') 公告資訊    
+                    .col-md-2.mb-md-0.mb-1
+                        h5.text-uppercase.footer-title#footer-4  其他服務
+                        div.border-bottom.web
+                        span.footer-collapse.d-md-none.collapsed( data-toggle="collapse" data-target="#footer-4-content" aria-expanded="true" aria-controls="footer-4-content")
+                            img.image(src="../img/img/arrow_down.svg", alt="" )
+                        //mobile with collapse
+                        #footer-4-content.collapse(aria-labelledby="footer-4" data-parent="#footer-links")
+                            ul.list-unstyled
+                                li
+                                    a(href='#!') 第一數速貸
+                                li
+                                    a(href='#!') iLeo
+                        //Web no collapse
+                        ul.list-unstyled.web
+                            li
+                                a(href='#!') 第一數速貸
+                            li
+                                a(href='#!') iLeo
+
+
+
+
+
+

@@ -1,3 +1,32 @@
+//story
+$(window).on('load',function() {
+
+  var $owl = $("#story").owlCarousel({
+    items: 5,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    nav: true,
+    center:true,
+    autoWidth:true,
+    // autoHeight:true,
+    checkVisibility: true,
+    responsiveClass: true,
+    loop: true,
+    mergeFit: true,
+    responsive: {
+      0: {
+          items: 3,
+      },768 : {
+          items: 3,
+      }
+    },
+  });
+
+  $owl.trigger('initialized.owl.carousel');
+  $owl.trigger('refresh.owl.carousel')
+});
+
 $(window).on('load',function() {
 
   var $owl = $("#services").owlCarousel({
@@ -94,7 +123,7 @@ $(document).ready(function(){
 
       $('html,body').animate({
 
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - 80
 
       }, 800);
 
