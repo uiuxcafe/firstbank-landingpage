@@ -1063,6 +1063,7 @@ li,a
         background-color: #FFFFFF
         .img-area
             img
+                width: 100%
         .text-area
             padding: 16px 24px
             h3,p
@@ -1073,6 +1074,11 @@ li,a
                 font-size: 24px
                 line-height: 32px
                 font-weight: 600
+                overflow: hidden
+                text-overflow: ellipsis
+                display: -webkit-box
+                -webkit-line-clamp: 1
+                -webkit-box-orient: vertical
             p
                 color: #81838C
                 font-size: 20px

@@ -1053,6 +1053,8 @@ li, a {
   border: 1px solid #D5D5D5;
   border-radius: 10px;
   background-color: #FFFFFF; }
+  .story-list .card .img-area img {
+    width: 100%; }
   .story-list .card .text-area {
     padding: 16px 24px; }
     .story-list .card .text-area h3, .story-list .card .text-area p {
@@ -1062,7 +1064,13 @@ li, a {
       color: #333848;
       font-size: 24px;
       line-height: 32px;
-      font-weight: 600; }
+      font-weight: 600;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical; }
     .story-list .card .text-area p {
       color: #81838C;
       font-size: 20px;
