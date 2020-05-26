@@ -123,7 +123,7 @@ $(document).ready(function(){
 
       $('html,body').animate({
 
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - 80
 
       }, 800);
 
