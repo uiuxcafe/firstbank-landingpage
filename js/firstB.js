@@ -4,21 +4,20 @@ $(window).on('load',function() {
   var $owl = $("#story").owlCarousel({
     items: 5,
     dots: false,
-    autoplay: true,
+   
     autoplayTimeout: 2000,
     nav: true,
-    center:true,
-    autoWidth:true,
-    // autoHeight:true,
+    center: true,
+    loop: true,
+    autoWidth: true,
     checkVisibility: true,
     responsiveClass: true,
-    loop: true,
     mergeFit: true,
     responsive: {
       0: {
           items: 3,
       },768 : {
-          items: 3,
+          items: 5,
       }
     },
   });
