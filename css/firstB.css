@@ -909,10 +909,11 @@ li, a {
   width: 100%; }
   .story .owl-stage-outer .owl-stage {
     position: relative;
-    margin-left: 110px; }
+    margin-left: -25%; }
     .story .owl-stage-outer .owl-stage .owl-item {
       list-style: none;
-      width: auto; }
+      width: auto;
+      max-width: 400px; }
       .story .owl-stage-outer .owl-stage .owl-item .person {
         padding: 20px 20px;
         display: -ms-grid;
