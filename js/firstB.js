@@ -34,18 +34,10 @@ $(window).on('load',function() {
     speed: 300,
     slidesToShow: 5,
     centerMode: true,
-    variableWidth: true
-   
+    variableWidth: true,
+    nextArrow: '<i id="#prev"></i>',
+    prevArrow: '<i id="#next"></i>',
   });
-
-  $('#prev').click(function(){ 
-    $(this).parent().find('#story-slick').slick('slickPrev');
-  } );
-  
-  $('#next').click(function(e){
-    e.preventDefault(); 
-    $(this).parent().find('#story-slick').slick('slickNext');
-  } );
 
   // $('#services-slick').slick({
   //   dots: false,
