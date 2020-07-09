@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto&amp;display=swap" rel="stylesheet">
     <link href="./css/owl.carousel.min.css" rel="stylesheet">
     <link href="./css/owl.theme.default.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/firstB.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -20,7 +21,7 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/owl.carousel.js"></script>
-    <script src="./js/vendor.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/firstB.js"></script>
   </head>
   <title>微企e時貸</title>
@@ -318,9 +319,9 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="owl-carousel owl-theme owl-loaded" id="story">
+          <div class="owl-carousel owl-theme owl-loaded owl-centered" id="story">
             <div class="owl-stage-outer">
-              <div class="owl-stage">
+              <div class="owl-stage" id="story-slick">
                 <li class="owl-item">
                   <div class="person">
                     <div class="img-area">
@@ -426,6 +427,10 @@
                   </div>
                 </li>
               </div>
+              <div class="owl-nav">
+                <button class="owl-prev" id="prev" type="button" role="presentation"><span aria-label="Previous">&lsaquo;</span></button>
+                <button class="owl-next" id="next" type="button" role="presentation"><span aria-label="Next">&rsaquo;</span></button>
+              </div>
             </div>
           </div><a class="more-link" href="./story/index.html">
             <p>更多封面故事</p><img src="./img/Button/ic_arrow.svg" alt=""></a>
@@ -469,17 +474,17 @@
         <div class="row justify-content-center">
           <div class="owl-carousel owl-theme owl-loaded" id="services">
             <div class="owl-stage-outer">
-              <div class="owl-stage">
+              <div class="owl-stage" id="services-slick">
                 <li class="owl-item"><a herf="">
-                    <div class="service"><img src="./banner/banner_01.png" alt="">
+                    <div class="service"><img src="./img/banner/banner_01.png" alt="">
                       <div class="bg"></div><img class="svg" src="./img/Button/btn_arrow_right.svg" alt="Button">
                     </div></a></li>
                 <li class="owl-item"><a herf="">
-                    <div class="service"><img src="./banner/banner_02.png" alt="">
+                    <div class="service"><img src="./img/banner/banner_02.png" alt="">
                       <div class="bg"></div><img class="svg" src="./img/Button/btn_arrow_right.svg" alt="Button">
                     </div></a></li>
                 <li class="owl-item"><a herf="">
-                    <div class="service"><img src="./banner/banner_03.png" alt="">
+                    <div class="service"><img src="./img/banner/banner_03.png" alt="">
                       <div class="bg">   </div><img class="svg" src="./img/Button/btn_arrow_right.svg" alt="Button">
                     </div></a></li>
               </div>

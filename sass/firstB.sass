@@ -772,7 +772,7 @@ li,a
             position: relative
             .owl-item
                 list-style: none
-                width: 90%
+                width: 385px
                 .service
                     width: calc(100% - 24px)
                     margin: 0 auto
@@ -920,23 +920,25 @@ li,a
             .col-md-2.mb-md-0.mb-1    
                 padding: 10px 15px 0px 15px
 
-.story
+.story  
     .container
         position: relative
     .owl-stage-outer
         width: 100%
+        margin: 0 auto
+        //max-height: 500px
         .owl-stage
-            position: relative
-            margin-left: 110px
+            height: 600px
             .owl-item
                 list-style: none
-                width: auto
+                outline: 0
                 .person
-                    padding: 20px 20px
+                    padding: 20px 0px
                     display: grid
                     justify-items: center
                     align-items: center
                     height: 400px
+                    width: 200px
                     .img-area
                         max-width: 400px
                         .icon
@@ -957,12 +959,12 @@ li,a
                                 margin: 0 auto
                     .text-area
                         display: none
-                        width: 400px
-                        
-            .owl-item.active.center
+                        max-width: 400px
+            .owl-item.slick-active.slick-center
                 .person
                     padding: 20px 0px
                     height: auto
+                    width: 350px
                     .img-area
                         max-width: 100px
                         .icon
@@ -1001,23 +1003,24 @@ li,a
                             position: absolute
                             right: 10px
     //nav               
-    .owl-nav
-        max-width: 100px
+    .owl-nav,.slick-arrow
+        
         margin: 0 auto
-    .owl-prev, .owl-next
+    .owl-prev, .owl-next, .slick-prev, .slick-next
+        display: inline-block !important
         width: 50px
         height: 50px
-        margin: 0
+        margin: 0 !important
         padding: 0
         outline: none
         height: 50px
         margin: 15px 0px
-        background: #E9F4EE
+        background: #E9F4EE !important
         span
-            color: #5DC58A
+            color: #5DC58A 
             font-size: 28px
     .owl-prev:hover , .owl-next:hover 
-        background: #5DC58A
+        background: #5DC58A !important
         span
             color: #FFF
     .owl-prev
@@ -1046,15 +1049,16 @@ li,a
             color: #39ae6b
             text-decoration: none
 @media (max-width: 767.98px)
-    .story
-        .owl-stage-outer
-            .owl-stage
-                margin-left: 110px
+    // .story
+    //     .owl-stage-outer
+    //         .owl-stage
+    //             margin-left: 110px
 @media (max-width: 575.98px)
-    .story
-        .owl-stage-outer
-            .owl-stage
-                margin-left: 110px
+    // .story
+    //     .owl-stage-outer
+    //         .owl-stage
+    //             margin-left: 110px
+                
 
 .story-list
     .card

@@ -223,9 +223,9 @@ block content
                     h2 封面故事
                     div.border-bottom
             .row.justify-content-center
-                .owl-carousel.owl-theme.owl-loaded#story
+                .owl-carousel.owl-theme.owl-loaded.owl-centered#story
                     .owl-stage-outer
-                        .owl-stage
+                        .owl-stage#story-slick
                             li.owl-item
                                 .person
                                     .img-area
@@ -323,6 +323,13 @@ block content
                                         h3 Dr.Sole
                                         p.company 古董鞋靴維修職人
                                         p 修鞋，不單純只是修理鞋；同時也是修復人與物品間的關係。創業，不單純只是開創事業；同時也是傳達愛物惜物的理念。
+                        .owl-nav
+                            button.owl-prev#prev(type='button' role='presentation')
+                                span(aria-label='Previous') &lsaquo;
+                            button.owl-next#next(type='button' role='presentation')
+                                span(aria-label='Next') &rsaquo;
+
+                
                 a.more-link(href="./story/index.html")
                     p 更多封面故事
                     img(src="./img/Button/ic_arrow.svg", alt="")
@@ -353,23 +360,23 @@ block content
             .row.justify-content-center
                 .owl-carousel.owl-theme.owl-loaded#services
                     .owl-stage-outer
-                        .owl-stage
+                        .owl-stage#services-slick
                             li.owl-item
                                 a(herf='')
                                     .service
-                                        img(src='./banner/banner_01.png' alt='')
+                                        img(src='./img/banner/banner_01.png' alt='')
                                         .bg
                                         img.svg(src="./img/Button/btn_arrow_right.svg", alt="Button")
                             li.owl-item
                                 a(herf='')
                                     .service
-                                        img(src='./banner/banner_02.png' alt='')
+                                        img(src='./img/banner/banner_02.png' alt='')
                                         .bg
                                         img.svg(src="./img/Button/btn_arrow_right.svg", alt="Button")
                             li.owl-item
                                 a(herf='')
                                     .service
-                                        img(src='./banner/banner_03.png' alt='') 
+                                        img(src='./img/banner/banner_03.png' alt='') 
                                         .bg    
                                         img.svg(src="./img/Button/btn_arrow_right.svg", alt="Button")        
     section.footer
@@ -464,7 +471,10 @@ block content
                             li
                                 a(href='#!') iLeo
 
-
+    //- script(type='text/javascript' src='https://code.jquery.com/jquery-1.11.0.min.js')
+    //- script(type='text/javascript' src='https://code.jquery.com/jquery-migrate-1.2.1.min.js')
+    //- script(type='text/javascript' src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
+    
 
 
 

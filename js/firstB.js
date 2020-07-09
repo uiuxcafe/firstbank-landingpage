@@ -1,31 +1,64 @@
 //story
 $(window).on('load',function() {
 
-  var $owl = $("#story").owlCarousel({
-    items: 5,
+  // var $owl = $("#story").owlCarousel({
+  //   dots: false,
+  //   nav: true,
+  //   autoWidth: true,
+  //   center: true,
+  //   loop: true,
+  //   responsive: {
+  //     0: {
+  //         items: 3,
+  //     },768: {
+  //         items: 5,
+  //     },1024:{
+  //         items: 5,
+  //     },1280: {
+  //         items: 5,
+  //     },1440: {
+  //         items: 5,
+  //     }
+  //   },
+  // });
+
+  // $owl.trigger('initialized.owl.carousel');
+
+});
+
+$(window).on('load',function() {
+  $('#story-slick').slick({
     dots: false,
-    autoplay: true,
-    autoplayTimeout: 2000,
-    nav: true,
-    center:true,
-    autoWidth:true,
-    // autoHeight:true,
-    checkVisibility: true,
-    responsiveClass: true,
-    loop: true,
-    mergeFit: true,
-    responsive: {
-      0: {
-          items: 3,
-      },768 : {
-          items: 3,
-      }
-    },
+    arrows: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 5,
+    centerMode: true,
+    variableWidth: true
+   
   });
 
-  $owl.trigger('initialized.owl.carousel');
-  $owl.trigger('refresh.owl.carousel')
+  $('#prev').click(function(){ 
+    $(this).parent().find('#story-slick').slick('slickPrev');
+  } );
+  
+  $('#next').click(function(e){
+    e.preventDefault(); 
+    $(this).parent().find('#story-slick').slick('slickNext');
+  } );
+
+  // $('#services-slick').slick({
+  //   dots: false,
+  //   arrows: true,
+  //   infinite: true,
+  //   speed: 300,
+  //   slidesToShow: 1,
+  //   centerMode: true,
+  //   variableWidth: true
+  // });
+
 });
+
 
 $(window).on('load',function() {
 
@@ -114,6 +147,14 @@ $(document).ready(function(){
 
 });
 
+// $(document).ready(function(){
+//   const items = document.querySelector("#first");
+//   if(items.classList.contains("center")){
+//     console.log('Yahhh! Class is found.');
+//   }else{
+//     console.log('2');
+//   }
+// });
 
 $(document).ready(function(){
 

@@ -746,7 +746,7 @@ li, a {
     position: relative; }
     .more-service .owl-stage-outer .owl-stage .owl-item {
       list-style: none;
-      width: 90%; }
+      width: 385px; }
       .more-service .owl-stage-outer .owl-stage .owl-item .service {
         width: calc(100% - 24px);
         margin: 0 auto;
@@ -906,22 +906,23 @@ li, a {
   position: relative; }
 
 .story .owl-stage-outer {
-  width: 100%; }
+  width: 100%;
+  margin: 0 auto; }
   .story .owl-stage-outer .owl-stage {
-    position: relative;
-    margin-left: 110px; }
+    height: 600px; }
     .story .owl-stage-outer .owl-stage .owl-item {
       list-style: none;
-      width: auto; }
+      outline: 0; }
       .story .owl-stage-outer .owl-stage .owl-item .person {
-        padding: 20px 20px;
+        padding: 20px 0px;
         display: -ms-grid;
         display: grid;
         justify-items: center;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        height: 400px; }
+        height: 400px;
+        width: 200px; }
         .story .owl-stage-outer .owl-stage .owl-item .person .img-area {
           max-width: 400px; }
           .story .owl-stage-outer .owl-stage .owl-item .person .img-area .icon {
@@ -947,20 +948,21 @@ li, a {
               margin: 0 auto; }
         .story .owl-stage-outer .owl-stage .owl-item .person .text-area {
           display: none;
-          width: 400px; }
-    .story .owl-stage-outer .owl-stage .owl-item.active.center .person {
+          max-width: 400px; }
+    .story .owl-stage-outer .owl-stage .owl-item.slick-active.slick-center .person {
       padding: 20px 0px;
-      height: auto; }
-      .story .owl-stage-outer .owl-stage .owl-item.active.center .person .img-area {
+      height: auto;
+      width: 350px; }
+      .story .owl-stage-outer .owl-stage .owl-item.slick-active.slick-center .person .img-area {
         max-width: 100px; }
-        .story .owl-stage-outer .owl-stage .owl-item.active.center .person .img-area .icon {
+        .story .owl-stage-outer .owl-stage .owl-item.slick-active.slick-center .person .img-area .icon {
           width: 100px;
           height: 100px;
           border: 2px solid #FFFFFF; }
-          .story .owl-stage-outer .owl-stage .owl-item.active.center .person .img-area .icon img {
+          .story .owl-stage-outer .owl-stage .owl-item.slick-active.slick-center .person .img-area .icon img {
             height: 100px;
             width: auto; }
-      .story .owl-stage-outer .owl-stage .owl-item.active.center .person .text-area {
+      .story .owl-stage-outer .owl-stage .owl-item.slick-active.slick-center .person .text-area {
         max-width: 400px;
         display: block;
         margin-top: 20px;
@@ -969,46 +971,46 @@ li, a {
         padding: 20px 24px;
         -webkit-box-shadow: inset -1px -1px 0 0 rgba(0, 0, 0, 0.1), inset 1px 1px 0 0 rgba(0, 0, 0, 0.1);
         box-shadow: inset -1px -1px 0 0 rgba(0, 0, 0, 0.1), inset 1px 1px 0 0 rgba(0, 0, 0, 0.1); }
-        .story .owl-stage-outer .owl-stage .owl-item.active.center .person .text-area h3, .story .owl-stage-outer .owl-stage .owl-item.active.center .person .text-area p {
+        .story .owl-stage-outer .owl-stage .owl-item.slick-active.slick-center .person .text-area h3, .story .owl-stage-outer .owl-stage .owl-item.slick-active.slick-center .person .text-area p {
           text-align: center;
           color: #333848;
           letter-spacing: 0; }
-        .story .owl-stage-outer .owl-stage .owl-item.active.center .person .text-area h3 {
+        .story .owl-stage-outer .owl-stage .owl-item.slick-active.slick-center .person .text-area h3 {
           font-size: 28px;
           font-weight: 600;
           line-height: 40px; }
-        .story .owl-stage-outer .owl-stage .owl-item.active.center .person .text-area p {
+        .story .owl-stage-outer .owl-stage .owl-item.slick-active.slick-center .person .text-area p {
           font-size: 20px;
           line-height: 28px; }
-        .story .owl-stage-outer .owl-stage .owl-item.active.center .person .text-area .company {
+        .story .owl-stage-outer .owl-stage .owl-item.slick-active.slick-center .person .text-area .company {
           color: #39AE6B;
           font-size: 16px;
           font-weight: 600;
           line-height: 24px; }
-        .story .owl-stage-outer .owl-stage .owl-item.active.center .person .text-area .more {
+        .story .owl-stage-outer .owl-stage .owl-item.slick-active.slick-center .person .text-area .more {
           width: 24px;
           position: absolute;
           right: 10px; }
 
-.story .owl-nav {
-  max-width: 100px;
+.story .owl-nav, .story .slick-arrow {
   margin: 0 auto; }
 
-.story .owl-prev, .story .owl-next {
+.story .owl-prev, .story .owl-next, .story .slick-prev, .story .slick-next {
+  display: inline-block !important;
   width: 50px;
   height: 50px;
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
   outline: none;
   height: 50px;
   margin: 15px 0px;
-  background: #E9F4EE; }
-  .story .owl-prev span, .story .owl-next span {
+  background: #E9F4EE !important; }
+  .story .owl-prev span, .story .owl-next span, .story .slick-prev span, .story .slick-next span {
     color: #5DC58A;
     font-size: 28px; }
 
 .story .owl-prev:hover, .story .owl-next:hover {
-  background: #5DC58A; }
+  background: #5DC58A !important; }
   .story .owl-prev:hover span, .story .owl-next:hover span {
     color: #FFF; }
 
@@ -1040,14 +1042,6 @@ li, a {
   .story .more-link:hover {
     color: #39ae6b;
     text-decoration: none; }
-
-@media (max-width: 767.98px) {
-  .story .owl-stage-outer .owl-stage {
-    margin-left: 110px; } }
-
-@media (max-width: 575.98px) {
-  .story .owl-stage-outer .owl-stage {
-    margin-left: 110px; } }
 
 .story-list .card {
   border: 1px solid #D5D5D5;
