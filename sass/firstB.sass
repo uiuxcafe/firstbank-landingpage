@@ -928,7 +928,7 @@ li,a
         margin: 0 auto
         //max-height: 500px
         .owl-stage
-            height: 600px
+            height: 500px
             .owl-item
                 list-style: none
                 outline: 0
@@ -939,6 +939,7 @@ li,a
                     align-items: center
                     height: 400px
                     width: 200px
+                    transition: 1s
                     .img-area
                         max-width: 400px
                         .icon
@@ -958,13 +959,17 @@ li,a
                                 width: auto
                                 margin: 0 auto
                     .text-area
-                        display: none
-                        max-width: 400px
+                        opacity: 0
+                        max-height: 0px
+                        transition: 1s
+                        max-width: 200px
+                    .more
+                        opacity: 0
             .owl-item.slick-active.slick-center
                 .person
                     padding: 20px 0px
-                    height: auto
-                    width: 350px
+                    height: 400px
+                    width: 400px
                     .img-area
                         max-width: 100px
                         .icon
@@ -975,9 +980,11 @@ li,a
                                 height: 100px
                                 width: auto
                     .text-area
-                        max-width: 400px
-                        display: block
+                        width: 400px
+                        opacity: 1
                         margin-top: 20px
+                        max-width: inherit
+                        max-height: inherit
                         background: #FFF
                         border-radius: 16px
                         padding: 20px 24px
@@ -1002,10 +1009,13 @@ li,a
                             width: 24px
                             position: absolute
                             right: 10px
+                            opacity: 1
     //nav               
     .owl-nav,.slick-arrow
-        
         margin: 0 auto
+        position: absolute
+        z-index: 10
+        bottom: 0
     .owl-prev, .owl-next, .slick-prev, .slick-next
         display: inline-block !important
         width: 50px
@@ -1025,13 +1035,20 @@ li,a
             color: #FFF
     .owl-prev
         border-radius: 25px 0 0 25px !important
+        right: 50%
+        
     .owl-next
         border-radius: 0 25px 25px 0 !important
+        left: 50%
+    
+    .slick-track
+        transition: all 0.3s ease
+        height: 500px
     //link
     .more-link
         position: absolute
         right: 0
-        bottom: 0px
+        bottom: 65px
         display: grid
         grid-template-columns: repeat(2,auto)
         z-index: 2

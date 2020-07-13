@@ -27,27 +27,20 @@ $(window).on('load',function() {
 });
 
 $(window).on('load',function() {
+  
   $('#story-slick').slick({
     dots: false,
-    arrows: false,
+    arrows: true,
     infinite: true,
-    speed: 300,
+    speed: 1000,
+    slidesToScroll: 1,
     slidesToShow: 5,
+    centerPadding: "0px",
     centerMode: true,
     variableWidth: true,
-    nextArrow: '<i id="#prev"></i>',
-    prevArrow: '<i id="#next"></i>',
+    nextArrow: '<button class="owl-next" id="next" type="button" role="presentation"><span aria-label="Next">&rsaquo;</span></button>',
+    prevArrow: '<button class="owl-prev" id="prev" type="button" role="presentation"><span aria-label="Previous">&lsaquo;</span></button>',
   });
-
-  // $('#services-slick').slick({
-  //   dots: false,
-  //   arrows: true,
-  //   infinite: true,
-  //   speed: 300,
-  //   slidesToShow: 1,
-  //   centerMode: true,
-  //   variableWidth: true
-  // });
 
 });
 
