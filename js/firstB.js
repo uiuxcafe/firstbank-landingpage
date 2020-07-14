@@ -1,4 +1,4 @@
-//story
+// story-carousel
 $(window).on('load',function() {
 
   // var $owl = $("#story").owlCarousel({
@@ -26,6 +26,7 @@ $(window).on('load',function() {
 
 });
 
+// story-slick
 $(window).on('load',function() {
   
   $('#story-slick').slick({
@@ -44,7 +45,7 @@ $(window).on('load',function() {
 
 });
 
-
+// more-service
 $(window).on('load',function() {
 
   var $owl = $("#services").owlCarousel({
@@ -132,7 +133,7 @@ $(document).ready(function(){
 
 });
 
-
+// desktop header
 $(document).ready(function(){
 
   $('a').click(function() {
@@ -151,6 +152,7 @@ $(document).ready(function(){
 
 });
 
+// faq 
 $(document).ready(function(){
   var card = $("#faq .accordion .card");
   var title = $(".card-header");
@@ -159,4 +161,25 @@ $(document).ready(function(){
   if (!!window.ActiveXObject || "ActiveXObject" in window){
    
   }
+});
+
+//test-tilt
+$(document).ready(function(){
+  const tilt = $('.first-tilt').tilt()
+
+  tilt.on('change', function(e, transforms){
+
+    const transformsX = Math.abs(transforms.tiltX)
+
+    if( transforms.tiltX > 0 ){
+      $('.right').css('opacity',`1-${transformsX/10}`)
+      $('.left').css('opacity',`${transformsX/10}`)
+    }
+
+    if( transforms.tiltX < 0 ){
+      $('.left').css('opacity',`1-${transformsX/10}`)
+      $('.right').css('opacity',`${transformsX/10}`)
+    }
+  });
+
 });

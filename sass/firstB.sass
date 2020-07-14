@@ -1138,8 +1138,21 @@ li,a
             line-height: 28px
 
 .first-tilt
-  width: 200px
-  height: 200px
-  background-color: #7e56ff
-  background-image: linear-gradient(150deg, #5a00ff 0%, #ff1ff7 100%, #ff1ff7 100%)
-
+    width: 200px
+    height: 200px
+    background-color: #7e56ff
+    background-image: linear-gradient(150deg, #5a00ff 0%, #ff1ff7 100%, #ff1ff7 100%)
+    ransform-style: preserve-3d
+    position: relative
+    p
+        color: #ffffff
+        position: absolute
+        will-change: opacity
+    .left
+        left: 5px
+        opacity: 0
+    .right
+        right: 5px
+        opacity: 0
+    .show
+        opacity: 1
