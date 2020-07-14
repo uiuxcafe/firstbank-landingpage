@@ -132,14 +132,6 @@ $(document).ready(function(){
 
 });
 
-// $(document).ready(function(){
-//   const items = document.querySelector("#first");
-//   if(items.classList.contains("center")){
-//     console.log('Yahhh! Class is found.');
-//   }else{
-//     console.log('2');
-//   }
-// });
 
 $(document).ready(function(){
 
