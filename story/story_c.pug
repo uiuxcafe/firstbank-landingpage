@@ -51,7 +51,25 @@ block content
                     p 後來將坪林的特色建築-石頭厝進行改造，透過百年老宅翻修成為如今的坪感覺，並將風景融入至料理中，除了提供深度旅行外，更以坪林茶入菜或製作點心，不斷研發視覺、美感兼具的私房創意料理，讓來訪的客人能夠親身體驗坪林的療效。
                     p 「 坪林很近 」，其實距離台北市車程僅需30-40分鐘，卻能在這裡，感受到清新的水與空氣，讓你洗去在生活於喧囂中所帶來的塵埃及壓力。
                     p 當你享受坪林的療育功效時，別忘了，有一群人正在背後努力著，讓更多的人能和這片土地有所連結，並分享他們在坪林的感受與覺知。
-   
+    
+    section.contact.py-4
+        .container
+            .row.justify-content-center
+                .title-area.text-center
+                    h2 專人聯絡我
+                    div.border-bottom
+            .row.justify-content-center
+                .card.col-12
+                    .row.justify-content-center
+                        .col-12
+                            .input-group-lg
+                                input.form-control#userName(type="text" name='姓名' placeholder='請輸入您的姓名' required="required") 
+                        .col-12
+                            .input-group-lg.phoneNunber
+                                input.form-control#phoneNunber(type="tel" name='手機號碼' placeholder='請輸入您的手機號碼' required="required" minlength="10" maxlength="10")
+                                span.button
+                                    img(src="../img/Button/btn_oval.svg", alt="Button")
+
     section.footer
         footer.page-footer.font-small.blue.pt-4
             .container.text-left

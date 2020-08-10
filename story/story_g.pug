@@ -60,7 +60,23 @@ block content
                     p ⸢我和老闆娘從大學就在一起了，野倉就像我們兩人一起努力拉拔長大的小孩，一路看著它成長，為了它灌注心思心力。⸥ 
                     p 一路上有彼此，很踏實。有時候一段關係、一場愛情，不僅只有兩個人的愛，更多的是一起為目標努力的過程。
                     p 堅持著間的原則，僅有一個目標，希望到訪的客人都能，來野倉野餐。
-             
+    section.contact.py-4
+        .container
+            .row.justify-content-center
+                .title-area.text-center
+                    h2 專人聯絡我
+                    div.border-bottom
+            .row.justify-content-center
+                .card.col-12
+                    .row.justify-content-center
+                        .col-12
+                            .input-group-lg
+                                input.form-control#userName(type="text" name='姓名' placeholder='請輸入您的姓名' required="required") 
+                        .col-12
+                            .input-group-lg.phoneNunber
+                                input.form-control#phoneNunber(type="tel" name='手機號碼' placeholder='請輸入您的手機號碼' required="required" minlength="10" maxlength="10")
+                                span.button
+                                    img(src="../img/Button/btn_oval.svg", alt="Button")         
     section.footer
         footer.page-footer.font-small.blue.pt-4
             .container.text-left

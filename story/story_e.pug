@@ -57,7 +57,25 @@ block content
                     p 讓女人在這片屬於她的秘密靈感花園中，恣意穿梭漫遊，找尋屬於她的美麗飾品。
                     p 每件精選的飾品，皆藏有細緻的華麗，盡顯繆思般的女性氣質，卻不高調彰顯，點綴日日穿搭，化為美麗思緒。
                     p Hermu 則屬於女人藏盡浪漫與美麗的，繆思靈感花園，讓妳在這裡輕鬆無壓力地打造自己唯一的style。       
-                    
+
+    section.contact.py-4
+        .container
+            .row.justify-content-center
+                .title-area.text-center
+                    h2 專人聯絡我
+                    div.border-bottom
+            .row.justify-content-center
+                .card.col-12
+                    .row.justify-content-center
+                        .col-12
+                            .input-group-lg
+                                input.form-control#userName(type="text" name='姓名' placeholder='請輸入您的姓名' required="required") 
+                        .col-12
+                            .input-group-lg.phoneNunber
+                                input.form-control#phoneNunber(type="tel" name='手機號碼' placeholder='請輸入您的手機號碼' required="required" minlength="10" maxlength="10")
+                                span.button
+                                    img(src="../img/Button/btn_oval.svg", alt="Button")
+
     section.footer
         footer.page-footer.font-small.blue.pt-4
             .container.text-left

@@ -51,7 +51,23 @@ block content
                     p 當傳統的咖啡外送，受限於運送距離及時間的因素，而無法將極易受到溫度而影響品質的咖啡做高品質的送到時，往往造成消費者對咖啡品質的不滿時。當你不想不出門，就想享受一杯高品質的咖啡時， 最好的方式就是呼叫杯杯職人行動咖啡車的到點現煮服務。咖啡杯杯直接把咖啡館搬到你面前，到點現煮，立即享用，正是最佳的解決方案。
 
 
-
+    section.contact.py-4
+        .container
+            .row.justify-content-center
+                .title-area.text-center
+                    h2 專人聯絡我
+                    div.border-bottom
+            .row.justify-content-center
+                .card.col-12
+                    .row.justify-content-center
+                        .col-12
+                            .input-group-lg
+                                input.form-control#userName(type="text" name='姓名' placeholder='請輸入您的姓名' required="required") 
+                        .col-12
+                            .input-group-lg.phoneNunber
+                                input.form-control#phoneNunber(type="tel" name='手機號碼' placeholder='請輸入您的手機號碼' required="required" minlength="10" maxlength="10")
+                                span.button
+                                    img(src="../img/Button/btn_oval.svg", alt="Button")
                 
     section.footer
         footer.page-footer.font-small.blue.pt-4

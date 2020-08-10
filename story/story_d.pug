@@ -52,6 +52,24 @@ block content
                     p 如果說擴大交友圈是第一步，那對很多人來說，找到心目中的白馬王子(公主)，便是終極目標。
                     p 戀愛秘書會根據喜好和篩選條件，精心安排約會細節和對象，透過近距離互動，一邊享用下午茶，一邊輕鬆聊天，找到心靈契合的另一半。
                     p 其實交友，並沒有我們想像中的那麼困難，我們只需要用對的方式，就能展現自己獨特的自信與魅力。
+    
+    section.contact.py-4
+        .container
+            .row.justify-content-center
+                .title-area.text-center
+                    h2 專人聯絡我
+                    div.border-bottom
+            .row.justify-content-center
+                .card.col-12
+                    .row.justify-content-center
+                        .col-12
+                            .input-group-lg
+                                input.form-control#userName(type="text" name='姓名' placeholder='請輸入您的姓名' required="required") 
+                        .col-12
+                            .input-group-lg.phoneNunber
+                                input.form-control#phoneNunber(type="tel" name='手機號碼' placeholder='請輸入您的手機號碼' required="required" minlength="10" maxlength="10")
+                                span.button
+                                    img(src="../img/Button/btn_oval.svg", alt="Button")
 
     section.footer
         footer.page-footer.font-small.blue.pt-4

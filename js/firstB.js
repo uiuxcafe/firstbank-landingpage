@@ -34,14 +34,19 @@ $(window).on('load',function() {
     arrows: true,
     infinite: true,
     speed: 1000,
-    slidesToScroll: 1,
+    slidesToScroll: 0.5,
     slidesToShow: 5,
-    centerPadding: "0px",
     centerMode: true,
+    autoplay: true,
     variableWidth: true,
+    centerPadding: '40px',
     nextArrow: '<button class="owl-next" id="next" type="button" role="presentation"><span aria-label="Next">&rsaquo;</span></button>',
     prevArrow: '<button class="owl-prev" id="prev" type="button" role="presentation"><span aria-label="Previous">&lsaquo;</span></button>',
   });
+
+  var next = document.getElementById("next");
+  var prev = document.getElementById("prev");
+
 
 });
 

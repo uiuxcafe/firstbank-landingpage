@@ -58,7 +58,25 @@ block content
                     p 網路的發達以及消費著宣傳的力量，在短時間內，便迅速在網路上擴散，讓更多人願意去嘗試。
                     p 打進台灣市場後，更不計成本赴歐洲參加世界食品品質評鑑大賞，更獲得最頂級的品質金獎。
                     p 這樣的堅持與努力，只為了讓大家知道來自台灣本土的小小黑糖，是值得在國際上驕傲的，也讓大家更放心。
- 
+    
+    section.contact.py-4
+        .container
+            .row.justify-content-center
+                .title-area.text-center
+                    h2 專人聯絡我
+                    div.border-bottom
+            .row.justify-content-center
+                .card.col-12
+                    .row.justify-content-center
+                        .col-12
+                            .input-group-lg
+                                input.form-control#userName(type="text" name='姓名' placeholder='請輸入您的姓名' required="required") 
+                        .col-12
+                            .input-group-lg.phoneNunber
+                                input.form-control#phoneNunber(type="tel" name='手機號碼' placeholder='請輸入您的手機號碼' required="required" minlength="10" maxlength="10")
+                                span.button
+                                    img(src="../img/Button/btn_oval.svg", alt="Button")
+
     section.footer
         footer.page-footer.font-small.blue.pt-4
             .container.text-left

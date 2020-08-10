@@ -922,7 +922,7 @@ li, a {
         -ms-flex-align: center;
         align-items: center;
         height: 400px;
-        width: 200px;
+        width: 400px;
         -webkit-transition: 1s;
         -o-transition: 1s;
         transition: 1s; }
@@ -951,11 +951,22 @@ li, a {
               margin: 0 auto; }
         .story .owl-stage-outer .owl-stage .owl-item .person .text-area {
           opacity: 0;
+          display: none;
           max-height: 0px;
           -webkit-transition: 1s;
           -o-transition: 1s;
           transition: 1s;
-          max-width: 200px; }
+          max-width: 200px;
+          width: 400px;
+          opacity: 1;
+          margin-top: 20px;
+          max-width: inherit;
+          max-height: inherit;
+          background: #FFF;
+          border-radius: 16px;
+          padding: 20px 24px;
+          -webkit-box-shadow: inset -1px -1px 0 0 rgba(0, 0, 0, 0.1), inset 1px 1px 0 0 rgba(0, 0, 0, 0.1);
+          box-shadow: inset -1px -1px 0 0 rgba(0, 0, 0, 0.1), inset 1px 1px 0 0 rgba(0, 0, 0, 0.1); }
         .story .owl-stage-outer .owl-stage .owl-item .person .more {
           opacity: 0; }
     .story .owl-stage-outer .owl-stage .owl-item.slick-active.slick-center .person {
@@ -972,16 +983,8 @@ li, a {
             height: 100px;
             width: auto; }
       .story .owl-stage-outer .owl-stage .owl-item.slick-active.slick-center .person .text-area {
-        width: 400px;
-        opacity: 1;
-        margin-top: 20px;
-        max-width: inherit;
-        max-height: inherit;
-        background: #FFF;
-        border-radius: 16px;
-        padding: 20px 24px;
-        -webkit-box-shadow: inset -1px -1px 0 0 rgba(0, 0, 0, 0.1), inset 1px 1px 0 0 rgba(0, 0, 0, 0.1);
-        box-shadow: inset -1px -1px 0 0 rgba(0, 0, 0, 0.1), inset 1px 1px 0 0 rgba(0, 0, 0, 0.1); }
+        display: block;
+        width: 400px; }
         .story .owl-stage-outer .owl-stage .owl-item.slick-active.slick-center .person .text-area h3, .story .owl-stage-outer .owl-stage .owl-item.slick-active.slick-center .person .text-area p {
           text-align: center;
           color: #333848;
