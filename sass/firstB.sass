@@ -948,31 +948,32 @@ li,a
                             overflow: hidden
                             width: 100%
                             height: auto
-                            max-width: 140px
-                            max-height: 140px
+                            max-width: 180px
+                            max-height: 180px
                             display: flex
                             justify-content: center
                             border: 3px solid #FFFFFF
                             box-shadow: 4px 6px 10px 0 rgba(0,0,0,0.2);
                             img
-                                height: 140px
+                                height: 180px
                                 width: auto
                                 margin: 0 auto
                     .text-area
                         opacity: 0
-                        display: none
                         max-height: 0px
                         transition: 1s
-                        max-width: 200px
                         width: 400px
-                        opacity: 1
-                        margin-top: 20px
-                        max-width: inherit
-                        max-height: inherit
-                        background: #FFF
-                        border-radius: 16px
-                        padding: 20px 24px
-                        box-shadow: inset -1px -1px 0 0 rgba(0,0,0,0.1), inset 1px 1px 0 0 rgba(0,0,0,0.1)
+                        
+                        border: 1px solid rgba(0,0,0,0.1)
+                        //box-shadow: inset -1px -1px 0 0 rgba(0,0,0,0.1), inset 1px 1px 0 0 rgba(0,0,0,0.1)
+                        transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+                        h3,p
+                            opacity: 0
+                        &:hover
+                            text-decoration: none
+                            -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05)
+                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05)
+
                     .more
                         opacity: 0
             .owl-item.slick-active.slick-center
@@ -990,20 +991,17 @@ li,a
                                 height: 100px
                                 width: auto
                     .text-area
-                        display: block
-                        width: 400px
-                        // opacity: 1
-                        // margin-top: 20px
-                        // max-width: inherit
-                        // max-height: inherit
-                        // background: #FFF
-                        // border-radius: 16px
-                        // padding: 20px 24px
-                        // box-shadow: inset -1px -1px 0 0 rgba(0,0,0,0.1), inset 1px 1px 0 0 rgba(0,0,0,0.1)
+                        max-height: inherit
+                        opacity: 1
+                        margin-top: 20px
+                        background: #FFF
+                        border-radius: 16px
+                        padding: 20px 24px
                         h3,p
                             text-align: center
                             color: #333848
                             letter-spacing: 0
+                            opacity: 1
                         h3
                             font-size: 28px
                             font-weight: 600
@@ -1016,11 +1014,7 @@ li,a
                             font-size: 16px
                             font-weight: 600
                             line-height: 24px
-                        .more
-                            width: 24px
-                            position: absolute
-                            right: 10px
-                            opacity: 1
+
     //nav               
     .owl-nav,.slick-arrow
         margin: 0 auto
@@ -1058,7 +1052,7 @@ li,a
     //link
     .more-link
         position: absolute
-        right: 0
+        right: 30px
         bottom: 65px
         display: grid
         grid-template-columns: repeat(2,auto)
@@ -1073,9 +1067,13 @@ li,a
         img
             width: 30px
             padding-left: 8px
+            transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1)
         &:hover
             color: #39ae6b
             text-decoration: none
+            img
+                transform: translateX(5px)
+               
 @media (max-width: 767.98px)
     // .story
     //     .owl-stage-outer
