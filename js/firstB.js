@@ -170,21 +170,25 @@ $(document).ready(function(){
 
 //test-tilt
 $(document).ready(function(){
-  const tilt = $('.first-tilt').tilt()
+  var scene = document.getElementById('parallax');
+  var parallax = new Parallax(scene);
+  
+  // $('#game-entry .bg').tilt({
+  //   maxTilt: 2,
+  // })
+  // tilt.on('change', function(e, transforms){
 
-  tilt.on('change', function(e, transforms){
+  //   const transformsX = Math.abs(transforms.tiltX)
 
-    const transformsX = Math.abs(transforms.tiltX)
+  //   if( transforms.tiltX > 0 ){
+  //     $('.right').css('opacity',`1-${transformsX/10}`)
+  //     $('.left').css('opacity',`${transformsX/10}`)
+  //   }
 
-    if( transforms.tiltX > 0 ){
-      $('.right').css('opacity',`1-${transformsX/10}`)
-      $('.left').css('opacity',`${transformsX/10}`)
-    }
-
-    if( transforms.tiltX < 0 ){
-      $('.left').css('opacity',`1-${transformsX/10}`)
-      $('.right').css('opacity',`${transformsX/10}`)
-    }
-  });
+  //   if( transforms.tiltX < 0 ){
+  //     $('.left').css('opacity',`1-${transformsX/10}`)
+  //     $('.right').css('opacity',`${transformsX/10}`)
+  //   }
+  // });
 
 });

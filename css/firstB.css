@@ -1156,3 +1156,30 @@ li, a {
     opacity: 0; }
   .first-tilt .show {
     opacity: 1; }
+
+#game-entry .row.justify-content-center {
+  position: relative;
+  overflow: hidden;
+  max-height: 400px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+#game-entry .bg {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  -webkit-transform: translateZ(20px);
+  transform: translateZ(20px); }
+
+#game-entry .people {
+  position: relative;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  z-index: 1;
+  top: 0;
+  -webkit-transform: translateZ(30px);
+  transform: translateZ(30px); }
