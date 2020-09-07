@@ -81,10 +81,10 @@ block content
                                 img(src="./img/header/logo_etime.svg", alt="微企e時貸")
                                 h2.py-md-3 從現在開始，做自己的老闆
                                 //p 第一銀行過去8年協助過超過73萬個微型創業遍及台、美、亞洲各地，讓第一銀行陪您開創事業
-                                button.btn.web 立即申辦
+                                button.btn.web(onclick="location.href=''") 立即申辦
                         .col-md-7
                             img(src="./img/im/im_01.svg", alt="im_01" title="im_01")
-                        button.btn.mobile 立即申辦
+                        button.btn.mobile(onclick="location.href=''") 立即申辦
 
     section.feature#feature.py-4
         .container
@@ -216,12 +216,17 @@ block content
                                             p 可透過「微企e時貸」進行可貸額度試算，並由專人與您聯繫，亦可透過第一銀行188家分行申請貸款。
                         .col-md-7
                             img(src="./img/im/im_06.svg", alt="im_06" title="im_06")
-    section#game-entry.py-4
+    section#game.py-4
         .container
-            .row.justify-content-center.card#parellax(data-tilt)
-                img.bg(src='./img/im/game-bg.svg' alt='bg' data-depth="0.2")
-                img.people(src='./img/im/game.svg' alt='people' data-depth="0.6")
-
+            .row.justify-content-center
+                .card.col-12#port
+                    img.bg(src='./img/im/game-bg.svg' alt='bg' data-depth="0")
+                    img.people(src='./img/im/game.svg' alt='people' data-depth="0.2")
+                    .text-area(data-depth="0.1")
+                        h2 我適合創業嗎？
+                        p 立即試玩創業小遊戲算出您的創業屬性
+                button.button.btn(onclick="location.href=''") 前往遊戲
+    
     section.story#story.py-4
         .container
             .row.justify-content-center
@@ -369,7 +374,7 @@ block content
                         .col-12
                             .input-group-lg.phoneNunber
                                 input.form-control#phoneNunber(type="tel" name='手機號碼' placeholder='請輸入您的手機號碼' required="required" minlength="10" maxlength="10")
-                                span.button
+                                span.button(onclick="")
                                     img(src="./img/Button/btn_oval.svg", alt="Button")
     section.more-service.py-4
         .container
@@ -491,10 +496,18 @@ block content
                             li
                                 a(href='#!') iLeo
 
-    script(src='./js/tilt.jquery.js')
-    script(src='./js/parallax.js')
+    
     script(src='./js/jquery.min.js')
     script(src='./js/bootstrap.min.js')
     script(src='./js/owl.carousel.js')
     script(type='text/javascript' src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
     script(src='./js/firstB.js')
+    script(src='./js/parallax.min.js')
+    script(type='text/javascript').
+        $(function(){
+        var scene = document.getElementById('port');
+        var parallaxInstance = new Parallax(scene, {
+                relativeInput: true
+            });
+        });
+        parallaxInstance.limit(20, 0)

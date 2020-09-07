@@ -105,11 +105,11 @@
                 <div class="text-area"><img src="./img/header/logo_etime.svg" alt="微企e時貸">
                   <h2 class="py-md-3">從現在開始，做自己的老闆</h2>
                   <!--p 第一銀行過去8年協助過超過73萬個微型創業遍及台、美、亞洲各地，讓第一銀行陪您開創事業-->
-                  <button class="btn web">立即申辦</button>
+                  <button class="btn web" onclick="location.href=''">立即申辦</button>
                 </div>
               </div>
               <div class="col-md-7"><img src="./img/im/im_01.svg" alt="im_01" title="im_01"></div>
-              <button class="btn mobile">立即申辦</button>
+              <button class="btn mobile" onclick="location.href=''">立即申辦</button>
             </div>
           </div>
         </div>
@@ -302,9 +302,17 @@
         </div>
       </div>
     </section>
-    <section class="py-4" id="game-entry">
+    <section class="py-4" id="game">
       <div class="container">
-        <div class="row justify-content-center card" id="parellax" data-tilt><img class="bg" src="./img/im/game-bg.svg" alt="bg" data-depth="0.2"><img class="people" src="./img/im/game.svg" alt="people" data-depth="0.6"></div>
+        <div class="row justify-content-center">
+          <div class="card col-12" id="port"><img class="bg" src="./img/im/game-bg.svg" alt="bg" data-depth="0"><img class="people" src="./img/im/game.svg" alt="people" data-depth="0.2">
+            <div class="text-area" data-depth="0.1">
+              <h2>我適合創業嗎？</h2>
+              <p>立即試玩創業小遊戲算出您的創業屬性</p>
+            </div>
+          </div>
+          <button class="button btn" onclick="location.href=''">前往遊戲</button>
+        </div>
       </div>
     </section>
     <section class="story py-4" id="story">
@@ -465,7 +473,7 @@
               </div>
               <div class="col-12">
                 <div class="input-group-lg phoneNunber">
-                  <input class="form-control" id="phoneNunber" type="tel" name="手機號碼" placeholder="請輸入您的手機號碼" required="required" minlength="10" maxlength="10"><span class="button"><img src="./img/Button/btn_oval.svg" alt="Button"></span>
+                  <input class="form-control" id="phoneNunber" type="tel" name="手機號碼" placeholder="請輸入您的手機號碼" required="required" minlength="10" maxlength="10"><span class="button" onclick=""><img src="./img/Button/btn_oval.svg" alt="Button"></span>
                 </div>
               </div>
             </div>
@@ -582,12 +590,20 @@
         </div>
       </footer>
     </section>
-    <script src="./js/tilt.jquery.js"></script>
-    <script src="./js/parallax.js"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/owl.carousel.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/firstB.js"></script>
+    <script src="./js/parallax.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+      var scene = document.getElementById('port');
+      var parallaxInstance = new Parallax(scene, {
+              relativeInput: true
+          });
+      });
+      parallaxInstance.limit(20, 0)
+    </script>
   </body>
 </html>

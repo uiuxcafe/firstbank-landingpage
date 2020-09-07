@@ -170,8 +170,9 @@ $(document).ready(function(){
 
 //test-tilt
 $(document).ready(function(){
-  var scene = document.getElementById('parallax');
-  var parallax = new Parallax(scene);
+  $('.parallax-layer').parallax({
+    mouseport: $("#port")
+  });
   
   // $('#game-entry .bg').tilt({
   //   maxTilt: 2,
