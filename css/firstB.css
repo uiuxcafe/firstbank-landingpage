@@ -1239,19 +1239,23 @@ li, a {
   z-index: 5;
   outline: 0; }
   #game .button:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transform: translateX(-50%) scale(1.04);
+    -ms-transform: translateX(-50%) scale(1.04);
+    transform: translateX(-50%) scale(1.04); }
+  #game .button:active {
+    -webkit-transform: translateX(-50%) scale(0.94);
+    -ms-transform: translateX(-50%) scale(0.94);
+    transform: translateX(-50%) scale(0.94); }
 
 @media (max-width: 1199px) {
   #game #port .people {
-    left: 5% !important; }
-  #game .button {
-    left: 42.5% !important; } }
+    left: 5% !important; } }
 
 @media (max-width: 991px) {
   #game #port .people {
-    left: -8% !important; }
-  #game .button {
-    left: 40% !important; } }
+    left: -8% !important; } }
 
 @media (max-width: 767.98px) {
   #game #port .people {
@@ -1265,17 +1269,11 @@ li, a {
       height: 300px; }
     #game #port .people {
       left: -15% !important;
-      bottom: -8% !important; }
-  #game .button {
-    left: 37.5% !important; } }
+      bottom: -8% !important; } }
 
 @media (max-width: 425px) {
   #game #port {
     height: 300px; }
     #game #port .people {
       left: -13% !important;
-      bottom: 5% !important; }
-  #game .button {
-    bottom: 5% !important;
-    left: 32% !important;
-    width: 35%; } }
+      bottom: 5% !important; } }

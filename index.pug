@@ -219,7 +219,7 @@ block content
     section#game.py-4
         .container
             .row.justify-content-center
-                .card.col-12#port
+                .card.col-12#port(data-hover-only="true")
                     img.bg(src='./img/im/game-bg.svg' alt='bg' data-depth="0")
                     img.people(src='./img/im/game.svg' alt='people' data-depth="0.2")
                     .text-area(data-depth="0.1")
@@ -519,6 +519,6 @@ block content
         var scene = document.getElementById('port');
         var parallaxInstance = new Parallax(scene, {
                 relativeInput: true
+                
             });
         });
-        parallaxInstance.limit(20, 0)

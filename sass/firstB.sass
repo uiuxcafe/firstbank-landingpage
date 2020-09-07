@@ -1229,25 +1229,32 @@ li,a
         top: inherit !important
         left: 50% !important
         bottom: 28px !important
-        transform: translateX(-50%)
+        transform: translateX(-50%) 
         z-index: 5
         outline: 0
         &:hover
             cursor: pointer
+            text-decoration: none
+            -webkit-transform: translateX(-50%) scale(1.04)
+            -ms-transform: translateX(-50%) scale(1.04)
+            transform: translateX(-50%) scale(1.04)
+        &:active
+            -webkit-transform: translateX(-50%) scale(0.94)
+            -ms-transform: translateX(-50%) scale(0.94)
+            transform: translateX(-50%) scale(0.94)
 @media (max-width: 1199px)
     #game
         #port
             .people
                 left: 5% !important
-        .button
-            left: 42.5% !important
+   
 @media (max-width: 991px)
     #game
         #port
             .people
                 left: -8% !important
-        .button
-            left: 40% !important
+     
+           
 @media (max-width: 767.98px)
     #game
         #port
@@ -1263,8 +1270,7 @@ li,a
             .people
                 left: -15% !important
                 bottom: -8% !important
-        .button
-            left: 37.5% !important
+
 @media (max-width: 425px)
     #game
         #port
@@ -1272,7 +1278,3 @@ li,a
             .people
                 left: -13% !important
                 bottom: 5% !important
-        .button
-            bottom: 5% !important
-            left: 32% !important
-            width: 35%;

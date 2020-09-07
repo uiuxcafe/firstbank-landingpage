@@ -304,7 +304,7 @@
     <section class="py-4" id="game">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="card col-12" id="port"><img class="bg" src="./img/im/game-bg.svg" alt="bg" data-depth="0"><img class="people" src="./img/im/game.svg" alt="people" data-depth="0.2">
+          <div class="card col-12" id="port" data-hover-only="true"><img class="bg" src="./img/im/game-bg.svg" alt="bg" data-depth="0"><img class="people" src="./img/im/game.svg" alt="people" data-depth="0.2">
             <div class="text-area" data-depth="0.1">
               <h2>我適合創業嗎？</h2>
               <p>立即試玩創業小遊戲算出您的創業屬性</p>
@@ -622,9 +622,9 @@
       var scene = document.getElementById('port');
       var parallaxInstance = new Parallax(scene, {
               relativeInput: true
+              
           });
       });
-      parallaxInstance.limit(20, 0)
     </script>
   </body>
 </html>
