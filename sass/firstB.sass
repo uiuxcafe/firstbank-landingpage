@@ -940,6 +940,8 @@ li,a
                 .person
                     padding: 20px 0px
                     display: grid
+                    display: -ms-grid
+                    -ms-grid-columns: 100%
                     justify-items: center
                     align-items: center
                     height: 400px
@@ -947,7 +949,10 @@ li,a
                     transition: 1s
                     .img-area
                         max-width: 400px
+                        .bg
+                            opacity: 0
                         .icon
+                            position: relative
                             margin: 0 auto
                             border-radius: 100%
                             overflow: hidden
@@ -963,12 +968,15 @@ li,a
                                 height: 180px
                                 width: auto
                                 margin: 0 auto
+                                position: relative
+                                left: 0
                     .text-area
                         opacity: 0
                         max-height: 0px
                         transition: 1s
                         width: 400px
-                        
+                        outline: 0
+                        -ms-grid-row: 2;
                         border: 1px solid rgba(0,0,0,0.1)
                         //box-shadow: inset -1px -1px 0 0 rgba(0,0,0,0.1), inset 1px 1px 0 0 rgba(0,0,0,0.1)
                         transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -978,7 +986,6 @@ li,a
                             text-decoration: none
                             -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05)
                             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05)
-
                     .more
                         opacity: 0
             .owl-item.slick-active.slick-center
@@ -988,6 +995,14 @@ li,a
                     width: 400px
                     .img-area
                         max-width: 100px
+                        margin: 0 auto
+                        .bg
+                            opacity: 1
+                            position: absolute
+                            left: 50%
+                            transform: translateX(-50%)
+                            img
+                                min-width: 275px
                         .icon
                             width: 100px
                             height: 100px
@@ -1061,6 +1076,8 @@ li,a
         bottom: 65px
         display: grid
         grid-template-columns: repeat(2,auto)
+        display: -ms-grid
+        -ms-grid-columns: auto 40px
         z-index: 2
         p
             color: #39ae6b
@@ -1071,8 +1088,10 @@ li,a
             text-align: center
         img
             width: 30px
+            height: 20px
             padding-left: 8px
             transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1)
+            -ms-grid-column: 2;
         &:hover
             color: #39ae6b
             text-decoration: none
@@ -1086,8 +1105,18 @@ li,a
                 height: 525px
         .more-link
             bottom: 5%
-
-                
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+    .story  
+        .owl-stage-outer
+            .owl-stage
+                .owl-item
+                    .person
+                        .img-area
+                            .icon
+                                img
+                                    position: relative
+                                    left: 50%
+                                    transform: translateX(-50%)
 
 .story-list
     .card
@@ -1159,7 +1188,6 @@ li,a
         height: 380px;
         width: 100%;
         max-width: 1280px;
-        margin: 0 auto;
         padding: 0;
         .text-area
             width: 100%
@@ -1199,8 +1227,9 @@ li,a
         color: #FFF
         position: absolute
         top: inherit !important
-        left: 43.3% !important
+        left: 50% !important
         bottom: 28px !important
+        transform: translateX(-50%)
         z-index: 5
         outline: 0
         &:hover
