@@ -60,7 +60,8 @@ li,a
     -moz-backface-visibility: hidden
     -webkit-transform: translate3d(0, 0, 0)
     -moz-transform: translate3d(0, 0, 0)
-
+.btn:focus
+   box-shadow: inherit !important; 
 .button, button
     border: 0px
     display: inline-block
@@ -686,6 +687,9 @@ li,a
             p 
                 font-size: 20px
                 line-height: 28px
+            .accordion#QA
+                height: inherit
+                padding-bottom: 20px
             .rectangle-text
                 height: auto
                 width: 100%
@@ -1146,52 +1150,99 @@ li,a
             letter-spacing: 0
             line-height: 28px
 
-.first-tilt
-    width: 200px
-    height: 200px
-    background-color: #7e56ff
-    background-image: linear-gradient(150deg, #5a00ff 0%, #ff1ff7 100%, #ff1ff7 100%)
-    ransform-style: preserve-3d
-    position: relative
-    p
-        color: #ffffff
-        position: absolute
-        will-change: opacity
-    .left
-        left: 5px
-        opacity: 0
-    .right
-        right: 5px
-        opacity: 0
-    .show
-        opacity: 1
-
-#game-entry
+#game
     .row.justify-content-center
         position: relative;
         overflow: hidden;
-        max-height: 400px;
-        transform-style: preserve-3d;
-        // #parellax
-        //     position: relative;
-        //     overflow: hidden;
-        //     max-height: 400px;
-        //     transform-style: preserve-3d;
-        //     width: 100%;
-        //     max-width: 1280px;
-    .bg
-        position: absolute;
-        top: -10%;
-        left: -10%;
-        width: 120%;
-        height: 120%;
-        transform: translateZ(20px);
-    .people
+    #port
         position: relative;
-        top: -10%;
-        left: -10%;
-        width: 120%;
-        height: 120%;
-        z-index: 1;
-        top: 0;
-        transform: translateZ(30px);
+        overflow: hidden;
+        height: 380px;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0;
+        .text-area
+            width: 100%
+            z-index: 3
+            top: 40px !important
+            padding: 0 16px
+            box-sizing: border-box
+            h2
+                text-align: center
+            p
+                color: #81838C
+                font-size: 20px
+                letter-spacing: 1px
+                line-height: 28px
+                text-align: center
+                font-weight: 400
+        .bg
+            position: absolute !important
+            // top: -10%;
+            left: 50% !important
+            transform: translateX(-50%) !important
+            width: auto 
+            height: 380px 
+        .people
+            position: relative
+            top: inherit !important
+            bottom: -10% !important
+            left: 13% !important
+            z-index: 1
+            
+    .button
+        height: 52px
+        width: 144px
+        border-radius: 24px
+        font-size: 20px
+        background-color: #5FC68B
+        color: #FFF
+        position: absolute
+        top: inherit !important
+        left: 43.3% !important
+        bottom: 28px !important
+        z-index: 5
+        outline: 0
+        &:hover
+            cursor: pointer
+@media (max-width: 1199px)
+    #game
+        #port
+            .people
+                left: 5% !important
+        .button
+            left: 42.5% !important
+@media (max-width: 991px)
+    #game
+        #port
+            .people
+                left: -8% !important
+        .button
+            left: 40% !important
+@media (max-width: 767.98px)
+    #game
+        #port
+            .people
+                left: -10% !important
+                width: 125%
+@media (max-width: 568px)
+    #game
+        #port
+            height: 300px;
+            .people
+                left: -15% !important
+                bottom: -8% !important
+        .button
+            left: 37.5% !important
+@media (max-width: 425px)
+    #game
+        #port
+            height: 300px;
+            .people
+                left: -13% !important
+                bottom: 5% !important
+        .button
+            bottom: 5% !important
+            left: 32% !important
+            width: 35%;
