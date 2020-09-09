@@ -1120,7 +1120,10 @@ li, a {
   .story .more-link {
     bottom: 0;
     position: relative;
-    right: 0; } }
+    right: inherit;
+    margin-top: 10px; }
+    .story .more-link p {
+      margin: 0; } }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .story .owl-stage-outer .owl-stage .owl-item .person .img-area .icon img {
