@@ -944,8 +944,8 @@ li,a
                     -ms-grid-columns: 100%
                     justify-items: center
                     align-items: center
-                    height: 400px
-                    width: 400px
+                    width: 100%
+                    max-width: 400px
                     transition: 1s
                     .img-area
                         max-width: 400px
@@ -974,9 +974,11 @@ li,a
                         opacity: 0
                         max-height: 0px
                         transition: 1s
-                        width: 400px
+                        width: 92vw
+                        max-width: 400px
                         outline: 0
                         -ms-grid-row: 2;
+                        box-sizing: border-box
                         border: 1px solid rgba(0,0,0,0.1)
                         //box-shadow: inset -1px -1px 0 0 rgba(0,0,0,0.1), inset 1px 1px 0 0 rgba(0,0,0,0.1)
                         transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -992,8 +994,8 @@ li,a
             .owl-item.slick-active.slick-center
                 .person
                     padding: 20px 0px
-                    height: 400px
-                    width: 400px
+                    width: 100%;
+                    max-width: 400px;
                     .img-area
                         max-width: 100px
                         margin: 0 auto
@@ -1041,7 +1043,7 @@ li,a
         margin: 0 auto
         position: absolute
         z-index: 10
-        bottom: 0
+        bottom: 10px
     .owl-prev, .owl-next, .slick-prev, .slick-next
         display: inline-block !important
         width: 50px
@@ -1103,9 +1105,15 @@ li,a
     .story
         .owl-stage-outer
             .owl-stage
-                height: 525px
+                height: auto
+                padding-bottom: 60px;
+        .owl-nav,.slick-arrow
+            position: absolute
+            bottom: 10px
         .more-link
-            bottom: 5%
+            bottom: 0
+            position: relative
+            right: 0
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
     .story  
         .owl-stage-outer
@@ -1166,6 +1174,24 @@ li,a
                 transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1.0)
     .card-bottom
         height: 20px
+@media (max-width: 568px)
+    .story-list
+        .card
+            display: grid;
+            display: -ms-grid;
+            -ms-grid-columns: 35% 65%;
+            grid-template-columns: 35% 65%;
+            .img-area
+                width: 100%;
+                height: 100%;
+                max-height: 150px;
+                overflow: hidden;
+                img 
+                    height: 100%;
+                    width: auto;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%)
 
 .story-detail
     .article-area
@@ -1279,3 +1305,19 @@ li,a
             .people
                 left: -13% !important
                 bottom: 5% !important
+
+.story-banner
+    .card
+        max-height: 420px;
+        img 
+            width: 105%;
+            left: -2.5%;
+            height: auto;
+            position: relative;
+@media (max-width: 767.98px)
+    .story-banner
+        .card
+            max-height: 420px;
+            border-radius: 16px !important
+            img 
+                border-radius: 16px !important
