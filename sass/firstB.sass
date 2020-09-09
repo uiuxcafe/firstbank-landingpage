@@ -1133,6 +1133,7 @@ li,a
         border-radius: 10px
         background-color: #FFFFFF
         .img-area
+            height: 100%
             img
                 width: 100%
         .text-area
@@ -1156,9 +1157,12 @@ li,a
                 line-height: 28px
                 overflow: hidden
                 text-overflow: ellipsis
+                white-space: normal
                 display: -webkit-box
+                line-clamp: 2
                 -webkit-line-clamp: 2
-                -webkit-box-orient: vertical
+                -webkit-box-orient: vertical;
+                -o-text-overflow: ellipsis;
             .company
                 color: #39AE6B
                 font-size: 16px
@@ -1181,6 +1185,9 @@ li,a
             display: -ms-grid;
             -ms-grid-columns: 35% 65%;
             grid-template-columns: 35% 65%;
+            height: 100%;
+            max-height: 150px;
+           
             .img-area
                 width: 100%;
                 height: 100%;
@@ -1192,7 +1199,28 @@ li,a
                     position: relative;
                     left: 50%;
                     transform: translateX(-50%)
-
+            .text-area
+                -ms-grid-column: 2
+                
+        
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+    .story-list
+        p
+            white-space: nowrap !important
+            text-overflow: ellipsis
+        //     padding-left: 10px;
+        .card-bottom
+            height: 20px
+    @media (max-width: 568px)
+        .story-list
+            .col-md-4.col-sm-6
+                height: 100%
+                max-height: 150px
+            .card
+                max-height: 130px; 
+            .img-area
+                max-height: 130px; 
+            
 .story-detail
     .article-area
         img 
