@@ -1,6 +1,9 @@
+html 
+    min-width: 425px;
+    
 body 
     background-color: #FAFAFA
-
+    min-width: 425px;
 h1,h2,h3,h4,h5,p,li,a,button,input,span
     color: #333848
     font-family: "PingFang TC", "Roboto", "Noto Sans TC","微軟正黑體", sans-serif
@@ -1218,6 +1221,8 @@ li,a
         
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
     .story-list
+        .img-area
+            max-height: 230px;
         p
             white-space: nowrap !important
             text-overflow: ellipsis
@@ -1235,6 +1240,16 @@ li,a
                 max-height: 130px; 
             
 .story-detail
+    .story-banner
+        .card
+            height: 335px !important
+            margin-bottom: 20px
+            img 
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                height: 100%
+                width: auto
     .article-area
         img.first
             margin-top: 0px !important;

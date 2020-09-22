@@ -1,6 +1,10 @@
 @charset "UTF-8";
+html {
+  min-width: 425px; }
+
 body {
-  background-color: #FAFAFA; }
+  background-color: #FAFAFA;
+  min-width: 425px; }
 
 h1, h2, h3, h4, h5, p, li, a, button, input, span {
   color: #333848;
@@ -1222,6 +1226,8 @@ li, a {
       -ms-grid-column: 2; } }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .story-list .img-area {
+    max-height: 230px; }
   .story-list p {
     white-space: nowrap !important;
     -o-text-overflow: ellipsis;
@@ -1237,6 +1243,18 @@ li, a {
     max-height: 130px; }
   .story-list .img-area {
     max-height: 130px; } }
+
+.story-detail .story-banner .card {
+  height: 335px !important;
+  margin-bottom: 20px; }
+  .story-detail .story-banner .card img {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 100%;
+    width: auto; }
 
 .story-detail .article-area img.first {
   margin-top: 0px !important; }
