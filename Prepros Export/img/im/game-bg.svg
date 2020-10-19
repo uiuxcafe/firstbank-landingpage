@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="400px" viewBox="0 0 1200 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Img/game-bg</title>
+    <defs>
+        <linearGradient x1="1.13296014%" y1="44.4693793%" x2="100%" y2="55.1834524%" id="linearGradient-1">
+            <stop stop-color="#CCFCD5" offset="0%"></stop>
+            <stop stop-color="#B1F6BC" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="1200" height="400" rx="16"></rect>
+    </defs>
+    <g id="Img/game-bg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="bg" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+            <polygon id="Path" fill-opacity="0.2" fill="#E8F9EB" mask="url(#mask-3)" points="0 200 620 200 0 0"></polygon>
+            <polygon id="Path" fill="#E8F9EB" mask="url(#mask-3)" points="1200 200 620 200 1200 0"></polygon>
+            <polygon id="Path" fill="#E8F9EB" mask="url(#mask-3)" points="0 200 620 200 0 400"></polygon>
+            <polygon id="Path" fill-opacity="0.6" fill="#E8F9EB" mask="url(#mask-3)" points="1200 200 620 200 1200 400"></polygon>
+            <polygon id="Path" fill-opacity="0.5" fill="#E8F9EB" mask="url(#mask-3)" points="620 400 620 200 0 400"></polygon>
+            <polygon id="Path" fill-opacity="0.7" fill="#E8F9EB" mask="url(#mask-3)" points="620 0 620 200 0 0"></polygon>
+            <polygon id="Path" fill-opacity="0.2" fill="#E8F9EB" mask="url(#mask-3)" points="620 400 620 200 1200 400"></polygon>
+            <polygon id="Path" fill-opacity="0.4" fill="#E8F9EB" mask="url(#mask-3)" points="620 -4.97379915e-14 620 200 1200 -2.27373675e-13"></polygon>
+        </g>
+    </g>
+</svg>
