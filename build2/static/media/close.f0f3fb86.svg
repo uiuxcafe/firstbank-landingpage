@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/close</title>
+    <g id="Icon/close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill-opacity="0" fill="#FFFFFF" cx="12" cy="12" r="12"></circle>
+        <path d="M16.2426407,6.34314575 L17.6568542,7.75735931 L13.4141458,12.0001458 L17.6568542,16.2426407 L16.2426407,17.6568542 L12.0001458,13.4141458 L7.75735931,17.6568542 L6.34314575,16.2426407 L10.5861458,12.0001458 L6.34314575,7.75735931 L7.75735931,6.34314575 L12.0001458,10.5861458 L16.2426407,6.34314575 Z" id="Combined-Shape" fill="#000000"></path>
+    </g>
+</svg>
